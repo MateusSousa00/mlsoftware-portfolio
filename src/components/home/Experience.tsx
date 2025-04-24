@@ -7,29 +7,30 @@ const experiences = [
     company: 'Neobrain',
     startDate: 'Jan 2022',
     endDate: 'Dec 2023',
-    link: '/#1',
+    link: 'https://www.neobrain.io/',
     description:
       'Led development of scalable features, improved architecture, and deployed AI-powered tools for HR platforms.',
-    stack: ['TypeScript', 'Node.js', 'Python', 'Next.js', 'Docker', 'PostgreSQL']
+    stack: ['Vue.js', 'Typescript', 'Node.js', 'PHP', 'And more...']
   },
   {
     title: 'Software Engineer',
-    company: 'LIQI',
-    startDate: 'Apr 2021',
-    endDate: 'Dec 2021',
-    link: '/#2',
+    company: 'Alloy Mit',
+    startDate: 'Jan 2021',
+    endDate: 'Mar 2024',
+    link: 'https://alloymit.com/',
     description:
-      'Contributed to blockchain integrations and built secure microservices with strong testing and CI/CD workflows.',
-    stack: ['Kotlin', 'Spring Boot', 'Docker', 'GraphQL', 'Redis']
+      'At Alloy, I led containerized deployments, refactored Laravel to Kotlin, and integrated APIs that boosted financial productivity 20x. Previously, I built high-traffic services, improved CI/CD, and optimized legacy code for performance and scalability.',
+    stack: ['Next.js', 'TypeScript', 'Node.js', 'PHP', 'And More...']
   },
   {
-    title: 'Tech Lead & Developer',
-    company: 'Globant France',
+    title: 'Backend Engineer',
+    company: 'LIQI Digital Assets',
     startDate: 'Jan 2020',
-    endDate: 'Mar 2021',
-    link: '/#3',
-    description: 'Refactored legacy systems, mentored junior devs, and designed high-throughput backend architectures.',
-    stack: ['JavaScript', 'PHP', 'Laravel', 'MySQL', 'RabbitMQ']
+    endDate: 'Dec 2020',
+    link: 'https://www.liqi.com.br/',
+    description:
+      'At Liqi, I automated invoices and doubled user acquisition with a referral campaign. Also built APIs and optimized database performance.',
+    stack: ['Node.js', 'TypeScript', 'Nest.js', 'Prisma', 'And More...']
   }
 ];
 
@@ -39,7 +40,7 @@ export default function Experience() {
       <h1 className="md:hidden text-2xl text-left mb-6">Experience</h1>
       {experiences.map((exp, index) => (
         <Link href={exp.link} key={index}>
-          <div className="border border-muted rounded-2xl p-6 mb-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:bg-muted/30 hover:shadow-md">
+          <div className="rounded-2xl p-6 mb-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:bg-muted/30 hover:shadow-md">
             <h3 className="text-lg font-semibold">
               {exp.title} – {exp.company}
             </h3>
@@ -49,10 +50,7 @@ export default function Experience() {
             <p className="mb-4 text-base text-foreground">{exp.description}</p>
             <div className="flex flex-wrap gap-2">
               {exp.stack.map((tech, i) => (
-                <div
-                  key={i}
-                  className="border border-muted px-3 py-1 rounded-md text-sm flex items-center gap-1 bg-primary"
-                >
+                <div key={i} className="px-3 py-1 rounded-md text-sm flex items-center gap-1 bg-primary">
                   <FaCode className="text-xs" /> {tech}
                 </div>
               ))}
