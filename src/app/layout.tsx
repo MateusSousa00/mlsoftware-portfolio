@@ -5,6 +5,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import { cn } from '@/lib/utils';
 import ContactCTA from '@/components/shared/ContactCTA';
+import CustomCursor from '@/components/CustomCursor';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
               </main>
             </div>
           </div>
+          <CustomCursor />
         </ThemeProvider>
       </body>
     </html>

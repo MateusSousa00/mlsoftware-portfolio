@@ -71,7 +71,7 @@ export function Sidebar() {
         {mounted && (
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="hover:scale-110 cursor-p transition-transform text-neutral-600 dark:text-neutral-300"
+            className="hover:scale-110 cursor-pointer transition-transform text-neutral-600 dark:text-neutral-300"
             title="Toggle Theme"
           >
             {theme === 'dark' ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
