@@ -16,7 +16,7 @@ export default function ContactCTA() {
           Message me on WhatsApp
         </a>
         <a
-          href="mailto:youremail@example.com"
+          href="#contact"
           className="px-6 py-3 rounded-md border border-neutral-400 dark:border-neutral-600 hover:bg-neutral-200 dark:hover:bg-neutral-800 transition"
         >
           Send me an Email

@@ -20,7 +20,7 @@ export default function CustomCursor() {
       animate={{ x: position.x - 256, y: position.y - 256 }}
       transition={{ type: 'spring', stiffness: 500, damping: 40 }}
     >
-      <div className="w-[512px] h-[512px] rounded-full bg-background/30 dark:bg-primary/3 blur-2xl" />
+      <div className="w-[512px] h-[512px] rounded-full dark:bg-primary/3 blur-2xl" />
     </motion.div>
   );
 }

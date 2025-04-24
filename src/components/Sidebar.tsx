@@ -16,11 +16,11 @@ export function Sidebar() {
     setMounted(true);
   }, []);
   return (
-    <aside className="w-full md:w-96 md:fixed top-0 md:top-auto md:h-screen z-20 bg-primary-foreground dark:bg-background border-b md:border-b-0 md:border-r border-neutral-200 dark:border-neutral-800 px-6 py-6 md:py-10 flex flex-col md:justify-between">
+    <aside className="w-full md:w-96 md:fixed top-0 md:top-auto md:h-screen z-20 bg-primary-foreground dark:bg-background border-neutral-200 dark:border-neutral-800 px-6 py-6 md:py-10 flex flex-col md:justify-between">
       {/* Top Content */}
       <div>
-        <h1 className="text-2xl font-bold mb-1">Mateus Lima</h1>
-        <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-4">M&L Software Founder.</p>
+        <h1 className="text-5xl font-bold mb-1">Mateus Lima</h1>
+        <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-4">M&L Software Founder.</p>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-2">Software Engineer</p>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 italic mb-10">
           I bring concepts to the real world, scalable products and an experience you will never forget.

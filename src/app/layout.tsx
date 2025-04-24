@@ -6,11 +6,12 @@ import { ThemeProvider } from '@/providers/ThemeProvider';
 import { cn } from '@/lib/utils';
 import ContactCTA from '@/components/shared/ContactCTA';
 import CustomCursor from '@/components/CustomCursor';
+import ContactForm from '@/components/shared/ContactForm';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'M&L Software LTDA',
+  title: 'M&L Software',
   description: 'Your best option for web design and scalable products.'
 };
 
@@ -30,6 +31,7 @@ export default function RootLayout({
                 <div className="mx-auto w-full md:pl-96">
                   {children}
                   <ContactCTA />
+                  <ContactForm />
                 </div>
               </main>
             </div>

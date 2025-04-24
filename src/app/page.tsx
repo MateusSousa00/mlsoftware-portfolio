@@ -1,12 +1,14 @@
 import Articles from '@/components/home/Articles';
-import Hero from '@/components/home/Hero';
-import SkillHighlights from '@/components/home/SkillHighlights';
+import About from '@/components/home/About';
+import Experience from '@/components/home/Experience';
+import HighlightProjects from '@/components/home/HighlightProjects';
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <SkillHighlights />
+      <About />
+      <Experience />
+      <HighlightProjects />
       <Articles />
     </>
   );

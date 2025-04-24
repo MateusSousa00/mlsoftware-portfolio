@@ -1,33 +1,46 @@
 'use client';
-import { motion } from 'framer-motion';
 
-export default function Articles() {
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+
+interface Article {
+  id: number;
+  title: string;
+  url: string;
+  description: string;
+  published_at: string;
+  cover_image: string | null;
+}
+
+export default function DevToArticles() {
+  const [articles, setArticles] = useState<Article[]>([]);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const res = await fetch('https://dev.to/api/articles?username=mateussousa00');
+        const data = await res.json();
+        setArticles(data);
+      } catch (err) {
+        console.error('Failed to fetch articles:', err);
+      }
+    };
+
+    fetchArticles();
+  }, []);
+
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      viewport={{ once: true }}
-      className="mt-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
-    >
-      <h2 className="text-2xl font-bold mb-8 text-center">Latest Articles</h2>
-      <div className="space-y-8">
-        <a
-          href="https://dev.to/your-article-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col sm:flex-row items-start gap-6 p-6 border border-neutral-200 dark:border-neutral-800 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-900 transition"
-        >
-          <p>some image goes here</p>
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Why I’m Building a Scalable WhatsApp SaaS with AI</h3>
-            <p className="text-neutral-600 dark:text-neutral-400">
-              A peek into the architecture, reasoning, and tech stack behind my latest SaaS venture...
-            </p>
+    <section className="space-y-6 px-5 py-10">
+      <h2 className="text-2xl font-bold">Latest Dev.to Articles</h2>
+      {articles.slice(0, 3).map((article) => (
+        <Link key={article.id} href={article.url} target="_blank">
+          <div className="border border-muted rounded-2xl p-4 shadow-sm hover:shadow-md transition hover:bg-muted/30 mb-4">
+            <h3 className="text-lg font-semibold">{article.title}</h3>
+            <p className="text-sm text-muted-foreground mb-1">{new Date(article.published_at).toDateString()}</p>
+            <p className="text-base">{article.description}</p>
           </div>
-        </a>
-        {/* Add more article cards below manually or later via RSS */}
-      </div>
-    </motion.section>
+        </Link>
+      ))}
+    </section>
   );
 }
