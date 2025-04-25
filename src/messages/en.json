@@ -1,0 +1,210 @@
+{
+  "about": {
+    "heading": "About",
+    "parOne": "I’m a full-stack software engineer specialized in web development, backend architecture, and AI integration. I build scalable, high-performance applications using TypeScript, Node.js, Python, Docker, and Kubernetes focusing on clean APIs, robust CI/CD, and maintainable systems.",
+    "parTwo": "Right now, I’m developing an AI-powered communication tool to simplify daily interactions using natural language processing and intelligent automation. It’s a bold step toward making tech more human—and just the beginning.",
+    "parThree": "I’ve led systems handling 10,000+ ops per minute, refactored legacy stacks from Laravel to Kotlin, and integrated SAP HANA with real-time data. I have also built blockchain tools and scaled teams through mentoring and architecture leadership.",
+    "parFour": "Off the clock, I’m usually playing bass, singing, or dropping pun-level bugs into conversations. Coffee fuels the code, and yes, dark mode is a lifestyle."
+  },
+  "articles": {
+    "heading": "Latest Dev.to Articles"
+  },
+  "contactCta": {
+    "heading": "Let’s work together",
+    "paragraph": "Whether it’s a freelance gig, collaboration, or just a chat — I’m open to connect. Reach out and let’s build something great.",
+    "whatsapp": "Message me on WhatsApp",
+    "email": "Send me an Email"
+  },
+  "contactForm": {
+    "heading": "Write something nice, I dare you.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "sidebar": {
+    "impact": "I bring concepts to the real world, scalable products and an experience you will never forget.",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects"
+  },
+  "experience": {
+    "heading": "Experience",
+    "cta": "Full experience →",
+    "jobs": {
+      "0": {
+        "title": "Senior Software Developer",
+        "company": "Globant - Neobrain",
+        "startDate": "Jan 2022",
+        "endDate": "Dec 2023",
+        "link": "https://www.neobrain.io/",
+        "description": "Led development of scalable features, improved architecture, and deployed AI-powered tools for HR platforms.",
+        "stack": {
+          "0": "Vue.js",
+          "1": "Typescript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "And more..."
+        }
+      },
+      "1": {
+        "title": "Software Engineer",
+        "company": "Alloy Mit",
+        "startDate": "Jan 2021",
+        "endDate": "Mar 2024",
+        "link": "https://alloymit.com/",
+        "description": "At Alloy, I led containerized deployments, refactored Laravel to Kotlin, and integrated APIs that boosted financial productivity 20x. Previously, I built high-traffic services, improved CI/CD, and optimized legacy code for performance and scalability.",
+        "stack": {
+          "0": "Next.js",
+          "1": "TypeScript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "And More..."
+        }
+      },
+      "2": {
+        "title": "Backend Engineer",
+        "company": "LIQI Digital Assets",
+        "startDate": "Jan 2020",
+        "endDate": "Dec 2020",
+        "link": "https://www.liqi.com.br/",
+        "description": "At Liqi, I automated invoices and doubled user acquisition with a referral campaign. Also built APIs and optimized database performance.",
+        "stack": {
+          "0": "Node.js",
+          "1": "TypeScript",
+          "2": "Nest.js",
+          "3": "Prisma",
+          "4": "And More..."
+        }
+      }
+    }
+  },
+  "fullExperience": {
+    "back": "Back to Home",
+    "heading": "My Full Experience",
+    "intro": "Here’s a detailed look at the roles, projects, and results I’ve delivered across multiple industries and stacks.",
+    "cta": "Download My Resume - EN (PDF)",
+    "closing": "Like it that much? You can keep it 😉",
+    "resume": "/mateus-resume.pdf",
+    "jobs": {
+      "0": {
+        "title": "Senior Software Engineer",
+        "company": "Globant - Neobrain",
+        "startDate": "Jan 2022",
+        "endDate": "Dec 2023",
+        "link": "https://www.neobrain.io/",
+        "description": {
+          "0": "Designed and developed a €200,000 custom employee skill assessment solution, enabling workforce-wide talent evaluation.",
+          "1": "Built a high-performance batch processing system capable of inserting 10,000+ users per minute, ensuring seamless synchronization between services across multiple languages.",
+          "2": "Initiated the migration of legacy monolithic code to a microservices architecture, significantly improving system scalability and maintainability.",
+          "3": "Predominantly focused on fixing bugs directly in the database using SAP HANA, ensuring data integrity and system reliability.",
+          "4": "Developed and maintained application features using Node.js and PHP, enhancing system functionality and performance. For frontend, utilized Vue.js to build and improve user interfaces, delivering a seamless user experience.",
+          "5": "Ensured all code was rigorously tested, achieving a 10% increase in test coverage for legacy projects. Implemented automated tests using Jest to maintain high-quality code standards."
+        },
+        "stack": {
+          "0": "Vue.js",
+          "1": "Typescript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "WebSocket",
+          "5": "Jest",
+          "6": "VPN",
+          "7": "HanaDB",
+          "8": "Gitlab Actions"
+        }
+      },
+      "1": {
+        "title": "Software Engineer",
+        "company": "Alloy Mit",
+        "startDate": "Jan 2021",
+        "endDate": "Mar 2024",
+        "link": "https://alloymit.com/",
+        "description": {
+          "0": "Led deployment for the company’s flagship project using containerization (Docker, Kubernetes), improving scalability and operational efficiency.",
+          "1": "Refactored a legacy Laravel system to Kotlin, enhancing system performance and maintainability.",
+          "2": "Integrated two accounting systems, automating payment processes via API and increasing financial productivity by 20x.",
+          "3": "Developed a universal communication interface, improving system interoperability and organizational innovation.",
+          "4": "Provided mentorship to junior developers, fostering a culture of continuous learning and technical growth.",
+          "5": "Developed and maintained backend services and APIs for high-traffic applications.",
+          "6": "Implemented CI/CD pipelines, reducing deployment times and increasing delivery efficiency.",
+          "7": "Participated in refactoring legacy code, improving performance and reducing operational costs.",
+          "8": "Optimized database queries and backend processes for scalability and lower latency."
+        },
+        "stack": {
+          "0": "Next.js",
+          "1": "TypeScript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "Laravel",
+          "5": "Docker",
+          "6": "Redis",
+          "7": "AWS",
+          "8": "Nginx",
+          "9": "Apache2",
+          "10": "Swagger",
+          "11": "Linux",
+          "12": "Kotlin"
+        }
+      },
+      "2": {
+        "title": "Backend Engineer",
+        "company": "LIQI Digital Assets",
+        "startDate": "Jan 2020",
+        "endDate": "Dec 2020",
+        "link": "https://www.liqi.com.br/",
+        "description": {
+          "0": "Integrated an accounting system, automating the generation of up to 120 invoices per minute, streamlining financial processes.",
+          "1": "Boosted customer acquisition by 100% through the successful \"Member Get Member\" campaign.",
+          "2": "Introduced and created cashback functionality, resulting in a 5%+ increase in the customer base.",
+          "3": "Developed APIs for financial transactions using Node.js & PostgreSQL.",
+          "4": "Assisted in database query optimization, enhancing system response times.",
+          "5": "Contributed to microservices development, improving system modularity and scalability.",
+          "6": "Assisted in writing internal documentation and process standardization, improving team efficiency."
+        },
+        "stack": {
+          "0": "Node.js",
+          "1": "TypeScript",
+          "2": "Nest.js",
+          "3": "Prisma",
+          "4": "Postgres",
+          "5": "Docker",
+          "6": "GraphQL",
+          "7": "Jest"
+        }
+      }
+    }
+  },
+  "highlightProjects": {
+    "heading": "Highlight Projects",
+    "projects": {
+      "0": {
+        "name": "Software Architecture Project",
+        "description": "Clean Architecture-based system with microservices, monitoring, and deployment strategies using Docker, Kubernetes, and AWS."
+      },
+      "1": {
+        "name": "Sentiment Analysis API",
+        "description": "AI-powered REST API using FastAPI, Hugging Face, and Docker for real-time sentiment classification."
+      },
+      "2": {
+        "name": "Version.com.br",
+        "description": "Corporate website focused on SEO, performance, and responsive design for a consulting agency."
+      },
+      "3": {
+        "name": "Confiareservicos.com.br",
+        "description": "Full redesign and frontend development of a condominium services website using Next.js and Tailwind."
+      }
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, es {🇪🇸 Spanish} en {🇺🇸 English} pt {🇧🇷 Portuguese} other {Unknown}}"
+  },
+  "metadata": {
+    "title": "M&L Software",
+    "description": "We bring concepts to the real world, scalable products and an experience you will never forget."
+  },
+  "notFound": {
+    "message": "Sorry, we couldn't find the page you were looking for.",
+    "goHome": "Return to homepage"
+  }
+}

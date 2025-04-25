@@ -1,24 +1,30 @@
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/app/globals.css';
 import { Sidebar } from '@/components/Sidebar';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import { cn } from '@/lib/utils';
-import { Locale, locales } from '@/i18n';
 import ContactCTA from '@/components/shared/ContactCTA';
 import CustomCursor from '@/components/CustomCursor';
 import ContactForm from '@/components/shared/ContactForm';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations } from 'next-intl/server';
+import { hasLocale, Locale, NextIntlClientProvider } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import { ReactNode } from 'react';
+import { notFound } from 'next/navigation';
+
+type Props = {
+  children: ReactNode;
+  params: Promise<{ locale: Locale }>;
+};
 
 const inter = Inter({ subsets: ['latin'] });
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata(props: Omit<Props, 'children'>) {
+  const { locale } = await props.params;
   const t = await getTranslations({ locale });
 
   return {
@@ -27,20 +33,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default async function RootLayout({
-  children,
-  params
-}: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}>) {
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
-  const messages = await getMessages();
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={cn(inter.className, 'bg-primary-foreground text-black dark:bg-background dark:text-white')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <NextIntlClientProvider locale={locale} messages={messages}>
+          <NextIntlClientProvider>
             <div className="flex justify-center flex-row">
               <div className="w-full max-w-[1280px]">
                 <Sidebar />

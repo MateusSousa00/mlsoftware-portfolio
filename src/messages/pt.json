@@ -1,0 +1,210 @@
+{
+  "about": {
+    "heading": "Sobre",
+    "parOne": "Sou um engenheiro de software full-stack especializado em desenvolvimento web, arquitetura backend e integração de IA. Construo aplicações escaláveis e de alto desempenho usando TypeScript, Node.js, Python, Docker e Kubernetes, focando em APIs limpas, CI/CD robusto e sistemas fáceis de manter.",
+    "parTwo": "Atualmente, estou desenvolvendo uma ferramenta de comunicação impulsionada por IA para simplificar interações diárias usando processamento de linguagem natural e automação inteligente. É um passo ousado para tornar a tecnologia mais humana — e é apenas o começo.",
+    "parThree": "Liderei sistemas que processam mais de 10.000 operações por minuto, refatorei stacks legados de Laravel para Kotlin e integrei SAP HANA com dados em tempo real. Também desenvolvi ferramentas em blockchain e ajudei a escalar equipes através de mentoria e liderança arquitetural.",
+    "parFour": "Fora do expediente, geralmente estou tocando baixo, cantando ou soltando bugs em forma de trocadilho nas conversas. Café alimenta o código — e sim, modo escuro é um estilo de vida."
+  },
+  "articles": {
+    "heading": "Últimos artigos no Dev.to"
+  },
+  "contactCta": {
+    "heading": "Vamos trabalhar juntos",
+    "paragraph": "Seja um projeto freelance, colaboração ou apenas um bate-papo — estou aberto para conectar. Entre em contato e vamos construir algo incrível.",
+    "whatsapp": "Me chame no WhatsApp",
+    "email": "Envie-me um E-mail"
+  },
+  "contactForm": {
+    "heading": "Escreva algo legal, eu te desafio.",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "send": "Enviar mensagem"
+  },
+  "sidebar": {
+    "impact": "Transformo conceitos em realidade com produtos escaláveis e uma experiência que você nunca vai esquecer.",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos"
+  },
+  "experience": {
+    "heading": "Experiência",
+    "cta": "Experiência completa →",
+    "jobs": {
+      "0": {
+        "title": "Desenvolvedor de Software Sênior",
+        "company": "Globant - Neobrain",
+        "startDate": "Jan 2022",
+        "endDate": "Dez 2023",
+        "link": "https://www.neobrain.io/",
+        "description": "Liderei o desenvolvimento de funcionalidades escaláveis, melhorei a arquitetura e implementei ferramentas impulsionadas por IA para plataformas de RH.",
+        "stack": {
+          "0": "Vue.js",
+          "1": "Typescript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "E mais..."
+        }
+      },
+      "1": {
+        "title": "Engenheiro de Software",
+        "company": "Alloy Mit",
+        "startDate": "Jan 2021",
+        "endDate": "Mar 2024",
+        "link": "https://alloymit.com/",
+        "description": "Na Alloy, liderei implantações com containers, refatorei sistemas legados de Laravel para Kotlin e integrei APIs que aumentaram a produtividade financeira em 20x. Também desenvolvi serviços de alto tráfego, otimizei pipelines de CI/CD e melhorei o desempenho de código legado.",
+        "stack": {
+          "0": "Next.js",
+          "1": "TypeScript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "E mais..."
+        }
+      },
+      "2": {
+        "title": "Engenheiro Backend",
+        "company": "LIQI Digital Assets",
+        "startDate": "Jan 2020",
+        "endDate": "Dez 2020",
+        "link": "https://www.liqi.com.br/",
+        "description": "Na Liqi, automatizei a emissão de faturas e dobrei a aquisição de usuários com uma campanha de indicação. Também desenvolvi APIs e otimizei o desempenho de banco de dados.",
+        "stack": {
+          "0": "Node.js",
+          "1": "TypeScript",
+          "2": "Nest.js",
+          "3": "Prisma",
+          "4": "E mais..."
+        }
+      }
+    }
+  },
+  "fullExperience": {
+    "back": "Voltar a pagina incial",
+    "heading": "Minha Experiência Completa",
+    "intro": "Aqui está uma visão detalhada dos papéis, projetos e resultados que entreguei em diversas indústrias e stacks.",
+    "cta": "Baixar Meu Currículo - PT (PDF)",
+    "closing": "Gostou tanto assim? Pode ficar 😉",
+    "resume": "/mateus-curriculo.pdf",
+    "jobs": {
+      "0": {
+        "title": "Engenheiro de Software Sênior",
+        "company": "Globant - Neobrain",
+        "startDate": "Jan 2022",
+        "endDate": "Dez 2023",
+        "link": "https://www.neobrain.io/",
+        "description": {
+          "0": "Projetei e desenvolvi uma solução personalizada de avaliação de habilidades de funcionários no valor de €200.000, permitindo a avaliação de talentos em toda a força de trabalho.",
+          "1": "Construí um sistema de processamento em lote de alto desempenho, capaz de inserir mais de 10.000 usuários por minuto, garantindo sincronização perfeita entre serviços em múltiplos idiomas.",
+          "2": "Iniciei a migração do código monolítico legado para uma arquitetura de microsserviços, melhorando significativamente a escalabilidade e a manutenibilidade do sistema.",
+          "3": "Foquei principalmente na correção de bugs diretamente no banco de dados usando SAP HANA, garantindo integridade dos dados e confiabilidade do sistema.",
+          "4": "Desenvolvi e mantive funcionalidades da aplicação utilizando Node.js e PHP, aprimorando a funcionalidade e o desempenho do sistema. No frontend, utilizei Vue.js para construir e melhorar interfaces de usuário, proporcionando uma experiência fluida.",
+          "5": "Garanti que todo o código fosse rigorosamente testado, aumentando em 10% a cobertura de testes em projetos legados. Implementei testes automatizados com Jest para manter altos padrões de qualidade de código."
+        },
+        "stack": {
+          "0": "Vue.js",
+          "1": "Typescript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "WebSocket",
+          "5": "Jest",
+          "6": "VPN",
+          "7": "HanaDB",
+          "8": "Gitlab Actions"
+        }
+      },
+      "1": {
+        "title": "Engenheiro de Software",
+        "company": "Alloy Mit",
+        "startDate": "Jan 2021",
+        "endDate": "Mar 2024",
+        "link": "https://alloymit.com/",
+        "description": {
+          "0": "Liderei a implantação do projeto principal da empresa utilizando conteinerização (Docker, Kubernetes), melhorando a escalabilidade e a eficiência operacional.",
+          "1": "Refatorei um sistema legado em Laravel para Kotlin, aprimorando o desempenho e a manutenibilidade do sistema.",
+          "2": "Integrei dois sistemas contábeis, automatizando processos de pagamento via API e aumentando a produtividade financeira em 20x.",
+          "3": "Desenvolvi uma interface universal de comunicação, melhorando a interoperabilidade entre sistemas e fomentando a inovação organizacional.",
+          "4": "Ofereci mentoria a desenvolvedores juniores, promovendo uma cultura de aprendizado contínuo e crescimento técnico.",
+          "5": "Desenvolvi e mantive serviços backend e APIs para aplicações de alto tráfego.",
+          "6": "Implementei pipelines de CI/CD, reduzindo o tempo de implantação e aumentando a eficiência de entrega.",
+          "7": "Participei da refatoração de código legado, melhorando a performance e reduzindo custos operacionais.",
+          "8": "Otimizei consultas de banco de dados e processos backend para maior escalabilidade e menor latência."
+        },
+        "stack": {
+          "0": "Next.js",
+          "1": "TypeScript",
+          "2": "Node.js",
+          "3": "PHP",
+          "4": "Laravel",
+          "5": "Docker",
+          "6": "Redis",
+          "7": "AWS",
+          "8": "Nginx",
+          "9": "Apache2",
+          "10": "Swagger",
+          "11": "Linux",
+          "12": "Kotlin"
+        }
+      },
+      "2": {
+        "title": "Engenheiro Backend",
+        "company": "LIQI Digital Assets",
+        "startDate": "Jan 2020",
+        "endDate": "Dez 2020",
+        "link": "https://www.liqi.com.br/",
+        "description": {
+          "0": "Integrei um sistema contábil, automatizando a geração de até 120 faturas por minuto e otimizando os processos financeiros.",
+          "1": "Aumentei a aquisição de clientes em 100% por meio da campanha \"Indique um Amigo\".",
+          "2": "Introduzi e implementei funcionalidade de cashback, resultando em um aumento de mais de 5% na base de clientes.",
+          "3": "Desenvolvi APIs para transações financeiras utilizando Node.js e PostgreSQL.",
+          "4": "Auxiliei na otimização de consultas ao banco de dados, melhorando os tempos de resposta do sistema.",
+          "5": "Contribuí para o desenvolvimento de microsserviços, aumentando a modularidade e a escalabilidade do sistema.",
+          "6": "Ajudei na redação de documentação interna e padronização de processos, aumentando a eficiência da equipe."
+        },
+        "stack": {
+          "0": "Node.js",
+          "1": "TypeScript",
+          "2": "Nest.js",
+          "3": "Prisma",
+          "4": "Postgres",
+          "5": "Docker",
+          "6": "GraphQL",
+          "7": "Jest"
+        }
+      }
+    }
+  },
+  "highlightProjects": {
+    "heading": "Projetos em Destaque",
+    "projects": {
+      "1": {
+        "name": "Projeto de Arquitetura de Software",
+        "description": "Sistema baseado em Clean Architecture com microsserviços, monitoramento e estratégias de deployment usando Docker, Kubernetes e AWS."
+      },
+      "2": {
+        "name": "API de Análise de Sentimentos",
+        "description": "API REST alimentada por IA usando FastAPI, Hugging Face e Docker para classificação de sentimentos em tempo real."
+      },
+      "3": {
+        "name": "Version.com.br",
+        "description": "Website corporativo focado em SEO, performance e design responsivo para uma agência de consultoria."
+      },
+      "4": {
+        "name": "Confiareservicos.com.br",
+        "description": "Redesign completo e desenvolvimento frontend de um site de serviços condominiais utilizando Next.js e Tailwind."
+      }
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Alterar idioma",
+    "locale": "{locale, select, es {🇪🇸 Espanhol} en {🇺🇸 Inglês} pt {🇧🇷 Português} other {Unknown}}"
+  },
+  "metadata": {
+    "title": "M&L Software",
+    "description": "Trazemos conceitos ao mundo real, produtos altamente escalaveis e uma experiencia que voce jamais irá esquecer."
+  },
+  "notFound": {
+    "message": "Desculpe, não conseguimos encontrar a página que você estava procurando.",
+    "goHome": "Voltar para a página inicial"
+  }
+}

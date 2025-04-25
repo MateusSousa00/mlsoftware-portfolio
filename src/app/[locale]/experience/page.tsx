@@ -12,7 +12,13 @@ export default function ExperiencePage() {
 
   return (
     <section className="max-w-4xl mx-auto py-24 px-6 space-y-16">
-      <div>
+      <Link
+        href="/"
+        className="text-accent-foreground text-left dark:text-primary underline underline-offset-4 hover:opacity-80"
+      >
+        {t('back')}
+      </Link>
+      <div className="pt-4">
         <h1 className="text-3xl font-bold mb-2">{t('heading')}</h1>
         <p className="text-neutral-600 dark:text-neutral-400 text-lg">{t('intro')}</p>
       </div>
@@ -57,7 +63,7 @@ export default function ExperiencePage() {
       <div className="pt-20 text-center">
         <p className="text-xl font-medium mb-2">{t('closing')}</p>
         <Link
-          href="/mateus-resume.pdf"
+          href={t('resume')}
           target="_blank"
           className="inline-block px-6 py-3 rounded-md bg-primary text-white hover:bg-opacity-90 transition"
         >

@@ -31,7 +31,7 @@ export function Sidebar() {
         <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-2">Software Engineer</p>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 italic mb-10">{t('impact')}</p>
 
-        {pathName === '/' && (
+        {/^\/(en|pt|es)?$/.test(pathName) && (
           <nav className="space-y-3 hidden md:block">
             <Link
               href="#about"

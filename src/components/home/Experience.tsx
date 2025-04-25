@@ -1,11 +1,16 @@
 'use client';
 
 import { getIndexedKeysFromMessages } from '@/lib/utils';
-import { useTranslations, useMessages } from 'next-intl';
+import { useTranslations, useMessages, Locale } from 'next-intl';
 import Link from 'next/link';
+import { use } from 'react';
 import { FaCode } from 'react-icons/fa';
 
-export default function Experience() {
+type Props = {
+  locale: Locale;
+};
+
+export default function Experience({ locale }: Props) {
   const t = useTranslations('experience');
   const messages = useMessages();
   const jobKeys = getIndexedKeysFromMessages(messages, 'experience.jobs');
@@ -46,7 +51,7 @@ export default function Experience() {
       })}
 
       <Link
-        href="/experience"
+        href={`/${locale}/experience`}
         className="text-accent-foreground text-left dark:text-primary underline underline-offset-4 hover:opacity-80"
       >
         {t('cta')}
