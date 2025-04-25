@@ -7,12 +7,15 @@ import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export function Sidebar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const activeId = useScrollSpy(['about', 'experience', 'projects']);
   const pathName = usePathname();
+  const t = useTranslations('sidebar');
 
   useEffect(() => {
     setMounted(true);
@@ -26,9 +29,7 @@ export function Sidebar() {
         </Link>
         <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-4">M&L Software Founder.</p>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-2">Software Engineer</p>
-        <p className="text-sm text-neutral-600 dark:text-neutral-400 italic mb-10">
-          I bring concepts to the real world, scalable products and an experience you will never forget.
-        </p>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 italic mb-10">{t('impact')}</p>
 
         {pathName === '/' && (
           <nav className="space-y-3 hidden md:block">
@@ -39,7 +40,7 @@ export function Sidebar() {
                 activeId === 'about' && 'font-bold underline underline-offset-4'
               )}
             >
-              About
+              {t('about')}
             </Link>
             <Link
               href="#experience"
@@ -48,7 +49,7 @@ export function Sidebar() {
                 activeId === 'experience' && 'font-bold underline underline-offset-4'
               )}
             >
-              Experience
+              {t('experience')}
             </Link>
             <Link
               href="#projects"
@@ -57,7 +58,7 @@ export function Sidebar() {
                 activeId === 'projects' && 'font-bold underline underline-offset-4'
               )}
             >
-              Projects
+              {t('projects')}
             </Link>
           </nav>
         )}
@@ -83,6 +84,7 @@ export function Sidebar() {
             {theme === 'dark' ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
           </button>
         )}
+        <LocaleSwitcher />
       </div>
     </aside>
   );

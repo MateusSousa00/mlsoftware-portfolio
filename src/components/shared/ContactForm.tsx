@@ -1,13 +1,15 @@
 'use client';
+import { useTranslations } from 'next-intl';
 
 export default function ContactForm() {
+  const t = useTranslations('contactForm');
   return (
     <section id="contact" className="max-w-3xl mx-auto py-24 px-6">
-      <h2 className="text-2xl font-bold mb-6 text-center">Write something nice, I dare you.</h2>
+      <h2 className="text-2xl font-bold mb-6 text-center">{t('heading')}</h2>
       <form action="https://formspree.io/f/your_form_id" method="POST" className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
-            Name
+            {t('name')}
           </label>
           <input
             type="text"
@@ -19,7 +21,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium mb-1">
-            Email
+            {t('email')}
           </label>
           <input
             type="email"
@@ -31,7 +33,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="message" className="block text-sm font-medium mb-1">
-            Message
+            {t('message')}
           </label>
           <textarea
             name="message"
@@ -42,7 +44,7 @@ export default function ContactForm() {
           />
         </div>
         <button type="submit" className="px-6 py-3 rounded-md bg-primary text-white hover:bg-opacity-90 transition">
-          Send Message
+          {t('send')}
         </button>
       </form>
     </section>

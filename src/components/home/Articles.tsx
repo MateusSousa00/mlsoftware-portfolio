@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface Article {
   id: number;
@@ -14,6 +15,8 @@ interface Article {
 
 export default function DevToArticles() {
   const [articles, setArticles] = useState<Article[]>([]);
+
+  const t = useTranslations('articles');
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -31,7 +34,7 @@ export default function DevToArticles() {
 
   return (
     <section className="space-y-6 px-5 py-10">
-      <h2 className="text-2xl font-bold">Latest Dev.to Articles</h2>
+      <h2 className="text-2xl font-bold">{t('heading')}</h2>
       {articles.slice(0, 3).map((article) => (
         <Link key={article.id} href={article.url} target="_blank">
           <div className="border border-muted rounded-2xl p-4 shadow-sm hover:shadow-md transition hover:bg-muted/30 mb-4">
