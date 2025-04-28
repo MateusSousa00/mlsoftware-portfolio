@@ -3,10 +3,11 @@ import { useTranslations } from 'next-intl';
 
 export default function ContactForm() {
   const t = useTranslations('contactForm');
+  const formspreeUrl = process.env.FORMSPREE_URL || '';
   return (
     <section id="contact" className="max-w-3xl mx-auto py-24 px-6">
       <h2 className="text-2xl font-bold mb-6 text-center">{t('heading')}</h2>
-      <form action={process.env.FORMSPREE_URL} method="POST" className="space-y-6">
+      <form action={formspreeUrl} method="POST" className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
             {t('name')}
@@ -43,7 +44,10 @@ export default function ContactForm() {
             className="w-full border px-4 py-2 rounded-md bg-white dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700"
           />
         </div>
-        <button type="submit" className="px-6 py-3 rounded-md bg-primary text-white hover:bg-opacity-90 transition">
+        <button
+          type="submit"
+          className="px-6 py-3 rounded-md bg-primary hover:cursor-pointer text-white hover:bg-opacity-90 transition"
+        >
           {t('send')}
         </button>
       </form>
