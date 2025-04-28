@@ -2,21 +2,21 @@
   "about": {
     "heading": "Sobre",
     "parOne": "Sou um engenheiro de software full-stack especializado em desenvolvimento web, arquitetura backend e integração de IA. Construo aplicações escaláveis e de alto desempenho usando TypeScript, Node.js, Python, Docker e Kubernetes, focando em APIs limpas, CI/CD robusto e sistemas fáceis de manter.",
-    "parTwo": "Atualmente, estou desenvolvendo uma ferramenta de comunicação impulsionada por IA para simplificar interações diárias usando processamento de linguagem natural e automação inteligente. É um passo ousado para tornar a tecnologia mais humana — e é apenas o começo.",
-    "parThree": "Liderei sistemas que processam mais de 10.000 operações por minuto, refatorei stacks legados de Laravel para Kotlin e integrei SAP HANA com dados em tempo real. Também desenvolvi ferramentas em blockchain e ajudei a escalar equipes através de mentoria e liderança arquitetural.",
-    "parFour": "Fora do expediente, geralmente estou tocando baixo, cantando ou soltando bugs em forma de trocadilho nas conversas. Café alimenta o código — e sim, modo escuro é um estilo de vida."
+    "parTwo": "Atualmente, estou desenvolvendo uma ferramenta de comunicação que com certeza terá IA para simplificar interações diárias usando processamento NLP e automação inteligente. Me acompanha de perto, vai ser top.",
+    "parThree": "Liderei sistemas que processam mais de 10.000 operações por minuto, refatorei stacks legados de Laravel para Kotlin e integrei SAP HANA com dados em tempo real. Também ajudei a escalar equipes através de mentoria e liderança motivacional, mas não sou coach.",
+    "parFour": "Fora do expediente, geralmente estou tocando contra-baixo, cantando ou caçando bugs em projetos pessoais. Café alimenta o 'meu código' e sim, modo escuro é um estilo de vida."
   },
   "articles": {
     "heading": "Últimos artigos no Dev.to"
   },
   "contactCta": {
     "heading": "Vamos trabalhar juntos",
-    "paragraph": "Seja um projeto freelance, colaboração ou apenas um bate-papo — estou aberto para conectar. Entre em contato e vamos construir algo incrível.",
+    "paragraph": "Seja um projeto freelance, colaboração ou apenas um bate-papo, vamos conectar. Entre em contato e vamos construir algo incrível.",
     "whatsapp": "Me chame no WhatsApp",
     "email": "Envie-me um E-mail"
   },
   "contactForm": {
-    "heading": "Escreva algo legal, eu te desafio.",
+    "heading": "Te desafio a escrever algo bacana.",
     "name": "Nome",
     "nameError": "Nome deve ter ao menos 3 letras",
     "email": "E-mail",
@@ -91,7 +91,7 @@
     "heading": "Minha Experiência Completa",
     "intro": "Aqui está uma visão detalhada dos papéis, projetos e resultados que entreguei em diversas indústrias e stacks.",
     "cta": "Baixar Meu Currículo - PT (PDF)",
-    "closing": "Gostou tanto assim? Pode ficar 😉",
+    "closing": "Gostou tanto assim? Pode ficar!",
     "resume": "/mateus-curriculo.pdf",
     "jobs": {
       "0": {
@@ -101,7 +101,7 @@
         "endDate": "Dez 2023",
         "link": "https://www.neobrain.io/",
         "description": {
-          "0": "Projetei e desenvolvi uma solução personalizada de avaliação de habilidades de funcionários no valor de €200.000, permitindo a avaliação de talentos em toda a força de trabalho.",
+          "0": "Projetei e desenvolvi uma solução personalizada de avaliação de habilidades de funcionários no valor de €6-digitos, permitindo a avaliação de talentos em toda a força de trabalho.",
           "1": "Construí um sistema de processamento em lote de alto desempenho, capaz de inserir mais de 10.000 usuários por minuto, garantindo sincronização perfeita entre serviços em múltiplos idiomas.",
           "2": "Iniciei a migração do código monolítico legado para uma arquitetura de microsserviços, melhorando significativamente a escalabilidade e a manutenibilidade do sistema.",
           "3": "Foquei principalmente na correção de bugs diretamente no banco de dados usando SAP HANA, garantindo integridade dos dados e confiabilidade do sistema.",

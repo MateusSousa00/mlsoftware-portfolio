@@ -1,17 +1,17 @@
 {
   "about": {
     "heading": "Acerca de",
-    "parOne": "Soy un ingeniero de software full-stack especializado en desarrollo web, arquitectura backend e integración de IA. Construyo aplicaciones escalables y de alto rendimiento utilizando TypeScript, Node.js, Python, Docker y Kubernetes, enfocándome en APIs limpias, CI/CD robusto y sistemas mantenibles.",
-    "parTwo": "Actualmente, estoy desarrollando una herramienta de comunicación impulsada por IA para simplificar las interacciones diarias utilizando procesamiento de lenguaje natural y automatización inteligente. Es un paso audaz para hacer la tecnología más humana — y apenas es el comienzo.",
-    "parThree": "He liderado sistemas que manejan más de 10.000 operaciones por minuto, he refactorizado pilas legadas de Laravel a Kotlin e integrado SAP HANA con datos en tiempo real. También he desarrollado herramientas de blockchain y he escalado equipos a través de mentoría y liderazgo en arquitectura.",
-    "parFour": "Fuera del trabajo, normalmente estoy tocando el bajo, cantando o soltando bugs disfrazados de chistes en las conversaciones. El café alimenta el código — y sí, el modo oscuro es un estilo de vida."
+    "parOne": "Soy un ingeniero de software full-stack especializado en desarrollo web, arquitectura backend e integración de IA. Construyo aplicaciones escalables y de alto rendimiento usando TypeScript, Node.js, Python, Docker y Kubernetes, enfocándome en API limpias, CI/CD robusto y sistemas fáciles de mantener.",
+    "parTwo": "Actualmente estoy desarrollando una herramienta de comunicación que definitivamente tendrá inteligencia artificial para simplificar las interacciones cotidianas mediante el procesamiento de PNL y la automatización inteligente. Sígueme de cerca, será genial.",
+    "parThree": "Lideré sistemas que procesan más de 10,000 operaciones por minuto, refactoricé pilas heredadas de Laravel a Kotlin e integré SAP HANA con datos en tiempo real. También he ayudado a escalar equipos mediante tutoría y liderazgo motivacional, pero no soy entrenador.",
+    "parFour": "Fuera del horario laboral, suelo tocar el bajo, cantar o atrapar insectos en proyectos personales. El café alimenta 'mi código' y sí, el modo oscuro es un estilo de vida."
   },
   "articles": {
     "heading": "Últimos artículos en Dev.to"
   },
   "contactCta": {
     "heading": "Trabajemos juntos",
-    "paragraph": "Ya sea un proyecto freelance, una colaboración o simplemente una charla — estoy abierto a conectar. Contáctame y construyamos algo increíble.",
+    "paragraph": "Ya sea un proyecto independiente, una colaboración o simplemente un chat, conectemos. Ponte en contacto y construyamos algo increíble.",
     "whatsapp": "Envíame un mensaje por WhatsApp",
     "email": "Envíame un correo electrónico"
   },
@@ -30,7 +30,7 @@
     "sending": "Enviando..."
   },
   "sidebar": {
-    "impact": "Llevo conceptos al mundo real con productos escalables y una experiencia que nunca olvidarás.",
+    "impact": "Transformo conceptos en realidad con productos escalables y una experiencia que nunca olvidarás.",
     "about": "Acerca de",
     "experience": "Experiencia",
     "projects": "Proyectos"
@@ -91,7 +91,7 @@
     "heading": "Mi Experiencia Completa",
     "intro": "Aquí tienes una mirada detallada a los roles, proyectos y resultados que he entregado en diversas industrias y stacks.",
     "cta": "Descargar Mi Currículum - ES (PDF)",
-    "closing": "¿Te gustó tanto? Entonces quédate con él 😉",
+    "closing": "¿Te gustó tanto? Entonces quédate con él!",
     "resume": "/mateus-curriculum.pdf",
     "jobs": {
       "0": {
@@ -101,7 +101,7 @@
         "endDate": "Dic 2023",
         "link": "https://www.neobrain.io/",
         "description": {
-          "0": "Diseñé y desarrollé una solución personalizada de evaluación de habilidades de empleados valorada en €200.000, permitiendo la evaluación de talento en toda la empresa.",
+          "0": "Diseñé y desarrollé una solución personalizada de evaluación de habilidades de los empleados de €6 dígitos, que permite la evaluación del talento en toda la fuerza laboral.",
           "1": "Construí un sistema de procesamiento por lotes de alto rendimiento capaz de insertar más de 10.000 usuarios por minuto, asegurando la sincronización perfecta entre servicios en múltiples idiomas.",
           "2": "Inicié la migración del código monolítico heredado a una arquitectura de microservicios, mejorando significativamente la escalabilidad y el mantenimiento del sistema.",
           "3": "Me enfoqué principalmente en corregir errores directamente en la base de datos usando SAP HANA, asegurando la integridad de los datos y la confiabilidad del sistema.",
@@ -208,7 +208,7 @@
   },
   "metadata": {
     "title": "M&L Software",
-    "description": "Llevamos conceptos al mundo real con productos escalables y una experiencia que nunca olvidarás."
+    "description": "Llevamos conceptos al mundo real, productos altamente escalables y una experiencia que nunca olvidará."
   },
   "notFound": {
     "message": "Lo sentimos, no pudimos encontrar la página que estabas buscando.",
