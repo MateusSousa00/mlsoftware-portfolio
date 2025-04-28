@@ -11,6 +11,7 @@ import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
+import { Toaster } from 'sonner';
 
 type Props = {
   children: ReactNode;
@@ -53,6 +54,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                     {children}
                     <ContactCTA />
                     <ContactForm />
+                    <Toaster richColors />
                   </div>
                 </main>
               </div>

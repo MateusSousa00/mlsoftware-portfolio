@@ -18,9 +18,16 @@
   "contactForm": {
     "heading": "Escribe algo bonito, te reto.",
     "name": "Nombre",
+    "nameError": "El nombre debe tener al menos 3 letras.",
     "email": "Correo electrónico",
+    "emailError": "Correo electrónico no válido",
     "message": "Mensaje",
-    "send": "Enviar mensaje"
+    "messageError": "El mensaje debe tener al menos 30 caracteres",
+    "successMessage": "¡Mensaje enviado con éxito!",
+    "errorMessage": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+    "networkErrorMessage": "Error de red. Inténtalo más tarde.",
+    "send": "Enviar mensaje",
+    "sending": "Enviando..."
   },
   "sidebar": {
     "impact": "Llevo conceptos al mundo real con productos escalables y una experiencia que nunca olvidarás.",

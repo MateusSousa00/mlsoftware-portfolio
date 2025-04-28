@@ -18,9 +18,16 @@
   "contactForm": {
     "heading": "Escreva algo legal, eu te desafio.",
     "name": "Nome",
+    "nameError": "Nome deve ter ao menos 3 letras",
     "email": "E-mail",
+    "emailError": "Email inválido",
     "message": "Mensagem",
-    "send": "Enviar mensagem"
+    "messageError": "Mensagem deve ter pelo menos 30 caracteres",
+    "successMessage": "Mensagem enviada com sucesso!",
+    "errorMessage": "Erro ao enviar. Tente novamente.",
+    "networkErrorMessage": "Erro de rede. Verifique sua conexão e tente novamente.",
+    "send": "Enviar mensagem",
+    "sending": "Enviando..."
   },
   "sidebar": {
     "impact": "Transformo conceitos em realidade com produtos escaláveis e uma experiência que você nunca vai esquecer.",

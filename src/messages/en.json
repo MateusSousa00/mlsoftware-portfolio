@@ -18,9 +18,16 @@
   "contactForm": {
     "heading": "Write something nice, I dare you.",
     "name": "Name",
+    "nameError": "Name must be valid",
     "email": "Email",
+    "emailError": "Email must be valid.",
     "message": "Message",
-    "send": "Send Message"
+    "messageError": "Message must have at least 30 characters.",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Failed to send message. Try again.",
+    "networkErrorMessage": "Network error. Please try again later.",
+    "send": "Send Message",
+    "sending": "Sending..."
   },
   "sidebar": {
     "impact": "I bring concepts to the real world, scalable products and an experience you will never forget.",
