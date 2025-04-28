@@ -3,7 +3,6 @@
 import { getIndexedKeysFromMessages } from '@/lib/utils';
 import { useTranslations, useMessages, Locale } from 'next-intl';
 import Link from 'next/link';
-import { use } from 'react';
 import { FaCode } from 'react-icons/fa';
 
 type Props = {
@@ -29,24 +28,28 @@ export default function Experience({ locale }: Props) {
         const stackKeys = getIndexedKeysFromMessages(messages, `experience.jobs.${key}.stack`);
 
         return (
-          <Link href={link} key={key}>
-            <div className="rounded-2xl p-6 mb-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:bg-muted/30 hover:shadow-md">
-              <h3 className="text-lg font-semibold">
-                {title} – {company}
-              </h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                {startDate} – {endDate}
-              </p>
-              <p className="mb-4 text-base text-foreground">{description}</p>
-              <div className="flex flex-wrap gap-2">
-                {stackKeys.map((i) => (
-                  <div key={i} className="px-3 py-1 rounded-md text-sm flex items-center gap-1 bg-primary">
-                    <FaCode className="text-xs" /> {t(`jobs.${key}.stack.${i}`)}
-                  </div>
-                ))}
-              </div>
+          <div
+            key={key}
+            className="rounded-2xl p-6 mb-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:bg-muted/30 hover:shadow-md"
+          >
+            <h3 className="text-lg font-semibold">
+              {title} –{' '}
+              <Link href={link} className="hover:underline">
+                {company}
+              </Link>
+            </h3>
+            <p className="text-sm text-muted-foreground mb-2">
+              {startDate} – {endDate}
+            </p>
+            <p className="mb-4 text-base text-foreground">{description}</p>
+            <div className="flex flex-wrap gap-2">
+              {stackKeys.map((i) => (
+                <div key={i} className="px-3 py-1 rounded-md text-sm flex items-center gap-1 bg-primary">
+                  <FaCode className="text-xs" /> {t(`jobs.${key}.stack.${i}`)}
+                </div>
+              ))}
             </div>
-          </Link>
+          </div>
         );
       })}
 

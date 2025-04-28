@@ -6,7 +6,7 @@ export default function ContactForm() {
   return (
     <section id="contact" className="max-w-3xl mx-auto py-24 px-6">
       <h2 className="text-2xl font-bold mb-6 text-center">{t('heading')}</h2>
-      <form action="https://formspree.io/f/your_form_id" method="POST" className="space-y-6">
+      <form action={process.env.FORMSPREE_URL} method="POST" className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
             {t('name')}

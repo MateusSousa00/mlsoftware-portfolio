@@ -33,30 +33,31 @@ export default function ExperiencePage() {
         const stack = getIndexedKeysFromMessages(messages, `fullExperience.jobs.${key}.stack`);
 
         return (
-          <Link href={link} key={key}>
-            <div className="p-6 mb-4 shadow-sm">
-              <h3 className="text-lg font-semibold">
-                {title} – {company}
-              </h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                {startDate} – {endDate}
-              </p>
+          <div key={key} className="p-6 mb-4 shadow-sm">
+            <h3 className="text-lg font-semibold">
+              {title} –{' '}
+              <Link href={link} className="hover:underline">
+                {company}
+              </Link>
+            </h3>
+            <p className="text-sm text-muted-foreground mb-2">
+              {startDate} – {endDate}
+            </p>
 
-              <ul className="list-disc pl-5 mb-4 text-base text-foreground space-y-1">
-                {descriptionItems.map((_, i) => (
-                  <li key={i}>{t(`jobs.${key}.description.${i}`)}</li>
-                ))}
-              </ul>
+            <ul className="list-disc pl-5 mb-4 text-base text-foreground space-y-1">
+              {descriptionItems.map((_, i) => (
+                <li key={i}>{t(`jobs.${key}.description.${i}`)}</li>
+              ))}
+            </ul>
 
-              <div className="flex flex-wrap gap-2">
-                {stack.map((_, i) => (
-                  <div key={i} className="px-3 py-1 rounded-md text-sm flex items-center gap-1 bg-primary text-white">
-                    <FaCode className="text-xs" /> {t(`jobs.${key}.stack.${i}`)}
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              {stack.map((_, i) => (
+                <div key={i} className="px-3 py-1 rounded-md text-sm flex items-center gap-1 bg-primary text-white">
+                  <FaCode className="text-xs" /> {t(`jobs.${key}.stack.${i}`)}
+                </div>
+              ))}
             </div>
-          </Link>
+          </div>
         );
       })}
 
