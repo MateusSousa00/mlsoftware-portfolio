@@ -42,8 +42,8 @@
       "0": {
         "title": "Desenvolvedor de Software Sênior",
         "company": "Globant - Neobrain",
-        "startDate": "Jan 2022",
-        "endDate": "Dez 2023",
+        "startDate": "Mar 2024",
+        "endDate": "-",
         "link": "https://www.neobrain.io/",
         "description": "Liderei o desenvolvimento de funcionalidades escaláveis, melhorei a arquitetura e implementei ferramentas impulsionadas por IA para plataformas de RH.",
         "stack": {
@@ -97,8 +97,8 @@
       "0": {
         "title": "Engenheiro de Software Sênior",
         "company": "Globant - Neobrain",
-        "startDate": "Jan 2022",
-        "endDate": "Dez 2023",
+        "startDate": "Mar 2024",
+        "endDate": "-",
         "link": "https://www.neobrain.io/",
         "description": {
           "0": "Projetei e desenvolvi uma solução personalizada de avaliação de habilidades de funcionários no valor de €6-digitos, permitindo a avaliação de talentos em toda a força de trabalho.",
@@ -193,11 +193,11 @@
         "description": "API REST alimentada por IA usando FastAPI, Hugging Face e Docker para classificação de sentimentos em tempo real."
       },
       "3": {
-        "name": "Version.com.br",
+        "name": "Version",
         "description": "Website corporativo focado em SEO, performance e design responsivo para uma agência de consultoria."
       },
       "4": {
-        "name": "Confiareservicos.com.br",
+        "name": "Confiare",
         "description": "Redesign completo e desenvolvimento frontend de um site de serviços condominiais utilizando Next.js e Tailwind."
       }
     }

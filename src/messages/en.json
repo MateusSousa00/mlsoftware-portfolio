@@ -42,8 +42,8 @@
       "0": {
         "title": "Senior Software Developer",
         "company": "Globant - Neobrain",
-        "startDate": "Jan 2022",
-        "endDate": "Dec 2023",
+        "startDate": "Mar 2024",
+        "endDate": "-",
         "link": "https://www.neobrain.io/",
         "description": "Led development of scalable features, improved architecture, and deployed AI-powered tools for HR platforms.",
         "stack": {
@@ -97,8 +97,8 @@
       "0": {
         "title": "Senior Software Engineer",
         "company": "Globant - Neobrain",
-        "startDate": "Jan 2022",
-        "endDate": "Dec 2023",
+        "startDate": "Mar 2024",
+        "endDate": "-",
         "link": "https://www.neobrain.io/",
         "description": {
           "0": "Designed and developed a €6-digit custom employee skill assessment solution, enabling workforce-wide talent evaluation.",
@@ -193,11 +193,11 @@
         "description": "AI-powered REST API using FastAPI, Hugging Face, and Docker for real-time sentiment classification."
       },
       "2": {
-        "name": "Version.com.br",
+        "name": "Version",
         "description": "Corporate website focused on SEO, performance, and responsive design for a consulting agency."
       },
       "3": {
-        "name": "Confiareservicos.com.br",
+        "name": "Confiare",
         "description": "Full redesign and frontend development of a condominium services website using Next.js and Tailwind."
       }
     }
