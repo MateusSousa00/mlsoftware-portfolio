@@ -1,7 +1,8 @@
-import Articles from '@/components/home/Articles';
 import About from '@/components/home/About';
-import Experience from '@/components/home/Experience';
-import HighlightProjects from '@/components/home/HighlightProjects';
+import Problem from '@/components/home/Problem';
+import Services from '@/components/home/Services';
+import Process from '@/components/home/Process';
+import SocialProof from '@/components/home/SocialProof';
 import { Locale } from 'next-intl';
 import { use } from 'react';
 
@@ -10,13 +11,14 @@ type Props = {
 };
 
 export default function Home({ params }: Props) {
-  const { locale } = use(params);
+  const { } = use(params);
   return (
     <>
       <About />
-      <Experience locale={locale} />
-      <HighlightProjects />
-      <Articles />
+      <Problem />
+      <Services />
+      <Process />
+      <SocialProof />
     </>
   );
 }

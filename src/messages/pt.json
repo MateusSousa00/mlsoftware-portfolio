@@ -1,37 +1,188 @@
 {
-  "about": {
-    "heading": "Sobre",
-    "parOne": "Sou um engenheiro de software full-stack especializado em desenvolvimento web, arquitetura backend e integração de IA. Construo aplicações escaláveis e de alto desempenho usando TypeScript, Node.js, Python, Docker e Kubernetes, focando em APIs limpas, CI/CD robusto e sistemas fáceis de manter.",
-    "parTwo": "Atualmente, estou desenvolvendo uma ferramenta de comunicação que com certeza terá IA para simplificar interações diárias usando processamento NLP e automação inteligente. Me acompanha de perto, vai ser top.",
-    "parThree": "Liderei sistemas que processam mais de 10.000 operações por minuto, refatorei stacks legados de Laravel para Kotlin e integrei SAP HANA com dados em tempo real. Também ajudei a escalar equipes através de mentoria e liderança motivacional, mas não sou coach.",
-    "parFour": "Fora do expediente, geralmente estou tocando contra-baixo, cantando ou caçando bugs em projetos pessoais. Café alimenta o 'meu código' e sim, modo escuro é um estilo de vida."
+  "hero": {
+    "headline": "Transforme Seu Negócio com Soluções de Software Personalizadas",
+    "subheadline": "Desenvolvimento de nível empresarial que transforma suas ideias em produtos lucrativos e escaláveis. Do MVP à integração de IA.",
+    "metric1": "Melhorias médias de performance em projetos",
+    "metric2": "Usuários suportados por aplicações que desenvolvi",
+    "metric3": "Semanas de cronograma típico do projeto",
+    "primaryCTA": "Consulta Estratégica Grátis",
+    "secondaryCTA": "WhatsApp Agora",
+    "trustIndicator1": "Consulta gratuita",
+    "trustIndicator2": "Garantia de 30 dias",
+    "trustIndicator3": "Apenas 3 projetos/mês",
+    "parOne": "Especializo em transformar ideias de negócio em soluções de software escaláveis e lucrativas. Com expertise em desenvolvimento full-stack, integração de IA e arquitetura de sistemas, ajudo empresas a alcançarem crescimento rápido através da tecnologia.",
+    "parTwo": "Meus clientes viram melhorias de performance de 3x, suportaram milhares de usuários e cresceram seus negócios com sucesso usando software confiável. Vamos conversar sobre como desenvolvimento personalizado pode acelerar seu crescimento."
+  },
+  "problem": {
+    "badge": "Desafios Comuns de Negócios",
+    "heading": "Seu Negócio Está Preso Nessas Armadilhas de Crescimento?",
+    "subheading": "A maioria das empresas luta contra os mesmos problemas críticos que impedem o crescimento eficaz.",
+    "interactiveHeading": "Qual é o Seu Maior Desafio?",
+    "interactiveSubheading": "Clique no seu principal desafio de negócio e receba uma recomendação de solução personalizada.",
+    "problem1": {
+      "title": "Ciclos de Desenvolvimento Lentos",
+      "description": "Sua equipe está sobrecarregada, funcionalidades levam meses para construir, e concorrentes estão se movendo mais rápido. Você está perdendo oportunidades de mercado esperando por funcionalidades básicas."
+    },
+    "problem2": {
+      "title": "Custos Técnicos Crescentes",
+      "description": "Toda mudança requer consultores caros, custos de manutenção continuam crescendo, e sua dívida técnica está se tornando um fardo financeiro difícil de escapar."
+    },
+    "problem3": {
+      "title": "Gargalos de Performance",
+      "description": "Seu sistema trava sob carga, usuários estão frustrados com tempos de resposta lentos, e você tem medo de escalar porque sua infraestrutura não consegue lidar com o crescimento."
+    },
+    "conclusion": "Esses problemas não se resolvem sozinhos. Eles se acumulam e ficam mais caros para corrigir com o tempo.",
+    "cta": "Vamos Resolver Isso Juntos"
+  },
+  "services": {
+    "heading": "Escolha Seu Caminho de Crescimento",
+    "subheading": "Quatro abordagens comprovadas projetadas para escalar seu negócio em cada etapa - de landing pages a aplicações completas",
+    "popular": "Mais Popular",
+    "scheduleCta": "Agendar Consulta Gratuita",
+    "customPricing": "Preços personalizados baseados em suas necessidades",
+    "bottomText": "Precisa de algo diferente? Vamos criar uma solução personalizada para suas necessidades específicas.",
+    "customSolutionCta": "Discutir Solução Personalizada",
+    "landing": {
+      "title": "📄 Landing Pages & Sites",
+      "description": "Landing pages de alta conversão e sites institucionais que impulsionam o crescimento do negócio e constroem confiança.",
+      "timeline": "1-3 semanas de entrega",
+      "feature1": "Design otimizado para conversão",
+      "feature2": "Responsivo e carregamento rápido",
+      "feature3": "Estrutura amigável ao SEO",
+      "feature4": "Integração com analytics"
+    },
+    "mvp": {
+      "title": "🚀 Aplicações Web",
+      "description": "Aplicações web personalizadas que resolvem problemas específicos de negócio com arquitetura escalável.",
+      "timeline": "4-8 semanas de entrega",
+      "feature1": "Desenvolvimento de funcionalidades personalizadas",
+      "feature2": "Autenticação de usuário e segurança",
+      "feature3": "Design e integração de banco de dados",
+      "feature4": "Testes e documentação"
+    },
+    "optimization": {
+      "title": "⚡ Otimização de Performance",
+      "description": "Multiplique por 10x a performance do seu sistema e processe escala massiva com otimização especializada.",
+      "timeline": "15-30 dias de entrega",
+      "feature1": "Otimização de banco de dados e queries",
+      "feature2": "Melhorias de performance de API",
+      "feature3": "Testes de carga e estratégias de escala",
+      "feature4": "Setup de monitoramento de performance"
+    },
+    "ai": {
+      "title": "🤖 Integração de IA",
+      "description": "Automatize fluxos de trabalho e melhore a experiência do usuário com soluções de IA personalizadas.",
+      "timeline": "45-60 dias de entrega",
+      "feature1": "Desenvolvimento de modelo de IA personalizado",
+      "feature2": "Integração de API e automação",
+      "feature3": "Processamento de linguagem natural",
+      "feature4": "Treinamento e documentação"
+    },
+    "ecommerce": {
+      "title": "🛒 Soluções E-commerce",
+      "description": "Lojas online completas otimizadas para vendas, experiência do usuário e crescimento do negócio.",
+      "timeline": "6-10 semanas de entrega",
+      "feature1": "Catálogo de produtos e sistema de checkout",
+      "feature2": "Integração com gateway de pagamento",
+      "feature3": "Gerenciamento de estoque",
+      "feature4": "Analytics e relatórios"
+    }
+  },
+  "socialProof": {
+    "statsHeading": "Resultados Comprovados Que Falam Por Si",
+    "stat1": "Projetos Entregues com Sucesso",
+    "stat2": "Operações Por Minuto Processadas",
+    "stat3": "Melhoria Média de Performance",
+    "stat4": "Taxa de Satisfação do Cliente",
+    "resultsHeading": "Resultados Reais Que Entreguei",
+    "result1": {
+      "metric": "20x",
+      "title": "Aumento de Velocidade de Processamento",
+      "description": "Otimizei um sistema financeiro para processar 10.000+ operações por minuto, transformando a capacidade do negócio.",
+      "context": "Cliente de Serviços Financeiros"
+    },
+    "result2": {
+      "metric": "99.9%",
+      "title": "Uptime do Sistema Alcançado",
+      "description": "Arquitetei infraestrutura robusta que mantém performance consistente sob carga pesada.",
+      "context": "Aplicação Empresarial"
+    },
+    "result3": {
+      "metric": "3-8 Semanas",
+      "title": "Cronograma Típico do Projeto",
+      "description": "Entreguei soluções de qualidade desde landing pages até aplicações web com cronogramas claros e atualizações regulares.",
+      "context": "Vários Tipos de Projeto"
+    },
+    "ctaText": "Pronto para ver resultados similares para seu negócio?",
+    "ctaButton": "Agendar Sua Consulta Gratuita"
+  },
+  "process": {
+    "heading": "Processo Simples, Resultados Poderosos",
+    "subheading": "Da primeira ligação ao lançamento bem-sucedido - aqui está exatamente como vamos trabalhar juntos",
+    "consultation": {
+      "title": "Consulta Estratégica Grátis",
+      "description": "Discutimos seus objetivos, desafios e criamos um roadmap para o sucesso.",
+      "duration": "30 minutos"
+    },
+    "proposal": {
+      "title": "Proposta Personalizada",
+      "description": "Plano detalhado do projeto com cronograma, entregáveis e preços transparentes.",
+      "duration": "2-3 dias"
+    },
+    "development": {
+      "title": "Desenvolvimento Ágil",
+      "description": "Updates regulares, demos semanais e comunicação constante durante todo o processo.",
+      "duration": "2-8 semanas"
+    },
+    "launch": {
+      "title": "Lançamento e Suporte",
+      "description": "Deploy suave com 30 dias de suporte para garantir que tudo funcione perfeitamente.",
+      "duration": "Contínuo"
+    },
+    "imagesHeading": "Nos Bastidores",
+    "ctaHeading": "Pronto Para Começar Seu Projeto?",
+    "ctaText": "Junte-se a 15+ negócios de sucesso que escolheram desenvolvimento personalizado em vez de soluções genéricas.",
+    "ctaButton": "Agendar Consulta Estratégica Grátis"
   },
   "articles": {
     "heading": "Últimos artigos no Dev.to"
   },
   "contactCta": {
-    "heading": "Vamos trabalhar juntos",
-    "paragraph": "Seja um projeto freelance, colaboração ou apenas um bate-papo, vamos conectar. Entre em contato e vamos construir algo incrível.",
-    "whatsapp": "Me chame no WhatsApp",
-    "email": "Envie-me um E-mail"
+    "urgencyBadge": "Vagas Limitadas Disponíveis",
+    "heading": "Pronto Para 10x Seu Negócio?",
+    "paragraph": "Junte-se a empresas de sucesso que escolheram soluções personalizadas em vez de ferramentas genéricas. Agende sua consulta estratégica gratuita agora.",
+    "guarantee1": "Consulta gratuita",
+    "guarantee2": "Garantia de 30 dias",
+    "guarantee3": "Apenas 3 projetos/mês",
+    "whatsapp": "WhatsApp Agora (Resposta Instantânea)",
+    "email": "Agendar Consulta Estratégica Grátis",
+    "scarcity": "⚡ Apenas 3 vagas de projeto disponíveis este mês"
+  },
+  "header": {
+    "cta": "Começar"
   },
   "contactForm": {
-    "heading": "Te desafio a escrever algo bacana.",
+    "badge": "Sessão Estratégica Gratuita",
+    "heading": "Vamos Discutir Seu Projeto",
+    "subheading": "Conte-me sobre seus objetivos e eu mostro exatamente como podemos alcançá-los juntos.",
     "name": "Nome",
     "nameError": "Nome deve ter ao menos 3 letras",
     "email": "E-mail",
     "emailError": "Email inválido",
-    "message": "Mensagem",
-    "messageError": "Mensagem deve ter pelo menos 30 caracteres",
-    "successMessage": "Mensagem enviada com sucesso!",
+    "message": "Detalhes do Projeto",
+    "messageError": "Por favor, descreva seu projeto (mínimo 30 caracteres).",
+    "successMessage": "Mensagem enviada! Responderei em até 2 horas.",
     "errorMessage": "Erro ao enviar. Tente novamente.",
     "networkErrorMessage": "Erro de rede. Verifique sua conexão e tente novamente.",
-    "send": "Enviar mensagem",
-    "sending": "Enviando..."
+    "send": "Obter Minha Sessão Estratégica Gratuita",
+    "sending": "Enviando...",
+    "privacy": "🔒 Suas informações são 100% seguras e confidenciais",
+    "responseTime": "Tempo médio de resposta: 2 horas"
   },
   "sidebar": {
     "impact": "Transformo conceitos em realidade com produtos escaláveis e uma experiência que você nunca vai esquecer.",
     "about": "Sobre",
+    "services": "Serviços",
     "experience": "Experiência",
     "projects": "Projetos"
   },
@@ -184,19 +335,19 @@
   "highlightProjects": {
     "heading": "Projetos em Destaque",
     "projects": {
-      "1": {
+      "0": {
         "name": "Projeto de Arquitetura de Software",
         "description": "Sistema baseado em Clean Architecture com microsserviços, monitoramento e estratégias de deployment usando Docker, Kubernetes e AWS."
       },
-      "2": {
+      "1": {
         "name": "API de Análise de Sentimentos",
         "description": "API REST alimentada por IA usando FastAPI, Hugging Face e Docker para classificação de sentimentos em tempo real."
       },
-      "3": {
+      "2": {
         "name": "Version",
         "description": "Website corporativo focado em SEO, performance e design responsivo para uma agência de consultoria."
       },
-      "4": {
+      "3": {
         "name": "Confiare",
         "description": "Redesign completo e desenvolvimento frontend de um site de serviços condominiais utilizando Next.js e Tailwind."
       }

@@ -13,7 +13,7 @@ import LocaleSwitcher from './LocaleSwitcher';
 export function Sidebar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const activeId = useScrollSpy(['about', 'experience', 'projects']);
+  const activeId = useScrollSpy(['about', 'services', 'experience', 'projects']);
   const pathName = usePathname();
   const t = useTranslations('sidebar');
 
@@ -41,6 +41,15 @@ export function Sidebar() {
               )}
             >
               {t('about')}
+            </Link>
+            <Link
+              href="#services"
+              className={cn(
+                'block text-sm transition-all duration-300',
+                activeId === 'services' && 'font-bold underline underline-offset-4'
+              )}
+            >
+              {t('services')}
             </Link>
             <Link
               href="#experience"

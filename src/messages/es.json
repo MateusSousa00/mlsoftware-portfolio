@@ -1,37 +1,57 @@
 {
-  "about": {
-    "heading": "Acerca de",
-    "parOne": "Soy un ingeniero de software full-stack especializado en desarrollo web, arquitectura backend e integración de IA. Construyo aplicaciones escalables y de alto rendimiento usando TypeScript, Node.js, Python, Docker y Kubernetes, enfocándome en API limpias, CI/CD robusto y sistemas fáciles de mantener.",
-    "parTwo": "Actualmente estoy desarrollando una herramienta de comunicación que definitivamente tendrá inteligencia artificial para simplificar las interacciones cotidianas mediante el procesamiento de PNL y la automatización inteligente. Sígueme de cerca, será genial.",
-    "parThree": "Lideré sistemas que procesan más de 10,000 operaciones por minuto, refactoricé pilas heredadas de Laravel a Kotlin e integré SAP HANA con datos en tiempo real. También he ayudado a escalar equipos mediante tutoría y liderazgo motivacional, pero no soy entrenador.",
-    "parFour": "Fuera del horario laboral, suelo tocar el bajo, cantar o atrapar insectos en proyectos personales. El café alimenta 'mi código' y sí, el modo oscuro es un estilo de vida."
+  "hero": {
+    "headline": "Transforma Tu Negocio con Soluciones de Software Personalizadas",
+    "subheadline": "Desarrollo de nivel empresarial que transforma tus ideas en productos rentables y escalables. Desde MVP hasta integración de IA.",
+    "metric1": "Mejoras promedio de rendimiento en proyectos",
+    "metric2": "Usuarios soportados por aplicaciones que desarrollé",
+    "metric3": "Semanas de cronograma típico del proyecto",
+    "primaryCTA": "Consulta Estratégica Gratuita",
+    "secondaryCTA": "WhatsApp Ahora",
+    "trustIndicator1": "Consulta gratuita",
+    "trustIndicator2": "Garantía de 30 días",
+    "trustIndicator3": "Solo 3 proyectos/mes",
+    "parOne": "Me especializo en transformar ideas de negocio en soluciones de software escalables y rentables. Con experiencia en desarrollo full-stack, integración de IA y arquitectura de sistemas, ayudo a empresas a lograr un crecimiento rápido a través de la tecnología.",
+    "parTwo": "Mis clientes han visto mejoras de rendimiento de 3x, soportado miles de usuarios y crecido exitosamente sus negocios con software confiable. Hablemos sobre cómo el desarrollo personalizado puede acelerar tu crecimiento."
   },
   "articles": {
     "heading": "Últimos artículos en Dev.to"
   },
   "contactCta": {
-    "heading": "Trabajemos juntos",
-    "paragraph": "Ya sea un proyecto independiente, una colaboración o simplemente un chat, conectemos. Ponte en contacto y construyamos algo increíble.",
-    "whatsapp": "Envíame un mensaje por WhatsApp",
-    "email": "Envíame un correo electrónico"
+    "urgencyBadge": "Plazas Limitadas Disponibles",
+    "heading": "¿Listo Para 10x Tu Negocio?",
+    "paragraph": "Únete a empresas exitosas que eligieron soluciones personalizadas en lugar de herramientas genéricas. Reserva tu consulta estratégica gratuita ahora.",
+    "guarantee1": "Consulta gratuita",
+    "guarantee2": "Garantía de 30 días",
+    "guarantee3": "Solo 3 proyectos/mes",
+    "whatsapp": "WhatsApp Ahora (Respuesta Instantánea)",
+    "email": "Reservar Consulta Estratégica Gratuita",
+    "scarcity": "⚡ Solo 3 plazas de proyecto disponibles este mes"
+  },
+  "header": {
+    "cta": "Comenzar"
   },
   "contactForm": {
-    "heading": "Escribe algo bonito, te reto.",
+    "badge": "Sesión Estratégica Gratuita",
+    "heading": "Hablemos de Tu Proyecto",
+    "subheading": "Cuéntame sobre tus objetivos y te mostraré exactamente cómo podemos lograrlos juntos.",
     "name": "Nombre",
     "nameError": "El nombre debe tener al menos 3 letras.",
     "email": "Correo electrónico",
     "emailError": "Correo electrónico no válido",
-    "message": "Mensaje",
-    "messageError": "El mensaje debe tener al menos 30 caracteres",
-    "successMessage": "¡Mensaje enviado con éxito!",
+    "message": "Detalles del Proyecto",
+    "messageError": "Por favor, describe tu proyecto (mínimo 30 caracteres).",
+    "successMessage": "¡Mensaje enviado! Responderé en 2 horas.",
     "errorMessage": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
     "networkErrorMessage": "Error de red. Inténtalo más tarde.",
-    "send": "Enviar mensaje",
-    "sending": "Enviando..."
+    "send": "Obtener Mi Sesión Estratégica Gratuita",
+    "sending": "Enviando...",
+    "privacy": "🔒 Tu información es 100% segura y confidencial",
+    "responseTime": "Tiempo promedio de respuesta: 2 horas"
   },
   "sidebar": {
     "impact": "Transformo conceptos en realidad con productos escalables y una experiencia que nunca olvidarás.",
     "about": "Acerca de",
+    "services": "Servicios",
     "experience": "Experiencia",
     "projects": "Proyectos"
   },
@@ -184,23 +204,154 @@
   "highlightProjects": {
     "heading": "Proyectos Destacados",
     "projects": {
-      "1": {
+      "0": {
         "name": "Proyecto de Arquitectura de Software",
         "description": "Sistema basado en Clean Architecture con microservicios, monitoreo y estrategias de deployment utilizando Docker, Kubernetes y AWS."
       },
-      "2": {
+      "1": {
         "name": "API de Análisis de Sentimientos",
         "description": "API REST impulsada por IA utilizando FastAPI, Hugging Face y Docker para clasificación de sentimientos en tiempo real."
       },
-      "3": {
+      "2": {
         "name": "Version",
         "description": "Sitio corporativo enfocado en SEO, rendimiento y diseño responsivo para una agencia de consultoría."
       },
-      "4": {
+      "3": {
         "name": "Confiare",
         "description": "Rediseño completo y desarrollo frontend de un sitio de servicios para condominios usando Next.js y Tailwind."
       }
     }
+  },
+  "problem": {
+    "badge": "Desafíos Comunes de Negocios",
+    "heading": "¿Tu Negocio Está Atrapado en Estas Trampas de Crecimiento?",
+    "subheading": "La mayoría de las empresas luchan con los mismos problemas críticos que impiden un crecimiento efectivo.",
+    "interactiveHeading": "¿Cuál es Tu Mayor Desafío?",
+    "interactiveSubheading": "Haz clic en tu principal desafío comercial y obtén una recomendación de solución personalizada.",
+    "problem1": {
+      "title": "Ciclos de Desarrollo Lentos",
+      "description": "Tu equipo está abrumado, las funcionalidades tardan meses en construirse, y los competidores se mueven más rápido. Estás perdiendo oportunidades de mercado esperando funcionalidades básicas."
+    },
+    "problem2": {
+      "title": "Costos Técnicos Crecientes",
+      "description": "Cada cambio requiere consultores costosos, los costos de mantenimiento siguen creciendo, y tu deuda técnica se está convirtiendo en una carga financiera difícil de escapar."
+    },
+    "problem3": {
+      "title": "Cuellos de Botella de Rendimiento",
+      "description": "Tu sistema se bloquea bajo carga, los usuarios están frustrados con tiempos de respuesta lentos, y tienes miedo de escalar porque tu infraestructura no puede manejar el crecimiento."
+    },
+    "conclusion": "Estos problemas no se resuelven solos. Se acumulan y se vuelven más caros de arreglar con el tiempo.",
+    "cta": "Arreglemos Esto Juntos"
+  },
+  "services": {
+    "heading": "Elige Tu Camino de Crecimiento",
+    "subheading": "Cuatro enfoques probados diseñados para escalar tu negocio en cada etapa - desde landing pages hasta aplicaciones completas",
+    "popular": "Más Popular",
+    "scheduleCta": "Reservar Consulta Gratuita",
+    "customPricing": "Precios personalizados según tus necesidades",
+    "bottomText": "¿Necesitas algo diferente? Creemos una solución personalizada para tus necesidades específicas.",
+    "customSolutionCta": "Discutir Solución Personalizada",
+    "landing": {
+      "title": "📄 Landing Pages & Sitios Web",
+      "description": "Landing pages de alta conversión y sitios web institucionales que impulsan el crecimiento del negocio y construyen confianza.",
+      "timeline": "1-3 semanas de entrega",
+      "feature1": "Diseño optimizado para conversión",
+      "feature2": "Responsivo y carga rápida",
+      "feature3": "Estructura amigable con SEO",
+      "feature4": "Integración con analytics"
+    },
+    "mvp": {
+      "title": "🚀 Aplicaciones Web",
+      "description": "Aplicaciones web personalizadas que resuelven problemas específicos del negocio con arquitectura escalable.",
+      "timeline": "4-8 semanas de entrega",
+      "feature1": "Desarrollo de funcionalidades personalizadas",
+      "feature2": "Autenticación de usuario y seguridad",
+      "feature3": "Diseño e integración de base de datos",
+      "feature4": "Pruebas y documentación"
+    },
+    "optimization": {
+      "title": "⚡ Optimización de Rendimiento",
+      "description": "Multiplica por 10x el rendimiento de tu sistema y maneja escala masiva con optimización experta.",
+      "timeline": "15-30 días de entrega",
+      "feature1": "Optimización de base de datos y consultas",
+      "feature2": "Mejoras de rendimiento de API",
+      "feature3": "Pruebas de carga y estrategias de escalado",
+      "feature4": "Configuración de monitoreo de rendimiento"
+    },
+    "ai": {
+      "title": "🤖 Integración de IA",
+      "description": "Automatiza flujos de trabajo y mejora la experiencia del usuario con soluciones de IA personalizadas.",
+      "timeline": "45-60 días de entrega",
+      "feature1": "Desarrollo de modelo de IA personalizado",
+      "feature2": "Integración de API y automatización",
+      "feature3": "Procesamiento de lenguaje natural",
+      "feature4": "Entrenamiento y documentación"
+    },
+    "ecommerce": {
+      "title": "🛒 Soluciones E-commerce",
+      "description": "Tiendas online completas optimizadas para ventas, experiencia del usuario y crecimiento del negocio.",
+      "timeline": "6-10 semanas de entrega",
+      "feature1": "Catálogo de productos y sistema de checkout",
+      "feature2": "Integración con pasarela de pago",
+      "feature3": "Gestión de inventario",
+      "feature4": "Analytics e informes"
+    }
+  },
+  "socialProof": {
+    "statsHeading": "Resultados Probados Que Hablan Por Sí Mismos",
+    "stat1": "Proyectos Exitosos Entregados",
+    "stat2": "Usuarios Soportados en Proyectos",
+    "stat3": "Mejora Promedio de Rendimiento",
+    "stat4": "Calificación Promedio del Cliente",
+    "resultsHeading": "Resultados Reales Que He Entregado",
+    "result1": {
+      "metric": "150%",
+      "title": "Aumento de Conversión en Landing Page",
+      "description": "Rediseñé una landing page de e-commerce que aumentó las conversiones del 2,1% al 5,2%, impactando directamente los ingresos.",
+      "context": "Cliente de E-commerce"
+    },
+    "result2": {
+      "metric": "98.5%",
+      "title": "Uptime Promedio del Sistema",
+      "description": "Construí aplicaciones web confiables con manejo robusto de errores y sistemas de monitoreo.",
+      "context": "15+ Proyectos"
+    },
+    "result3": {
+      "metric": "3-8 Semanas",
+      "title": "Cronograma Típico del Proyecto",
+      "description": "Entregué soluciones de calidad desde landing pages hasta aplicaciones web con cronogramas claros y actualizaciones regulares.",
+      "context": "Varios Tipos de Proyecto"
+    },
+    "ctaText": "¿Listo para ver resultados similares para tu negocio?",
+    "ctaButton": "Reservar Tu Consulta Gratuita"
+  },
+  "process": {
+    "heading": "Proceso Simple, Resultados Poderosos",
+    "subheading": "Desde la primera llamada hasta el lanzamiento exitoso - aquí está exactamente cómo trabajaremos juntos",
+    "consultation": {
+      "title": "Consulta Estratégica Gratuita",
+      "description": "Discutimos tus objetivos, desafíos y creamos una hoja de ruta para el éxito.",
+      "duration": "30 minutos"
+    },
+    "proposal": {
+      "title": "Propuesta Personalizada",
+      "description": "Plan detallado del proyecto con cronograma, entregables y precios transparentes.",
+      "duration": "2-3 días"
+    },
+    "development": {
+      "title": "Desarrollo Ágil",
+      "description": "Actualizaciones regulares, demos semanales y comunicación constante durante todo el proceso.",
+      "duration": "2-8 semanas"
+    },
+    "launch": {
+      "title": "Lanzamiento y Soporte",
+      "description": "Despliegue suave con 30 días de soporte para asegurar que todo funcione perfectamente.",
+      "duration": "Continuo"
+    },
+    "imagesHeading": "Entre Bastidores",
+    "ctaHeading": "¿Listo Para Comenzar Tu Proyecto?",
+    "ctaText": "Únete a 15+ negocios exitosos que eligieron desarrollo personalizado sobre soluciones genéricas.",
+    "ctaButton": "Reservar Consulta Estratégica Gratuita"
   },
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
