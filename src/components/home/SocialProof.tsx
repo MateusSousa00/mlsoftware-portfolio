@@ -104,7 +104,7 @@ function TestimonialCarousel() {
                 <FaQuoteLeft className="text-3xl text-primary mb-4 opacity-50" />
 
                 <p className="text-lg text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
-                  "{client.text}"
+                  &ldquo;{client.text}&rdquo;
                 </p>
 
                 <div className="flex items-center">

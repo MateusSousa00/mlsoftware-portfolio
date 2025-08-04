@@ -2,10 +2,11 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { FaExclamationTriangle, FaClock, FaMoneyBillWave, FaChartLine, FaArrowRight, FaLaptopCode, FaRocket, FaBolt } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
 interface ProblemOption {
   id: string;
-  icon: any;
+  icon: IconType;
   color: string;
   bgColor: string;
   recommendation: string;
