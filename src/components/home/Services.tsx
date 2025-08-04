@@ -51,11 +51,11 @@ export default function Services() {
           return (
             <div
               key={service.id}
-              className={`relative p-8 rounded-2xl border-2 ${service.borderColor} ${service.bgColor} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden`}
+              className={`relative p-8 rounded-2xl border-2 ${service.borderColor} ${service.bgColor} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group`}
             >
               {/* Popular Badge */}
               {service.id === 'mvp' && (
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold z-20">
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-3 rounded-full text-sm font-semibold z-20">
                   {t('popular')}
                 </div>
               )}

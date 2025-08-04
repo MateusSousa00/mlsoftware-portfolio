@@ -41,9 +41,9 @@ export default function Problem() {
   ];
 
   const recommendations = {
-    landing: { icon: FaLaptopCode, service: 'Landing Pages & Websites' },
-    mvp: { icon: FaRocket, service: 'Web Applications' },
-    optimization: { icon: FaBolt, service: 'Performance Optimization' }
+    landing: { icon: FaLaptopCode, service: t('recommendationLP') },
+    mvp: { icon: FaRocket, service: t('recommendationWeb') },
+    optimization: { icon: FaBolt, service: t('recommendationPerformance') }
   };
 
   const handleProblemSelect = (problemId: string) => {
@@ -117,7 +117,7 @@ export default function Problem() {
           }`}>
             <div className="text-center">
               <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                ✨ Personalized Recommendation
+                ✨ {t('recommendation')}
               </div>
               
               {(() => {
@@ -128,10 +128,10 @@ export default function Problem() {
                 return (
                   <div>
                     <h3 className="text-2xl font-bold mb-4">
-                      Perfect! We recommend: {recommendation?.service}
+                      {t('recommendationHeading')} {recommendation?.service}
                     </h3>
                     <p className="text-lg mb-6 opacity-90">
-                      Based on your challenge, this service will provide the fastest path to resolution.
+                      {t('recommendationParagraph')}
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -140,13 +140,13 @@ export default function Problem() {
                         className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                       >
                         {RecommendationIcon && <RecommendationIcon className="w-5 h-5" />}
-                        View Service Details
+                        {t('recommendationDetail')}
                       </a>
                       <a
                         href="#contact"
                         className="inline-flex items-center justify-center gap-2 bg-white/20 border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white/30 transition-colors"
                       >
-                        Get Free Consultation
+                        {t('recommendationCTA')}
                       </a>
                     </div>
                   </div>

@@ -19,6 +19,14 @@
     "subheading": "Most businesses struggle with the same critical issues that prevent them from scaling effectively.",
     "interactiveHeading": "What's Your Biggest Challenge?",
     "interactiveSubheading": "Click on your main business challenge and get a personalized solution recommendation.",
+    "recommendation": "Personalized Recommendation",
+    "recommendationHeading":"Perfect! We recommend: ",
+    "recommendationParagraph":"Based on your challenge, this service will provide the fastest path to resolution.",
+    "recommendationDetail": "View Service Details",
+    "recommendationCTA": "Get Free Consultation",
+    "recommendationLP": "Landing Pages and Websites",
+    "recommendationWeb": "Web Applications",
+    "recommendationPerformance": "Performance Optimization",
     "problem1": {
       "title": "Slow Development Cycles",
       "description": "Your team is overwhelmed, features take months to build, and competitors are moving faster. You're losing market opportunities while waiting for basic functionality."
@@ -95,6 +103,30 @@
     "stat3": "Average Performance Improvement",
     "stat4": "Average Client Rating",
     "resultsHeading": "Real Results I've Delivered",
+    "clientTestimony": {
+      "heading": "What Clients Say",
+      "client1": {
+        "name": "Sarah Johnson",
+        "company": "TechStart Inc.",
+        "role": "CEO",
+        "text": "Mateus delivered our e-commerce platform ahead of schedule. The performance improvements were remarkable - our conversion rate increased by 150%!",
+        "rating": 5
+      },
+      "client2": {
+        "name": "Lucas Oliveira",
+        "company": "TechSpire",
+        "role": "CTO",
+        "text": "The AI integration project exceeded our expectations. Our team productivity increased by 3x and customer satisfaction scores hit an all-time high.",
+        "rating": 5
+      },
+      "client3": {
+        "name": "Carlos Davis",
+        "company": "StartupLab",
+        "role": "Founder",
+        "text": "Working with M&L Software was a game-changer. They understood our vision and delivered a product that perfectly matched our needs.",
+        "rating": 5
+      }
+    },
     "result1": {
       "metric": "150%",
       "title": "Landing Page Conversion Increase",
@@ -149,13 +181,25 @@
   },
   "contactCta": {
     "urgencyBadge": "Limited Spots Available",
-    "heading": "Ready to 10x Your Business?",
+    "heading": "Ready to Boost Your Business?",
     "paragraph": "Join successful companies that chose custom solutions over generic tools. Book your free strategy call now.",
     "guarantee1": "Free consultation",
     "guarantee2": "30-day guarantee",
     "guarantee3": "Only 3 projects/month",
     "whatsapp": "WhatsApp Now (Instant Response)",
-    "email": "Book Free Strategy Call",
+    "email": "Book Now",
+    "scarcity": "⚡ Only 3 slots available this month"
+  },
+  "popup": {
+    "urgencyBadge": "Wait! Special Offer",
+    "heading": "Don't leave without claiming your free consultation",
+    "paragraph1": "Get Your Free Strategy Session",
+    "paragraph2": "Before you go, let's discuss how we can 3x your business growth with custom software solutions.",
+    "guarantee1": "Free 30-minute strategy consultation",
+    "guarantee2": "Custom roadmap for your business",
+    "guarantee3": "No commitment required",
+    "button": "Claim My Free Session Now",
+    "close": "No thanks, I'll pass on free advice",
     "scarcity": "⚡ Only 3 project slots available this month"
   },
   "header": {

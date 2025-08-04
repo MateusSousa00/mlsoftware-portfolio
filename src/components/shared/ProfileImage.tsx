@@ -16,14 +16,14 @@ const sizeClasses = {
 };
 
 export default function ProfileImage({ 
-  src = '/M-removebg-preview.png', 
+  src = '/M.png', 
   alt, 
   size = 'lg', 
   className = '', 
   priority = false 
 }: ProfileImageProps) {
   return (
-    <div className={`${sizeClasses[size]} relative overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/20 ${className}`}>
+    <div className={`${sizeClasses[size]} ${className}`}>
       {src !== '/placeholder-profile.jpg' ? (
         <Image
           src={src}

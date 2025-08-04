@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
@@ -20,8 +21,19 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold">
-          M&L Software
+        <Link href="/" className="flex items-center gap-2">
+          {/* Show image on small screens */}
+          <div className="sm:hidden">
+            <Image
+              src="/M.png"
+              alt="M&L Logo"
+              width={32}
+              height={32}
+              priority
+            />
+          </div>
+          {/* Show text on larger screens */}
+          <span className="text-2xl font-bold hidden sm:inline">M&L Software</span>
         </Link>
 
         {/* Right side - Theme toggle, Language switcher, CTA */}
@@ -43,7 +55,7 @@ export function Header() {
           {/* Primary CTA */}
           <a
             href="#contact"
-            className="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all"
+            className="hidden sm:inline px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all"
           >
             {t('cta')}
           </a>

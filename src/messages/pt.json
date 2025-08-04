@@ -19,6 +19,14 @@
     "subheading": "A maioria das empresas luta contra os mesmos problemas críticos que impedem o crescimento eficaz.",
     "interactiveHeading": "Qual é o Seu Maior Desafio?",
     "interactiveSubheading": "Clique no seu principal desafio de negócio e receba uma recomendação de solução personalizada.",
+    "recommendation": "Recomendação Personalizada",
+    "recommendationHeading":"Perfeito! Nós recomendamos: ",
+    "recommendationParagraph":"Baseado no seu desafio, esse serviço será o caminho mais rápido para resolução.",
+    "recommendationDetail": "Ver Detalhes do Serviço",
+    "recommendationCTA": "Quero uma consulta gratuita",
+    "recommendationLP": "Landing Pages e Sites",
+    "recommendationWeb": "Aplicações Web",
+    "recommendationPerformance": "Otimização de Performance",
     "problem1": {
       "title": "Ciclos de Desenvolvimento Lentos",
       "description": "Sua equipe está sobrecarregada, funcionalidades levam meses para construir, e concorrentes estão se movendo mais rápido. Você está perdendo oportunidades de mercado esperando por funcionalidades básicas."
@@ -95,23 +103,47 @@
     "stat3": "Melhoria Média de Performance",
     "stat4": "Taxa de Satisfação do Cliente",
     "resultsHeading": "Resultados Reais Que Entreguei",
+    "clientTestimony": {
+      "heading": "O que os Clientes dizem",
+      "client1": {
+        "name": "Sarah Johnson",
+        "company": "TechStart Inc.",
+        "role": "CEO",
+        "text": "Mateus entregou nossa plataforma de e-commerce antes do prazo. As melhorias de desempenho foram notáveis, nossa taxa de conversão aumentou 150%!",
+        "rating": 5
+      },
+      "client2": {
+        "name": "Lucas Oliveira",
+        "company": "TechSpire",
+        "role": "CTO",
+        "text": "O projeto de integração de IA superou as nossas expectativas. A produtividade da nossa equipe aumentou 3x e os índices de satisfação do cliente atingiram um nível mais alto.",
+        "rating": 5
+      },
+      "client3": {
+        "name": "Carlos Davis",
+        "company": "StartupLab",
+        "role": "Founder",
+        "text": "Trabalhar com a M&L Software foi uma virada de jogo. Eles entenderam nossa visão e entregaram um produto que atendeu perfeitamente às nossas necessidades.",
+        "rating": 5
+      }
+    },
     "result1": {
       "metric": "20x",
-      "title": "Aumento de Velocidade de Processamento",
-      "description": "Otimizei um sistema financeiro para processar 10.000+ operações por minuto, transformando a capacidade do negócio.",
-      "context": "Cliente de Serviços Financeiros"
+      "title": "Aumento da conversão da Landing Page",
+      "description": "Redesenhei uma landing page de e-commerce que aumentou as conversões de 2,1% para 5,2%, impactando diretamente a receita.",
+      "context": "Cliente do setor de E-commerce"
     },
     "result2": {
-      "metric": "99.9%",
+      "metric": "98.5%",
       "title": "Uptime do Sistema Alcançado",
       "description": "Arquitetei infraestrutura robusta que mantém performance consistente sob carga pesada.",
-      "context": "Aplicação Empresarial"
+      "context": "15+ Projetos"
     },
     "result3": {
       "metric": "3-8 Semanas",
       "title": "Cronograma Típico do Projeto",
       "description": "Entreguei soluções de qualidade desde landing pages até aplicações web com cronogramas claros e atualizações regulares.",
-      "context": "Vários Tipos de Projeto"
+      "context": "Vários Tipos de Projetos"
     },
     "ctaText": "Pronto para ver resultados similares para seu negócio?",
     "ctaButton": "Agendar Sua Consulta Gratuita"
@@ -149,14 +181,26 @@
   },
   "contactCta": {
     "urgencyBadge": "Vagas Limitadas Disponíveis",
-    "heading": "Pronto Para 10x Seu Negócio?",
+    "heading": "Pronto Para Alavancar Seu Negócio?",
     "paragraph": "Junte-se a empresas de sucesso que escolheram soluções personalizadas em vez de ferramentas genéricas. Agende sua consulta estratégica gratuita agora.",
     "guarantee1": "Consulta gratuita",
     "guarantee2": "Garantia de 30 dias",
     "guarantee3": "Apenas 3 projetos/mês",
     "whatsapp": "WhatsApp Agora (Resposta Instantânea)",
-    "email": "Agendar Consulta Estratégica Grátis",
-    "scarcity": "⚡ Apenas 3 vagas de projeto disponíveis este mês"
+    "email": "Agendar Agora",
+    "scarcity": "⚡ Apenas 3 vagas disponíveis este mês"
+  },
+  "popup": {
+    "urgencyBadge": "Espere! Oferta especial",
+    "heading": "Não saia sem solicitar sua consulta gratuita",
+    "paragraph1": "Obtenha sua sessão de estratégia gratuita",
+    "paragraph2": "Antes de prosseguir, vamos discutir como podemos triplicar o crescimento do seu negócio com soluções de software personalizadas.",
+    "guarantee1": "Consulta estratégica gratuita de 30 minutos",
+    "guarantee2": "Roteiro personalizado para o seu negócio",
+    "guarantee3": "Não é necessário compromisso",
+    "button": "Reivindique minha sessão gratuita agora",
+    "close": "Não, obrigado, vou passar desta vez.",
+    "scarcity": "⚡ Restam apenas 2 vagas esse mês"
   },
   "header": {
     "cta": "Começar"

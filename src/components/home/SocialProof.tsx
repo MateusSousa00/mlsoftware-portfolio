@@ -62,77 +62,61 @@ function AnimatedCounter({ end, duration = 2000, suffix = '' }: CounterProps) {
 }
 
 function TestimonialCarousel() {
+  const t = useTranslations('socialProof');
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
-      role: "CEO",
-      image: "/api/placeholder/60/60",
-      text: "Mateus delivered our e-commerce platform ahead of schedule. The performance improvements were remarkable - our conversion rate increased by 150%!",
-      rating: 5
-    },
-    {
-      name: "Carlos Rodriguez",
-      company: "Digital Solutions",
-      role: "CTO",
-      image: "/api/placeholder/60/60",
-      text: "The AI integration project exceeded our expectations. Our team productivity increased by 3x and customer satisfaction scores hit an all-time high.",
-      rating: 5
-    },
-    {
-      name: "Emma Davis",
-      company: "StartupLab",
-      role: "Founder",
-      image: "/api/placeholder/60/60",
-      text: "Working with M&L Software was a game-changer. They understood our vision and delivered a product that perfectly matched our needs.",
-      rating: 5
-    }
-  ];
+
+  const rawTestimonials = t.raw('clientTestimony'); // Access raw object
+  const clients = Object.entries(rawTestimonials)
+    .filter(([key]) => key.startsWith('client'))
+    .map(([, value]) => value) as {
+      name: string;
+      company: string;
+      role: string;
+      text: string;
+      rating: number;
+    }[];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+      setCurrentIndex((prev) => (prev + 1) % clients.length);
     }, 5000);
-
     return () => clearInterval(interval);
-  }, [testimonials.length]);
+  }, [clients.length]);
 
   return (
     <div className="relative">
       <div className="overflow-hidden">
-        <div 
+        <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {testimonials.map((testimonial, index) => (
+          {clients.map((client, index) => (
             <div key={index} className="w-full flex-shrink-0">
               <div className="bg-white dark:bg-neutral-800 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
                 <div className="flex items-center mb-6">
                   <div className="flex text-yellow-400">
-                    {[...Array(testimonial.rating)].map((_, i) => (
+                    {[...Array(client.rating)].map((_, i) => (
                       <FaStar key={i} className="w-5 h-5" />
                     ))}
                   </div>
                 </div>
-                
+
                 <FaQuoteLeft className="text-3xl text-primary mb-4 opacity-50" />
-                
+
                 <p className="text-lg text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
-                  "{testimonial.text}"
+                  "{client.text}"
                 </p>
-                
+
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
-                    {testimonial.name.split(' ').map(n => n[0]).join('')}
+                    {client.name.split(' ').map((n) => n[0]).join('')}
                   </div>
                   <div className="ml-4">
                     <div className="font-semibold text-neutral-900 dark:text-white">
-                      {testimonial.name}
+                      {client.name}
                     </div>
                     <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                      {testimonial.role} at {testimonial.company}
+                      {client.role} at {client.company}
                     </div>
                   </div>
                 </div>
@@ -141,10 +125,10 @@ function TestimonialCarousel() {
           ))}
         </div>
       </div>
-      
+
       {/* Indicators */}
       <div className="flex justify-center mt-6 space-x-2">
-        {testimonials.map((_, index) => (
+        {clients.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
@@ -157,6 +141,7 @@ function TestimonialCarousel() {
     </div>
   );
 }
+
 
 export default function SocialProof() {
   const t = useTranslations('socialProof');
@@ -188,7 +173,7 @@ export default function SocialProof() {
 
       {/* Testimonial Carousel */}
       <div className="max-w-6xl mx-auto mb-20">
-        <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">What Clients Say</h3>
+        <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">{t('clientTestimony.heading')}</h3>
         <TestimonialCarousel />
       </div>
 

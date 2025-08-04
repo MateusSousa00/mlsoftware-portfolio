@@ -5,14 +5,16 @@ import { FaTimes, FaClock } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function StickyCTA() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [isMinimized, setIsMinimized] = useState(false);
   const t = useTranslations('contactCta');
   const whatsapp: string = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
 
   useEffect(() => {
+    const wasClosed = sessionStorage.getItem('stickyCTAClosed') === 'true';
+
     const handleScroll = () => {
-      // Show sticky CTA after scrolling 500px
+      if (wasClosed) return;
       const scrolled = window.scrollY > 500;
       setIsVisible(scrolled);
     };
@@ -23,17 +25,8 @@ export default function StickyCTA() {
 
   const handleClose = () => {
     setIsVisible(false);
-    // Don't show again for this session
     sessionStorage.setItem('stickyCTAClosed', 'true');
   };
-
-  useEffect(() => {
-    // Check if user closed it this session
-    const wasClosed = sessionStorage.getItem('stickyCTAClosed');
-    if (wasClosed) {
-      setIsVisible(false);
-    }
-  }, []);
 
   if (!isVisible) return null;
 

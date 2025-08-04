@@ -18,14 +18,26 @@
   },
   "contactCta": {
     "urgencyBadge": "Plazas Limitadas Disponibles",
-    "heading": "¿Listo Para 10x Tu Negocio?",
+    "heading": "¿Listo Para Impulsionar Tu Negocio?",
     "paragraph": "Únete a empresas exitosas que eligieron soluciones personalizadas en lugar de herramientas genéricas. Reserva tu consulta estratégica gratuita ahora.",
     "guarantee1": "Consulta gratuita",
     "guarantee2": "Garantía de 30 días",
     "guarantee3": "Solo 3 proyectos/mes",
     "whatsapp": "WhatsApp Ahora (Respuesta Instantánea)",
-    "email": "Reservar Consulta Estratégica Gratuita",
-    "scarcity": "⚡ Solo 3 plazas de proyecto disponibles este mes"
+    "email": "Reservar Ahora",
+    "scarcity": "⚡ Solo 3 plazas disponibles este mes"
+  },
+  "popup": {
+    "urgencyBadge": "¡Esperar! Oferta especial",
+    "heading": "No te vayas sin solicitar tu consulta gratuita",
+    "paragraph1": "Obtenga su sesión de estrategia gratuita",
+    "paragraph2": "Antes de continuar, analicemos cómo podemos triplicar el crecimiento de su negocio con soluciones de software personalizadas.",
+    "guarantee1": "Consulta estratégica gratuita de 30 minutos",
+    "guarantee2": "Itinerario personalizado para su negocio",
+    "guarantee3": "No se requiere compromiso",
+    "button": "Reclama mi sesión gratuita ahora",
+    "close": "No gracias, pasaré esta vez.",
+    "scarcity": "⚡ Solo quedan 2 lugares este mes"
   },
   "header": {
     "cta": "Comenzar"
@@ -228,6 +240,14 @@
     "subheading": "La mayoría de las empresas luchan con los mismos problemas críticos que impiden un crecimiento efectivo.",
     "interactiveHeading": "¿Cuál es Tu Mayor Desafío?",
     "interactiveSubheading": "Haz clic en tu principal desafío comercial y obtén una recomendación de solución personalizada.",
+    "recommendation": "Recomendación personalizada",
+    "recommendationHeading":"¡Perfecto! Recomendamos: ",
+    "recommendationParagraph":"Según su desafío, este servicio le brindará el camino más rápido hacia la resolución.",
+    "recommendationDetail": "Ver detalles del servicio",
+    "recommendationCTA": "Obtenga una consulta gratuita",
+    "recommendationLP": "Landing Pages y sitios web",
+    "recommendationWeb": "Aplicaciones Web",
+    "recommendationPerformance": "Optimización del rendimiento",
     "problem1": {
       "title": "Ciclos de Desarrollo Lentos",
       "description": "Tu equipo está abrumado, las funcionalidades tardan meses en construirse, y los competidores se mueven más rápido. Estás perdiendo oportunidades de mercado esperando funcionalidades básicas."
@@ -304,6 +324,30 @@
     "stat3": "Mejora Promedio de Rendimiento",
     "stat4": "Calificación Promedio del Cliente",
     "resultsHeading": "Resultados Reales Que He Entregado",
+    "clientTestimony": {
+      "heading": "What Clients Say",
+      "client1": {
+        "name": "Sarah Johnson",
+        "company": "TechStart Inc.",
+        "role": "CEO",
+        "text": "Mateus entregó nuestra plataforma de comercio electrónico antes de lo previsto. Las mejoras de rendimiento fueron notables: ¡nuestra tasa de conversión aumentó en un 150%!",
+        "rating": 5
+      },
+      "client2": {
+        "name": "Lucas Oliveira",
+        "company": "TechSpire",
+        "role": "CTO",
+        "text": "El proyecto de integración de IA superó nuestras expectativas. La productividad de nuestro equipo se triplicó y los puntajes de satisfacción del cliente alcanzaron un máximo histórico.",
+        "rating": 5
+      },
+      "client3": {
+        "name": "Carlos Davis",
+        "company": "StartupLab",
+        "role": "Founder",
+        "text": "Trabajar con M&L Software fue un punto de inflexión. Entendieron nuestra visión y entregaron un producto que se adaptaba perfectamente a nuestras necesidades.",
+        "rating": 5
+      }
+    },
     "result1": {
       "metric": "150%",
       "title": "Aumento de Conversión en Landing Page",

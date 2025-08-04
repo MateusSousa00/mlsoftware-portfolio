@@ -29,10 +29,10 @@ export default function About() {
         {/* Professional Profile Image */}
         <div className={`mb-8 transition-all duration-1000 ${isLoaded ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
           <ProfileImage 
-            src="/ML SOFTWARE.png" 
+            src="/ML_SOFTWARE.png" 
             alt="M&L Software - Professional Software Development"
             size="xl"
-            className="mx-auto ring-4 ring-white/20 shadow-2xl"
+            className="mx-auto"
             priority={true}
           />
         </div>

@@ -49,7 +49,7 @@ export default function Process() {
               <div key={step.id} className="relative">
                 {/* Connection Line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-neutral-200 dark:bg-neutral-700 -z-10">
+                  <div className="hidden md:block absolute top-8 left-1/2 w-[120%] h-0.5 bg-neutral-200 dark:bg-neutral-700 -z-10">
                     <div className="absolute right-2 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full"></div>
                   </div>
                 )}
@@ -77,57 +77,6 @@ export default function Process() {
               </div>
             );
           })}
-        </div>
-
-        {/* Client Testimonials */}
-        <div className="mt-16 mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">{t('imagesHeading')}</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaCalendarAlt className="w-6 h-6 text-blue-500" />
-                </div>
-                <p className="text-sm italic text-gray-600 dark:text-gray-400 mb-2">
-                  &quot;I&apos;ve expected something and M&L Software gave me even better&quot;
-                </p>
-                <p className="text-xs text-gray-500">Strategy consultation meeting with client</p>
-              </div>
-            </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaCode className="w-6 h-6 text-purple-500" />
-                </div>
-                <p className="text-sm italic text-gray-600 dark:text-gray-400 mb-2">
-                  &quot;Software development is the core and the passion of M&L Software&quot;
-                </p>
-                <p className="text-xs text-gray-500">Software development in progress</p>
-              </div>
-            </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaFileAlt className="w-6 h-6 text-green-500" />
-                </div>
-                <p className="text-sm italic text-gray-600 dark:text-gray-400 mb-2">
-                  &quot;high load of testing to make sure we don&apos;t deliver anything buggy&quot;
-                </p>
-                <p className="text-xs text-gray-500">Mobile application testing</p>
-              </div>
-            </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaRocket className="w-6 h-6 text-orange-500" />
-                </div>
-                <p className="text-sm italic text-gray-600 dark:text-gray-400 mb-2">
-                  &quot;We are always happy because our deployment always make our clients happy&quot;
-                </p>
-                <p className="text-xs text-gray-500">Successful project launch celebration</p>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Bottom CTA */}
