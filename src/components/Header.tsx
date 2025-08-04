@@ -33,7 +33,15 @@ export function Header() {
             />
           </div>
           {/* Show text on larger screens */}
-          <span className="text-2xl font-bold hidden sm:inline">M&L Software</span>
+          <div className="hidden sm:inline">
+            <Image
+              src="/mlsoftware.png"
+              alt="M&L Logo"
+              width={300}
+              height={100}
+              priority
+            />
+          </div>
         </Link>
 
         {/* Right side - Theme toggle, Language switcher, CTA */}
