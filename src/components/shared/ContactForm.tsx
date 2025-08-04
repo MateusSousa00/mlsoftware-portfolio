@@ -181,7 +181,7 @@ export default function ContactForm() {
               alert('Please set NEXT_PUBLIC_CALENDIFY_URL environment variable');
             } : undefined}
           >
-            📅 Schedule Meeting
+            {t('schedule')}
           </a>
         </div>
         

@@ -5,16 +5,21 @@ import { FaTimes, FaClock } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function StickyCTA() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
+  const [isClosed, setIsClosed] = useState(false);
   const t = useTranslations('contactCta');
   const whatsapp: string = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
 
   useEffect(() => {
+    // Check if it was previously closed
     const wasClosed = sessionStorage.getItem('stickyCTAClosed') === 'true';
+    if (wasClosed) {
+      setIsClosed(true);
+      return; // Don't add scroll listener if already closed
+    }
 
     const handleScroll = () => {
-      if (wasClosed) return;
       const scrolled = window.scrollY > 500;
       setIsVisible(scrolled);
     };
@@ -25,10 +30,11 @@ export default function StickyCTA() {
 
   const handleClose = () => {
     setIsVisible(false);
+    setIsClosed(true);
     sessionStorage.setItem('stickyCTAClosed', 'true');
   };
 
-  if (!isVisible) return null;
+  if (isClosed || !isVisible) return null;
 
   return (
     <div className={`fixed bottom-0 left-0 right-0 z-40 transform transition-all duration-500 ${isMinimized ? 'translate-y-12' : 'translate-y-0'}`}>

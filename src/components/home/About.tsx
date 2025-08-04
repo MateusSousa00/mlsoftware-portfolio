@@ -29,11 +29,11 @@ export default function About() {
         {/* Professional Profile Image */}
         <div className={`mb-8 transition-all duration-1000 ${isLoaded ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
           <ProfileImage 
-            src="/ML_SOFTWARE.png" 
             alt="M&L Software - Professional Software Development"
             size="xl"
             className="mx-auto"
             priority={true}
+            enableCoinFlip={true}
           />
         </div>
         
