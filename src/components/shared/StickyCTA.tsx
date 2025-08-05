@@ -2,14 +2,12 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { FaTimes, FaClock } from 'react-icons/fa';
-import Link from 'next/link';
+import { useStickyCTA } from '../../contexts/StickyCTAContext';
 
 export default function StickyCTA() {
   const [isVisible, setIsVisible] = useState(false);
-  const [isMinimized, setIsMinimized] = useState(false);
-  const [isClosed, setIsClosed] = useState(false);
+  const { isMinimized, isClosed, setIsMinimized, setIsClosed } = useStickyCTA();
   const t = useTranslations('contactCta');
-  const whatsapp: string = process.env.WHATSAPP_NUMBER || '';
 
   useEffect(() => {
     // Check if it was previously closed
@@ -26,7 +24,7 @@ export default function StickyCTA() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [setIsClosed]);
 
   const handleClose = () => {
     setIsVisible(false);
@@ -66,19 +64,8 @@ export default function StickyCTA() {
                 href="#contact"
                 className="bg-white text-blue-600 px-1 py-2 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105"
               >
-                <h1 className='font-semibold text-sm w-28 text-center'>{t('email')}</h1>
+                <h1 className='font-semibold text-sm w-28 mt-1 md:mt-auto text-center'>{t('email')}</h1>
               </a>
-              
-              {whatsapp && (
-                <Link
-                  href={whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition-colors text-sm transform hover:scale-105"
-                >
-                  WhatsApp
-                </Link>
-              )}
               
               <button
                 onClick={handleClose}
@@ -101,7 +88,7 @@ export default function StickyCTA() {
       {/* Minimize button */}
       <button
         onClick={() => setIsMinimized(!isMinimized)}
-        className="absolute -top-8 right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-t-lg text-xs hover:from-blue-700 hover:to-purple-700 transition-colors"
+        className="absolute -top-11 md:-top-6 left-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-t-lg text-xs hover:from-blue-700 hover:to-purple-700 transition-colors"
       >
         {isMinimized ? '↑' : '↓'}
       </button>

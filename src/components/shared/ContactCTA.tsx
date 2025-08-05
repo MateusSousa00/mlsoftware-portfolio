@@ -1,6 +1,8 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { FaClock, FaShieldAlt, FaFire } from 'react-icons/fa';
+import { trackWhatsAppClick } from './FacebookPixel';
 
 export default function ContactCTA() {
   const t = useTranslations('contactCta');
@@ -44,6 +46,7 @@ export default function ContactCTA() {
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 rounded-lg bg-green-600 text-white hover:bg-green-700 transition-all transform hover:scale-105 font-semibold shadow-lg"
+            onClick={() => trackWhatsAppClick('contact-cta')}
           >
             {t('whatsapp')}
           </Link>

@@ -15,6 +15,9 @@ import { routing } from '@/i18n/routing';
 import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import { Toaster } from 'sonner';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
+import FacebookPixel from '@/components/shared/FacebookPixel';
+import { StickyCTAProvider } from '@/contexts/StickyCTAContext';
 
 type Props = {
   children: ReactNode;
@@ -44,26 +47,35 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
+  const gaId = process.env.GA_ID;
+  const gtmId = process.env.GTM_ID;
+  const fbPixelId = process.env.FB_PIXEL_ID;
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={cn(inter.className, 'bg-white text-black dark:bg-background dark:text-white')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider>
-            <Header />
-            <main className="pt-20">
-              <div className="mx-auto w-full">
-                {children}
-                <ContactCTA />
-                <ContactForm />
-                <Toaster richColors />
-              </div>
-            </main>
-            <CustomCursor />
-            <FloatingWhatsApp />
-            <StickyCTA />
-            <ExitIntentPopup />
+            <StickyCTAProvider>
+              <Header />
+              <main className="pt-20">
+                <div className="mx-auto w-full">
+                  {children}
+                  <ContactCTA />
+                  <ContactForm />
+                  <Toaster richColors />
+                </div>
+              </main>
+              <CustomCursor />
+              <FloatingWhatsApp />
+              <StickyCTA />
+              <ExitIntentPopup />
+            </StickyCTAProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
+        {gaId && <GoogleAnalytics gaId={gaId} />}
+        {gtmId && <GoogleTagManager gtmId={gtmId} />}
+        {fbPixelId && <FacebookPixel pixelId={fbPixelId} />}
       </body>
     </html>
   );

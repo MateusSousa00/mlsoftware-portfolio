@@ -2,6 +2,8 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { toast } from 'sonner';
+import { trackFormSubmission, trackScheduleClick } from './FacebookPixel';
+import Link from 'next/link';
 
 interface ContactApiResponse {
   success?: boolean;
@@ -67,6 +69,7 @@ export default function ContactForm() {
         toast.success(t('successMessage'));
         setForm({ name: '', email: '', message: '' });
         setErrors({});
+        trackFormSubmission();
       } else {
         toast.error(result.error || t('errorMessage'));
       }
@@ -171,7 +174,7 @@ export default function ContactForm() {
             )}
           </button>
           
-          <a
+          <Link
             href={calendlyUrl === '#' ? '#contact' : calendlyUrl}
             target={calendlyUrl === '#' ? '_self' : '_blank'}
             rel={calendlyUrl === '#' ? '' : 'noopener noreferrer'}
@@ -179,10 +182,10 @@ export default function ContactForm() {
             onClick={calendlyUrl === '#' ? (e) => {
               e.preventDefault();
               alert('Please set NEXT_PUBLIC_CALENDIFY_URL environment variable');
-            } : undefined}
+            } : () => trackScheduleClick()}
           >
             {t('schedule')}
-          </a>
+          </Link>
         </div>
         
         {/* Trust Indicators */}
