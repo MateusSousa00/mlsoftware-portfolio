@@ -264,6 +264,7 @@
       "title": "Cuellos de Botella de Rendimiento",
       "description": "Tu sistema se bloquea bajo carga, los usuarios están frustrados con tiempos de respuesta lentos, y tienes miedo de escalar porque tu infraestructura no puede manejar el crecimiento."
     },
+    "selected": "Seleccionado",
     "conclusion": "Estos problemas no se resuelven solos. Se acumulan y se vuelven más caros de arreglar con el tiempo.",
     "cta": "Arreglemos Esto Juntos"
   },

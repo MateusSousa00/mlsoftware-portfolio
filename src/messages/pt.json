@@ -42,6 +42,7 @@
       "title": "Gargalos de Performance",
       "description": "Seu sistema trava sob carga, usuários estão frustrados com tempos de resposta lentos, e você tem medo de escalar porque sua infraestrutura não consegue lidar com o crescimento."
     },
+    "selected": "Selecionado",
     "conclusion": "Esses problemas não se resolvem sozinhos. Eles se acumulam e ficam mais caros para corrigir com o tempo.",
     "cta": "Vamos Resolver Isso Juntos"
   },

@@ -83,7 +83,7 @@ export default function Problem() {
               <button
                 key={problem.id}
                 onClick={() => handleProblemSelect(problem.id)}
-                className={`text-left bg-white dark:bg-neutral-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-2 ${
+                className={`text-left cursor-pointer bg-white dark:bg-neutral-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-2 ${
                   isSelected 
                     ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20' 
                     : 'border-transparent hover:border-blue-200'
@@ -102,7 +102,7 @@ export default function Problem() {
                 
                 {isSelected && (
                   <div className="flex items-center text-blue-600 font-semibold">
-                    <span>Selected</span>
+                    <span>{t('selected')}</span>
                     <FaArrowRight className="w-4 h-4 ml-2" />
                   </div>
                 )}

@@ -42,6 +42,7 @@
       "title": "Performance Bottlenecks",
       "description": "Your system crashes under load, users are frustrated with slow response times, and you're afraid to scale because your infrastructure can't handle the growth."
     },
+    "selected": "Selected",
     "conclusion": "These problems don't solve themselves. They compound and get more expensive to fix over time.",
     "cta": "Let's Fix This Together"
   },
