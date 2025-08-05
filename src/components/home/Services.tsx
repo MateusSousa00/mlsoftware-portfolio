@@ -47,11 +47,10 @@ export default function Services() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
         {services.map((service) => {
-          const Icon = service.icon;
           return (
             <div
               key={service.id}
-              className={`relative p-8 rounded-2xl border-2 ${service.borderColor} ${service.bgColor} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group`}
+              className={`relative p-8 rounded-2xl border-2 ${service.borderColor} ${service.bgColor} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group flex flex-col`}
             >
               {/* Popular Badge */}
               {service.id === 'mvp' && (
@@ -59,11 +58,6 @@ export default function Services() {
                   {t('popular')}
                 </div>
               )}
-              
-              {/* Service Icon */}
-              <div className={`inline-flex p-4 rounded-full ${service.bgColor} mb-6 ring-2 ring-white/20`}>
-                <Icon className={`w-8 h-8 ${service.color}`} />
-              </div>
 
               {/* Service Info */}
               <h3 className="text-2xl font-bold mb-4">{t(`${service.id}.title`)}</h3>
@@ -94,7 +88,7 @@ export default function Services() {
               {/* CTA Button */}
               <a
                 href="#contact"
-                className={`block w-full text-center py-3 px-6 rounded-lg font-semibold transition-all ${
+                className={`block w-full mt-auto justify-end text-center py-3 px-6 rounded-lg font-semibold transition-all ${
                   service.id === 'mvp'
                     ? 'bg-primary text-white hover:bg-primary/90'
                     : `border-2 ${service.borderColor} ${service.color} hover:bg-primary hover:text-white hover:border-primary`

@@ -64,7 +64,7 @@ export default function Process() {
                   </div>
 
                   {/* Step Info */}
-                  <h3 className="text-xl font-bold mb-4">{t(`${step.id}.title`)}</h3>
+                  <h3 className="text-lg font-bold mb-4">{t(`${step.id}.title`)}</h3>
                   <p className="text-neutral-600 dark:text-neutral-400 mb-4">
                     {t(`${step.id}.description`)}
                   </p>

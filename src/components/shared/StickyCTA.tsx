@@ -9,7 +9,7 @@ export default function StickyCTA() {
   const [isMinimized, setIsMinimized] = useState(false);
   const [isClosed, setIsClosed] = useState(false);
   const t = useTranslations('contactCta');
-  const whatsapp: string = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
+  const whatsapp: string = process.env.WHATSAPP_NUMBER || '';
 
   useEffect(() => {
     // Check if it was previously closed
@@ -41,7 +41,7 @@ export default function StickyCTA() {
       {/* Main CTA Bar */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex">
             {/* Left side - Urgency message */}
             <div className="flex items-center space-x-3">
               <div className="flex items-center space-x-2">
@@ -64,9 +64,9 @@ export default function StickyCTA() {
             <div className="flex items-center space-x-3">
               <a
                 href="#contact"
-                className="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm transform hover:scale-105"
+                className="bg-white text-blue-600 px-1 py-2 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105"
               >
-                {t('email')}
+                <h1 className='font-semibold text-sm w-28 text-center'>{t('email')}</h1>
               </a>
               
               {whatsapp && (

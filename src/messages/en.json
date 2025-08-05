@@ -2,16 +2,19 @@
   "hero": {
     "headline": "Transform Your Business with Custom Software Solutions",
     "subheadline": "Enterprise-grade development that transforms your ideas into profitable, scalable products. From MVP to AI integration.",
-    "metric1": "Average performance improvements across projects",
-    "metric2": "Users supported by applications I've built",
-    "metric3": "Weeks typical project timeline",
+    "headMetric1":"3 Times Faster",
+    "metric1": "Average performance boost across projects",
+    "headMetric2":"5,000+ Active Users",
+    "metric2": "Real-world usage in deployed applications",
+    "headMetric3":"4 to 8 Weeks to Launch",
+    "metric3": "Typical delivery timeline from start to launch",
     "primaryCTA": "Get Free Strategy Call",
     "secondaryCTA": "WhatsApp Now",
     "trustIndicator1": "Free consultation",
     "trustIndicator2": "30-day guarantee",
     "trustIndicator3": "Only 3 projects/month",
     "parOne": "I specialize in transforming business ideas into scalable, profitable software solutions. With expertise in full-stack development, AI integration, and system architecture, I help companies achieve rapid growth through technology.",
-    "parTwo": "My clients have seen 3x performance improvements, supported thousands of users, and successfully grown their businesses with reliable software. Let's discuss how custom development can accelerate your growth."
+    "parTwo": "My clients have seen 3x performance improvements, supported thousands of users, and successfully grown their businesses with reliable software. Let's discuss how custom development can accelerate your growth?"
   },
   "problem": {
     "badge": "Common Business Challenges",

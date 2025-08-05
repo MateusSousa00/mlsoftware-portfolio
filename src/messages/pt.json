@@ -2,16 +2,19 @@
   "hero": {
     "headline": "Transforme Seu Negócio com Soluções de Software Personalizadas",
     "subheadline": "Desenvolvimento de nível empresarial que transforma suas ideias em produtos lucrativos e escaláveis. Do MVP à integração de IA.",
-    "metric1": "Melhorias médias de performance em projetos",
-    "metric2": "Usuários suportados por aplicações que desenvolvi",
-    "metric3": "Semanas de cronograma típico do projeto",
+    "headMetric1":"3 Vezes Mais Rápido",
+    "metric1": "Média de ganho de performance nos projetos",
+    "headMetric2":"5.000+ Usuários",
+    "metric2": "Usuários reais em aplicações implantadas",
+    "headMetric3":"4 a 8 semanas",
+    "metric3": "Prazo médio para entrega",
     "primaryCTA": "Consulta Estratégica Grátis",
     "secondaryCTA": "WhatsApp Agora",
     "trustIndicator1": "Consulta gratuita",
     "trustIndicator2": "Garantia de 30 dias",
     "trustIndicator3": "Apenas 3 projetos/mês",
     "parOne": "Especializo em transformar ideias de negócio em soluções de software escaláveis e lucrativas. Com expertise em desenvolvimento full-stack, integração de IA e arquitetura de sistemas, ajudo empresas a alcançarem crescimento rápido através da tecnologia.",
-    "parTwo": "Meus clientes viram melhorias de performance de 3x, suportaram milhares de usuários e cresceram seus negócios com sucesso usando software confiável. Vamos conversar sobre como desenvolvimento personalizado pode acelerar seu crescimento."
+    "parTwo": "Meus clientes viram melhorias de performance de 3x, suportaram milhares de usuários e cresceram seus negócios com sucesso usando software confiável. Vamos conversar sobre como desenvolvimento personalizado pode acelerar seu crescimento?"
   },
   "problem": {
     "badge": "Desafios Comuns de Negócios",
@@ -71,7 +74,7 @@
     "optimization": {
       "title": "⚡ Otimização de Performance",
       "description": "Multiplique por 10x a performance do seu sistema e processe escala massiva com otimização especializada.",
-      "timeline": "15-30 dias de entrega",
+      "timeline": "2 a 4 semanas de entrega",
       "feature1": "Otimização de banco de dados e queries",
       "feature2": "Melhorias de performance de API",
       "feature3": "Testes de carga e estratégias de escala",
@@ -163,7 +166,7 @@
     },
     "development": {
       "title": "Desenvolvimento Ágil",
-      "description": "Updates regulares, demos semanais e comunicação constante durante todo o processo.",
+      "description": "Updates regulares, demos semanais e comunicação constante durante o processo.",
       "duration": "2-8 semanas"
     },
     "launch": {

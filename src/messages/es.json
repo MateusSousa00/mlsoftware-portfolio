@@ -2,8 +2,11 @@
   "hero": {
     "headline": "Transforma Tu Negocio con Soluciones de Software Personalizadas",
     "subheadline": "Desarrollo de nivel empresarial que transforma tus ideas en productos rentables y escalables. Desde MVP hasta integración de IA.",
+    "headMetric1":"3 Veces Mas Rápido",
     "metric1": "Mejoras promedio de rendimiento en proyectos",
+    "headMetric2":"5.000+ Usuarios",
     "metric2": "Usuarios soportados por aplicaciones que desarrollé",
+    "headMetric3":"4 a 8 semanas",
     "metric3": "Semanas de cronograma típico del proyecto",
     "primaryCTA": "Consulta Estratégica Gratuita",
     "secondaryCTA": "WhatsApp Ahora",
@@ -11,7 +14,7 @@
     "trustIndicator2": "Garantía de 30 días",
     "trustIndicator3": "Solo 3 proyectos/mes",
     "parOne": "Me especializo en transformar ideas de negocio en soluciones de software escalables y rentables. Con experiencia en desarrollo full-stack, integración de IA y arquitectura de sistemas, ayudo a empresas a lograr un crecimiento rápido a través de la tecnología.",
-    "parTwo": "Mis clientes han visto mejoras de rendimiento de 3x, soportado miles de usuarios y crecido exitosamente sus negocios con software confiable. Hablemos sobre cómo el desarrollo personalizado puede acelerar tu crecimiento."
+    "parTwo": "Mis clientes han visto mejoras de rendimiento de 3x, soportado miles de usuarios y crecido exitosamente sus negocios con software confiable. Hablemos sobre cómo el desarrollo personalizado puede acelerar tu crecimiento?"
   },
   "articles": {
     "heading": "Últimos artículos en Dev.to"
@@ -293,7 +296,7 @@
     "optimization": {
       "title": "⚡ Optimización de Rendimiento",
       "description": "Multiplica por 10x el rendimiento de tu sistema y maneja escala masiva con optimización experta.",
-      "timeline": "15-30 días de entrega",
+      "timeline": "2-4 semanas de entrega",
       "feature1": "Optimización de base de datos y consultas",
       "feature2": "Mejoras de rendimiento de API",
       "feature3": "Pruebas de carga y estrategias de escalado",

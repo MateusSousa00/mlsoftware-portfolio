@@ -47,15 +47,15 @@ export default function About() {
         {/* Value Propositions */}
         <div className={`grid md:grid-cols-3 gap-6 mb-10 transition-all duration-1000 delay-700 ${isLoaded ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
           <div className="text-center md:text-left p-6 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-white/20 hover:-translate-y-2 transition-all duration-300">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">3x</div>
+            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">{t('headMetric1')}</div>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">{t('metric1')}</p>
           </div>
           <div className="text-center md:text-left p-6 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-white/20 hover:-translate-y-2 transition-all duration-300">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">5k+</div>
+            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">{t('headMetric2')}</div>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">{t('metric2')}</p>
           </div>
           <div className="text-center md:text-left p-6 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-white/20 hover:-translate-y-2 transition-all duration-300">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">4-8</div>
+            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">{t('headMetric3')}</div>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">{t('metric3')}</p>
           </div>
         </div>
