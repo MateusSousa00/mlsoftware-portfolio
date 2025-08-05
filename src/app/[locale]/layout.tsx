@@ -18,6 +18,7 @@ import { Toaster } from 'sonner';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import FacebookPixel from '@/components/shared/FacebookPixel';
 import { StickyCTAProvider } from '@/contexts/StickyCTAContext';
+import Script from 'next/script';
 
 type Props = {
   children: ReactNode;
@@ -53,6 +54,20 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17439695397"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17439695397');
+          `}
+        </Script>
+      </head>
       <body className={cn(inter.className, 'bg-white text-black dark:bg-background dark:text-white')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider>
