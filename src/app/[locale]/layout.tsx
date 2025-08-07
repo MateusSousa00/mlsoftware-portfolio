@@ -15,7 +15,6 @@ import { routing } from '@/i18n/routing';
 import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import { Toaster } from 'sonner';
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import FacebookPixel from '@/components/shared/FacebookPixel';
 import { StickyCTAProvider } from '@/contexts/StickyCTAContext';
 import Script from 'next/script';
@@ -49,24 +48,27 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
 
   const gaId = process.env.GA_ID;
-  const gtmId = process.env.GTM_ID;
   const fbPixelId = process.env.FB_PIXEL_ID;
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17439695397"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads-config" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17439695397');
-          `}
-        </Script>
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="beforeInteractive"
+            />
+            <Script id="google-ads-config" strategy="beforeInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        )}
       </head>
       <body className={cn(inter.className, 'bg-white text-black dark:bg-background dark:text-white')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
@@ -88,8 +90,6 @@ export default async function LocaleLayout({ children, params }: Props) {
             </StickyCTAProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
-        {gaId && <GoogleAnalytics gaId={gaId} />}
-        {gtmId && <GoogleTagManager gtmId={gtmId} />}
         {fbPixelId && <FacebookPixel pixelId={fbPixelId} />}
       </body>
     </html>
