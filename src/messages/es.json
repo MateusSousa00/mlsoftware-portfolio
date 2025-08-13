@@ -415,5 +415,11 @@
   "notFound": {
     "message": "Lo sentimos, no pudimos encontrar la página que estabas buscando.",
     "goHome": "Volver a la página principal"
+  },
+  "autozappr": {
+    "metadata": {
+      "title": "AutoZappr - Programador de WhatsApp para Empresarios Ocupados",
+      "description": "Nunca pierdas una venta por retrasos en WhatsApp. AutoZappr programa tus mensajes automáticamente con protección única contra prohibiciones."
+    }
   }
 }

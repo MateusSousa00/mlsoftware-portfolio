@@ -2,12 +2,15 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { FaTimes, FaClock } from 'react-icons/fa';
+import { usePathname } from 'next/navigation';
 import { useStickyCTA } from '../../contexts/StickyCTAContext';
 
 export default function StickyCTA() {
   const [isVisible, setIsVisible] = useState(false);
   const { isMinimized, isClosed, setIsMinimized, setIsClosed } = useStickyCTA();
-  const t = useTranslations('contactCta');
+  const pathname = usePathname();
+  const isAutoZappr = pathname?.includes('/autozappr');
+  const t = useTranslations(isAutoZappr ? 'autozappr.contactCta' : 'contactCta');
 
   useEffect(() => {
     // Check if it was previously closed

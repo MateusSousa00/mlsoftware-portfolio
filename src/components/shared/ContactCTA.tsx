@@ -2,10 +2,13 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { FaClock, FaShieldAlt, FaFire } from 'react-icons/fa';
+import { usePathname } from 'next/navigation';
 import { trackWhatsAppClick } from './FacebookPixel';
 
 export default function ContactCTA() {
-  const t = useTranslations('contactCta');
+  const pathname = usePathname();
+  const isAutoZappr = pathname?.includes('/autozappr');
+  const t = useTranslations(isAutoZappr ? 'autozappr.contactCta' : 'contactCta');
   const whatsapp: string = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
   
   return (

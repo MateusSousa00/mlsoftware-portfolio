@@ -415,5 +415,11 @@
   "notFound": {
     "message": "Sorry, we couldn't find the page you were looking for.",
     "goHome": "Return to homepage"
+  },
+  "autozappr": {
+    "metadata": {
+      "title": "AutoZappr - WhatsApp Scheduler for Busy Business Owners",
+      "description": "Never lose a sale due to WhatsApp delays. AutoZappr automatically schedules your messages with unique protection against bans."
+    }
   }
 }

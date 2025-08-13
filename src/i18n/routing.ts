@@ -8,6 +8,10 @@ export const routing = defineRouting({
     '/experience': {
       pt: '/experiencia',
       es: '/experiencia'
+    },
+    '/autozappr': {
+      pt: '/autozappr',
+      es: '/autozappr'
     }
   }
 });

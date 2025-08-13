@@ -2,11 +2,11 @@
   "hero": {
     "headline": "Transforme Seu Negócio com Soluções de Software Personalizadas",
     "subheadline": "Desenvolvimento de nível empresarial que transforma suas ideias em produtos lucrativos e escaláveis. Do MVP à integração de IA.",
-    "headMetric1":"3 Vezes Mais Rápido",
+    "headMetric1": "3 Vezes Mais Rápido",
     "metric1": "Média de ganho de performance nos projetos",
-    "headMetric2":"5.000+ Usuários",
+    "headMetric2": "5.000+ Usuários",
     "metric2": "Usuários reais em aplicações implantadas",
-    "headMetric3":"4 a 8 semanas",
+    "headMetric3": "4 a 8 semanas",
     "metric3": "Prazo médio para entrega",
     "primaryCTA": "Consulta Estratégica Grátis",
     "secondaryCTA": "WhatsApp Agora",
@@ -23,8 +23,8 @@
     "interactiveHeading": "Qual é o Seu Maior Desafio?",
     "interactiveSubheading": "Clique no seu principal desafio de negócio e receba uma recomendação de solução personalizada.",
     "recommendation": "Recomendação Personalizada",
-    "recommendationHeading":"Perfeito! Nós recomendamos: ",
-    "recommendationParagraph":"Baseado no seu desafio, esse serviço será o caminho mais rápido para resolução.",
+    "recommendationHeading": "Perfeito! Nós recomendamos: ",
+    "recommendationParagraph": "Baseado no seu desafio, esse serviço será o caminho mais rápido para resolução.",
     "recommendationDetail": "Ver Detalhes do Serviço",
     "recommendationCTA": "Quero uma consulta gratuita",
     "recommendationLP": "Landing Pages e Sites",
@@ -228,7 +228,7 @@
     "sending": "Enviando...",
     "privacy": "🔒 Suas informações são 100% seguras e confidenciais",
     "responseTime": "Tempo médio de resposta: 2 horas",
-    "schedule":"📅 Agendar Reunião"
+    "schedule": "📅 Agendar Reunião"
   },
   "sidebar": {
     "impact": "Transformo conceitos em realidade com produtos escaláveis e uma experiência que você nunca vai esquecer.",
@@ -415,5 +415,258 @@
   "notFound": {
     "message": "Desculpe, não conseguimos encontrar a página que você estava procurando.",
     "goHome": "Voltar para a página inicial"
+  },
+  "autozappr": {
+    "metadata": {
+      "title": "AutoZappr - O Agendador de WhatsApp para Empresários Ocupados",
+      "description": "Nunca mais perca uma venda por atraso no WhatsApp. AutoZappr agenda suas mensagens automaticamente com proteção única contra banimento."
+    },
+    "hero": {
+      "badge": "Semana de Lançamento: 50% OFF",
+      "headline": "Nunca Mais Perca Uma Venda Por Atraso no WhatsApp",
+      "subheadline": "AutoZappr agenda suas mensagens do WhatsApp automaticamente. Perfeito para donos de negócio ocupados que não podem ficar no celular 24h.",
+      "primaryCTA": "Comece Grátis - 7 Dias",
+      "secondaryCTA": "R$48,50 no 1º Mês",
+      "trustIndicator1": "7 dias grátis",
+      "trustIndicator2": "Sem taxa de setup",
+      "trustIndicator3": "Cancele quando quiser",
+      "heroFeature1": "⚡ Setup em 5 minutos",
+      "heroFeature2": "🛡️ Proteção contra banimento",
+      "heroFeature3": "🇧🇷 Suporte em português"
+    },
+    "problems": {
+      "badge": "Você Está Perdendo Vendas?",
+      "heading": "Você Está Perdendo R$2.000+ Por Mês Com Atrasos no WhatsApp?",
+      "subheading": "A maioria dos empresários perde clientes todos os dias por não conseguir responder no WhatsApp na hora certa.",
+      "problem1": {
+        "title": "Precisa avisar todos os clientes, mas só lembra no fim do dia",
+        "description": "Anúncios, promoções ou avisos importantes chegam atrasados ou nem chegam para todo mundo."
+      },
+      "problem2": {
+        "title": "Perde tempo enviando mensagem um por um",
+        "description": "Mandar manualmente para cada cliente ou grupo consome horas que poderiam ser usadas no seu negócio."
+      },
+      "problem3": {
+        "title": "Eventos e campanhas começam sem seus clientes saberem",
+        "description": "Lançamentos, ofertas-relâmpago e novidades perdem força se não forem avisados na hora certa."
+      },
+      "problem4": {
+        "title": "Grupos ativos, mas suas mensagens chegam fora de hora",
+        "description": "Enviar no momento errado reduz engajamento e vendas — timing é tudo."
+      },
+      "conclusion": "A solução não é ficar no celular o tempo todo. É programar mensagens e disparos para grupos no momento certo.",
+      "cta": "Quero Agendar Mensagens e Vender Mais"
+    },
+    "solution": {
+      "badge": "A Solução Definitiva",
+      "heading": "AutoZappr: O Único Agendador de WhatsApp Que Protege Seus Contatos",
+      "subheading": "Enquanto outros te deixam na mão quando o WhatsApp bane sua conta, nós garantimos que você nunca perca seus clientes.",
+      "feature1": {
+        "title": "Agendamento Simples",
+        "description": "Configure em 5 minutos, não 30. Interface feita para quem tem pressa e precisa de resultados rápidos."
+      },
+      "feature2": {
+        "title": "Envio para Grupos",
+        "description": "Mensagens promocionais automáticas para dezenas de clientes ao mesmo tempo, sem perder o toque pessoal."
+      },
+      "feature3": {
+        "title": "Backup de Contatos",
+        "description": "Garantia exclusiva: se sua conta for banida, seus contatos estão seguros. Nenhum concorrente oferece isso."
+      },
+      "feature4": {
+        "title": "Mídia Suportada",
+        "description": "Imagens, vídeos, áudios - tudo no automático. Suas campanhas ficam mais ricas e envolventes."
+      },
+      "feature5": {
+        "title": "Suporte Brasileiro",
+        "description": "Atendimento em português, pagamento via Pix, horário comercial brasileiro. Somos daqui, entendemos seu negócio."
+      },
+      "cta": "Quero Proteger Meus Contatos"
+    },
+    "comparison": {
+      "badge": "Comparação Honesta",
+      "heading": "Por Que AutoZappr vs Outras Ferramentas?",
+      "subheading": "Veja a diferença entre uma ferramenta feita para empresários brasileiros vs soluções importadas complexas.",
+      "feature1": "Preço transparente",
+      "feature2": "Tempo de setup",
+      "feature3": "Proteção de contatos",
+      "feature4": "Programação de mensagens",
+      "feature5": "Foco no mercado",
+      "feature6": "Suporte",
+      "autoZappr": "AutoZappr",
+      "concorrenteA": "Concorrente A",
+      "concorrenteB": "Concorrente B",
+      "others": "Outros",
+      "autoZapprValues": {
+        "price": "R$97/mês transparente",
+        "setup": "5 min simples",
+        "protection": "Backup garantido",
+        "scheduling": "Avançado e simples",
+        "market": "Focado no Brasil",
+        "support": "WhatsApp português"
+      },
+      "concorrenteAValues": {
+        "price": "R$147-397/mês",
+        "setup": "30+ min complexo",
+        "protection": "Sem proteção",
+        "scheduling": "Complexo de configurar",
+        "market": "Internacional genérico",
+        "support": "Email demorado"
+      },
+      "concorrenteBValues": {
+        "price": "Preço oculto",
+        "setup": "Fluxos complicados",
+        "protection": "Sem backup",
+        "scheduling": "Limitado",
+        "market": "Foco em marketing",
+        "support": "Suporte limitado"
+      },
+      "othersValues": {
+        "price": "Risco de ban alto",
+        "setup": "Sem proteção",
+        "protection": "Contas perdidas",
+        "scheduling": "Básico ou inexistente",
+        "market": "Suporte ruim",
+        "support": "Sem garantias"
+      },
+      "cta": "Escolher a Opção Segura"
+    },
+    "testimonials": {
+      "badge": "Quem Já Confia",
+      "heading": "Mais de 50+ Empresários Já Confiam no AutoZappr",
+      "subheading": "Veja como outros donos de negócio transformaram suas vendas no WhatsApp com nossa solução.",
+      "testimonial1": {
+        "text": "Aumentei minhas vendas em 40% só com o agendamento de mensagens nos finais de semana. O AutoZappr literalmente trabalha enquanto eu durmo.",
+        "name": "Carlos Mendes",
+        "business": "Consultoria Contábil - São Paulo",
+        "result": "+40% vendas"
+      },
+      "testimonial2": {
+        "text": "Não perco mais nenhum cliente por delay. O AutoZappr salvou meu negócio e minha sanidade mental.",
+        "name": "Marina Oliveira",
+        "business": "Estética e Beleza - Rio de Janeiro",
+        "result": "0% perda por atraso"
+      },
+      "testimonial3": {
+        "text": "Simples demais! Em 5 minutos estava funcionando. Meus clientes nem percebem que é automático.",
+        "name": "Roberto Silva",
+        "business": "Advocacia - Minas Gerais",
+        "result": "Setup em 5 min"
+      },
+      "cta": "Quero Resultados Assim Também"
+    },
+    "calculator": {
+      "badge": "Calcule Seu Prejuízo",
+      "heading": "Calcule Quanto Você Está Perdendo",
+      "subheading": "Descubra o valor real das vendas que escapam pelos dedos por causa de atrasos no WhatsApp.",
+      "clientsPerDay": "Quantos clientes te procuram por dia no WhatsApp?",
+      "averageTicket": "Qual seu ticket médio (valor médio de venda)?",
+      "delayRate": "Quantos % você perde por demora na resposta?",
+      "calculate": "Calcular Prejuízo",
+      "result": "Você pode estar perdendo",
+      "perMonth": "por mês em vendas atrasadas",
+      "payback": "AutoZappr se paga em",
+      "days": "dias",
+      "cta": "Parar de Perder Essa Grana"
+    },
+    "pricing": {
+      "badge": "Oferta de Lançamento",
+      "heading": "Preço Honesto, Sem Pegadinhas",
+      "subheading": "Um plano simples que cabe no bolso de qualquer empresário sério sobre crescimento.",
+      "planName": "AutoZappr Pro",
+      "originalPrice": "R$97",
+      "discountedPrice": "R$48,50",
+      "period": "/mês",
+      "discount": "50% OFF primeiro mês",
+      "feature1": "✅ Agendamento ilimitado de mensagens",
+      "feature2": "✅ Envio para grupos e listas de broadcast",
+      "feature3": "✅ Backup automático de contatos",
+      "feature4": "✅ Suporte via WhatsApp em português",
+      "feature5": "✅ Garantia de 7 dias grátis",
+      "feature6": "✅ Sem taxa de setup ou instalação",
+      "feature7": "✅ Cancele quando quiser, sem multa",
+      "feature8": "✅ Aceita Pix, cartão e boleto",
+      "cta": "Começar Agora - R$48,50",
+      "guarantee": "🔒 7 dias grátis + garantia de satisfação",
+      "urgency": "⚡ Oferta limitada - apenas para os primeiros 100 clientes"
+    },
+    "faq": {
+      "badge": "Dúvidas Frequentes",
+      "heading": "Perguntas Que Todo Empresário Faz",
+      "subheading": "Respostas diretas para as principais preocupações sobre automação no WhatsApp.",
+      "question1": "Minha conta pode ser banida?",
+      "answer1": "Com AutoZappr, o risco é mínimo. Seguimos todas as políticas do WhatsApp e oferecemos backup automático dos seus contatos. Se algo acontecer (muito raro), você não perde nada.",
+      "question2": "É difícil de configurar?",
+      "answer2": "Absolutamente não. Em 5 minutos você está enviando mensagens automáticas. Nossa interface foi feita para empresários ocupados, não para técnicos em informática.",
+      "question3": "Funciona com WhatsApp Business?",
+      "answer3": "Sim! Funciona perfeitamente tanto com WhatsApp comum quanto WhatsApp Business. Você pode usar em múltiplos números se precisar.",
+      "question4": "Tem suporte em português?",
+      "answer4": "Claro! Nossa equipe é 100% brasileira. Suporte via WhatsApp no horário comercial, com resposta média em 30 minutos.",
+      "question5": "Posso cancelar quando quiser?",
+      "answer5": "Sim, sem multa e sem burocracia. Você tem 7 dias grátis para testar e pode cancelar a qualquer momento pelo próprio painel.",
+      "question6": "Como é feito o pagamento?",
+      "answer6": "Aceitamos Pix (desconto de 5%), cartão de crédito e boleto bancário. Tudo processado de forma segura no Brasil."
+    },
+    "finalCta": {
+      "badge": "Última Chance",
+      "heading": "Pare de Perder Vendas Por Atraso no WhatsApp",
+      "subheading": "Junte-se aos empresários inteligentes que automatizaram seus resultados enquanto dormem.",
+      "benefit1": "Nunca mais perca uma venda por atraso",
+      "benefit2": "Trabalhe menos, venda mais",
+      "benefit3": "Proteção total dos seus contatos",
+      "urgency": "Oferta de 50% OFF termina em breve",
+      "cta": "Quero Começar Agora - R$48,50",
+      "guarantee": "7 dias grátis + garantia de satisfação",
+      "risk": "Risco zero: teste grátis por 7 dias completos"
+    },
+    "contactCta": {
+      "urgencyBadge": "Oferta de Lançamento Limitada",
+      "heading": "Pronto Para Automatizar Suas Vendas?",
+      "paragraph": "Junte-se aos empresários que escolheram nunca mais perder uma venda por atraso no WhatsApp. Comece seu teste gratuito agora.",
+      "guarantee1": "7 dias grátis",
+      "guarantee2": "Setup em 5 minutos",
+      "guarantee3": "Cancele quando quiser",
+      "help": "Precisa de Ajuda?",
+      "whatsapp": "Fale no WhatsApp - Resposta Rápida",
+      "whatsappHover": "WhatsApp AutoZappr",
+      "email": "Começar Teste Grátis",
+      "scarcity": "⚡ Oferta de 50% OFF por tempo limitado"
+    },
+    "popup": {
+      "urgencyBadge": "Espere! Oferta Especial AutoZappr",
+      "heading": "Não perca essa oportunidade de automatizar suas vendas",
+      "paragraph1": "Teste AutoZappr GRÁTIS por 7 dias",
+      "paragraph2": "Antes de sair, experimente o único agendador de WhatsApp com backup automático de contatos. Seus concorrentes não oferecem essa proteção.",
+      "guarantee1": "7 dias de teste completamente grátis",
+      "guarantee2": "Setup em apenas 5 minutos",
+      "guarantee3": "Backup automático dos seus contatos",
+      "button": "Quero Testar AutoZappr Grátis",
+      "close": "Não, prefiro continuar perdendo vendas",
+      "scarcity": "⚡ Oferta de 50% OFF termina em breve"
+    },
+    "contactForm": {
+      "heading": "Comece Seu Teste Gratuito do AutoZappr",
+      "subheading": "Preencha o formulário abaixo e receba acesso imediato ao AutoZappr. Setup completo em menos de 5 minutos.",
+      "name": "Seu nome",
+      "email": "Seu melhor email",
+      "message": "Qual seu maior desafio com WhatsApp? (opcional)",
+      "messagePlaceholder": "Ex: Perco muitas vendas por atraso nas respostas, não consigo acompanhar todos os leads...",
+      "submit": "Começar Teste Grátis Agora",
+      "submitting": "Enviando...",
+      "successMessage": "🎉 Sucesso! Você receberá as instruções de acesso por email em até 5 minutos.",
+      "errorMessage": "Ops! Algo deu errado. Tente novamente ou entre em contato pelo WhatsApp.",
+      "nameRequired": "Nome é obrigatório",
+      "emailRequired": "Email é obrigatório",
+      "emailInvalid": "Email deve ter um formato válido",
+      "scheduleHeading": "Ou prefere uma demonstração personalizada?",
+      "scheduleButton": "Agendar Demo AutoZappr",
+      "scheduleSubtext": "Veja o AutoZappr funcionando ao vivo",
+      "todas": "Todas as funcionalidades incluídas",
+      "badge": "Teste Grátis",
+      "send": "Enviar",
+      "schedule": "Agendar",
+      "privacy": "Seus dados estão protegidos conosco",
+      "responseTime": "Resposta em até 30 minutos"
+    }
   }
 }

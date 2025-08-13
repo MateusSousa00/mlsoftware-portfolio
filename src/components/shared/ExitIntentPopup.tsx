@@ -2,11 +2,14 @@
 import { useState, useEffect } from 'react';
 import { FaTimes, FaClock, FaGift } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
-  const t = useTranslations('popup');
+  const pathname = usePathname();
+  const isAutoZappr = pathname?.includes('/autozappr');
+  const t = useTranslations(isAutoZappr ? 'autozappr.popup' : 'popup');
 
   useEffect(() => {
     let exitIntentShown = false;
