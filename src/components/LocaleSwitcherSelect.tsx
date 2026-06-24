@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { useParams } from 'next/navigation';
 import { Locale } from 'next-intl';
 import { ChangeEvent, ReactNode, useTransition } from 'react';
+import { FaChevronDown } from 'react-icons/fa6';
 import { usePathname, useRouter } from '@/i18n/navigation';
 
 type Props = {
@@ -32,17 +33,17 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }: 
   }
 
   return (
-    <label className={clsx('relative text-gray-400', isPending && 'transition-opacity [&:disabled]:opacity-30')}>
+    <label className={clsx('relative block', isPending && 'opacity-50')}>
       <p className="sr-only">{label}</p>
       <select
-        className="inline-flex appearance-none hover:cursor-pointer bg-transparent py-3 pl-2 pr-6"
+        className="inline-flex cursor-pointer appearance-none rounded-lg border border-border bg-background py-2 pl-3 pr-9 text-sm font-medium text-foreground transition-colors hover:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/50 disabled:cursor-not-allowed"
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
       >
         {children}
       </select>
-      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
+      <FaChevronDown className="pointer-events-none absolute right-3 top-1/2 h-3 w-3 -translate-y-1/2 text-muted-foreground" />
     </label>
   );
 }

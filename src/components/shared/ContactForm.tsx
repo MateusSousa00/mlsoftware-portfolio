@@ -2,8 +2,7 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { trackFormSubmission, trackScheduleClick } from './FacebookPixel';
-import Link from 'next/link';
+import { trackFormSubmission } from './FacebookPixel';
 
 interface ContactApiResponse {
   success?: boolean;
@@ -16,8 +15,6 @@ export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
   const [isLoading, setIsLoading] = useState(false);
-  
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDIFY_URL || '#'; // Fallback to show button
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -27,7 +24,7 @@ export default function ContactForm() {
   const validateForm = () => {
     const newErrors: typeof errors = {};
 
-    if (form.name.trim().length < 3) {
+    if (form.name.trim().length < 2) {
       newErrors.name = t('nameError');
     }
 
@@ -46,10 +43,9 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!validateForm()) return;
 
-    setIsLoading(true); // Start loading
+    setIsLoading(true);
 
     try {
       const res = await fetch('/api/contact', {
@@ -77,24 +73,27 @@ export default function ContactForm() {
       console.error(err);
       toast.error(t('networkErrorMessage'));
     } finally {
-      setIsLoading(false); // End loading no matter what
+      setIsLoading(false);
     }
   };
 
+  const fieldClass = (hasError: boolean) =>
+    `w-full rounded-lg border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 ${
+      hasError ? 'border-destructive focus:ring-destructive/40' : 'border-border'
+    }`;
+
   return (
-    <section id="contact" className="max-w-3xl mx-auto py-24 px-6">
-      <div className="text-center mb-8">
-        <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
-          {t('badge')}
-        </div>
-        <h2 className="text-3xl font-bold mb-4">{t('heading')}</h2>
-        <p className="text-neutral-600 dark:text-neutral-400 mb-6">
-          {t('subheading')}
-        </p>
+    <section id="contact" className="mx-auto max-w-xl px-6 py-16 md:py-24">
+      <div className="mb-8">
+        <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
+          {t('heading')}
+        </h2>
+        <p className="mt-3 text-muted-foreground">{t('subheading')}</p>
       </div>
-      <form onSubmit={handleSubmit} method="POST" className="space-y-6 bg-white dark:bg-neutral-800 p-8 rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-700">
+
+      <form onSubmit={handleSubmit} method="POST" className="space-y-5">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-1">
+          <label htmlFor="name" className="mb-1.5 block text-sm font-medium">
             {t('name')}
           </label>
           <input
@@ -103,17 +102,14 @@ export default function ContactForm() {
             id="name"
             value={form.name}
             onChange={handleChange}
-            placeholder={t('name')}
             required
-            className={`w-full border px-4 py-2 rounded-md bg-white focus:outline-none focus:ring-2 
-              dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700 ${
-                errors.name ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500 text-gray-300'
-              }`}
+            className={fieldClass(!!errors.name)}
           />
-          {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+          {errors.name && <p className="mt-1 text-sm text-destructive">{errors.name}</p>}
         </div>
+
         <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-1">
+          <label htmlFor="email" className="mb-1.5 block text-sm font-medium">
             {t('email')}
           </label>
           <input
@@ -122,77 +118,49 @@ export default function ContactForm() {
             id="email"
             value={form.email}
             onChange={handleChange}
-            placeholder={t('email')}
             required
-            className={`w-full border px-4 py-2 rounded-md bg-white focus:outline-none focus:ring-2 
-              dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700 ${
-                errors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500 text-gray-300'
-              }`}
+            className={fieldClass(!!errors.email)}
           />
-          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+          {errors.email && <p className="mt-1 text-sm text-destructive">{errors.email}</p>}
         </div>
+
         <div>
-          <label htmlFor="message" className="block text-sm font-medium mb-1">
+          <label htmlFor="message" className="mb-1.5 block text-sm font-medium">
             {t('message')}
           </label>
           <textarea
             name="message"
+            id="message"
+            rows={5}
             value={form.message}
             onChange={handleChange}
-            placeholder={t('message')}
-            className={`w-full border px-4 py-2 rounded-md bg-white focus:outline-none focus:ring-2 
-              dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700 ${
-                errors.message
-                  ? 'border-red-500 focus:ring-red-500'
-                  : 'border-gray-300 focus:ring-blue-500 text-gray-300'
-              }`}
+            className={fieldClass(!!errors.message)}
           />
-          {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+          {errors.message && <p className="mt-1 text-sm text-destructive">{errors.message}</p>}
         </div>
-        {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button
-            type="submit"
-            disabled={isLoading}
-            className="flex-1 px-8 py-4 rounded-lg bg-primary hover:cursor-pointer text-white hover:bg-primary/90 transition disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 font-semibold text-lg shadow-lg transform hover:scale-105"
-          >
-            {isLoading ? (
-              <>
-                <svg
-                  className="animate-spin h-5 w-5 text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
-                </svg>
-                {t('sending')}
-              </>
-            ) : (
-              t('send')
-            )}
-          </button>
-          
-          <Link
-            href={calendlyUrl === '#' ? '#contact' : calendlyUrl}
-            target={calendlyUrl === '#' ? '_self' : '_blank'}
-            rel={calendlyUrl === '#' ? '' : 'noopener noreferrer'}
-            className="flex-1 px-8 py-4 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition flex items-center justify-center gap-2 font-semibold text-lg shadow-lg transform hover:scale-105"
-            onClick={calendlyUrl === '#' ? (e) => {
-              e.preventDefault();
-              alert('Please set NEXT_PUBLIC_CALENDIFY_URL environment variable');
-            } : () => trackScheduleClick()}
-          >
-            {t('schedule')}
-          </Link>
-        </div>
-        
-        {/* Trust Indicators */}
-        <div className="text-center pt-4 border-t border-neutral-200 dark:border-neutral-700">
-          <p className="text-sm text-neutral-500 mb-2">{t('privacy')}</p>
-          <p className="text-xs text-neutral-400">{t('responseTime')}</p>
-        </div>
+
+        <button
+          type="submit"
+          disabled={isLoading}
+          className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        >
+          {isLoading ? (
+            <>
+              <svg
+                className="h-5 w-5 animate-spin text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+              </svg>
+              {t('sending')}
+            </>
+          ) : (
+            t('send')
+          )}
+        </button>
       </form>
     </section>
   );

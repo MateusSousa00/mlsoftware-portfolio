@@ -1,70 +1,108 @@
 {
   "hero": {
-    "headline": "Transforma Tu Negocio con Soluciones de Software Personalizadas",
-    "subheadline": "Desarrollo de nivel empresarial que transforma tus ideas en productos rentables y escalables. Desde MVP hasta integración de IA.",
-    "headMetric1":"3 Veces Mas Rápido",
-    "metric1": "Mejoras promedio de rendimiento en proyectos",
-    "headMetric2":"5.000+ Usuarios",
-    "metric2": "Usuarios soportados por aplicaciones que desarrollé",
-    "headMetric3":"4 a 8 semanas",
-    "metric3": "Semanas de cronograma típico del proyecto",
-    "primaryCTA": "Consulta Estratégica Gratuita",
-    "secondaryCTA": "WhatsApp Ahora",
-    "trustIndicator1": "Consulta gratuita",
-    "trustIndicator2": "Garantía de 30 días",
-    "trustIndicator3": "Solo 3 proyectos/mes",
-    "parOne": "Me especializo en transformar ideas de negocio en soluciones de software escalables y rentables. Con experiencia en desarrollo full-stack, integración de IA y arquitectura de sistemas, ayudo a empresas a lograr un crecimiento rápido a través de la tecnología.",
-    "parTwo": "Mis clientes han visto mejoras de rendimiento de 3x, soportado miles de usuarios y crecido exitosamente sus negocios con software confiable. Hablemos sobre cómo el desarrollo personalizado puede acelerar tu crecimiento?"
+    "name": "Mateus Lima",
+    "role": "Ingeniero de Software Senior · São Paulo",
+    "headline": "Construyo el producto que tu startup necesita para avanzar rápido.",
+    "subheadline": "Aplicaciones web a medida, MVPs e integraciones de IA — hechos por un ingeniero senior con experiencia real en producción. Con base en São Paulo.",
+    "primaryCTA": "Agendar una llamada",
+    "secondaryCTA": "Escríbeme por WhatsApp"
+  },
+  "whoFor": {
+    "label": "Para quién es esto",
+    "text": "Si eres un founder en etapa temprana con un producto real para construir — no solo una idea — y quieres un ingeniero senior que se haga cargo de la entrega desde la arquitectura hasta el lanzamiento, hablemos."
+  },
+  "services": {
+    "heading": "Lo que construyo",
+    "web": {
+      "title": "Aplicaciones web & MVPs",
+      "description": "De la arquitectura al lanzamiento. TypeScript, Node.js, Bun, Next.js, PostgreSQL. Entrega típica en 4–8 semanas."
+    },
+    "ai": {
+      "title": "Integración de IA",
+      "description": "Agrega inteligencia a tu producto con la Claude API, OpenAI o pipelines a medida. Procesamiento de documentos, automatización y flujos inteligentes."
+    },
+    "backend": {
+      "title": "Sistemas backend & APIs",
+      "description": "Integraciones de pago (PIX, BTG), WhatsApp Business API, arquitectura de APIs de terceros y rendimiento a escala."
+    }
+  },
+  "projects": {
+    "heading": "Proyectos reales",
+    "subheading": "Una selección de trabajos que llevé a producción.",
+    "linkLabel": "Visitar",
+    "items": {
+      "engrenna": {
+        "name": "Engrenna",
+        "tag": "Experiencia en producción",
+        "description": "Pipeline de pagos PIX, integración con la WhatsApp Business API (HSM) y validación de documentos con IA. Co-liderando la migración de .NET a Bun, Elysia.js y Next.js.",
+        "note": "Empleador actual — presentado como experiencia en producción, no como proyecto de cliente."
+      },
+      "kieh": {
+        "name": "Kieh 540 Team",
+        "tag": "Cliente freelance",
+        "description": "Rediseño del sitio editorial y tienda en Nuvemshop para un equipo competitivo de Taekwondo."
+      },
+      "confiare": {
+        "name": "Confiare Serviços",
+        "tag": "Cliente freelance",
+        "description": "Rediseño completo del frontend hecho con Next.js y Tailwind.",
+        "link": "https://confiareservicos.com.br",
+        "linkLabel": "confiareservicos.com.br"
+      },
+      "sentiment": {
+        "name": "Sentiment Analysis API",
+        "tag": "Código abierto",
+        "description": "API REST de IA hecha con FastAPI, Hugging Face y Docker.",
+        "link": "https://github.com/MateusSousa00/sentiment-analysis",
+        "linkLabel": "github.com/MateusSousa00/sentiment-analysis"
+      }
+    }
+  },
+  "process": {
+    "heading": "Cómo funciona",
+    "consultation": {
+      "title": "Llamada inicial",
+      "description": "30 min, sin compromiso. Mapeamos tu proyecto y te digo con honestidad si soy la persona indicada."
+    },
+    "proposal": {
+      "title": "Propuesta",
+      "description": "Alcance, plazo y precio. Claros y por escrito."
+    },
+    "development": {
+      "title": "Desarrollo",
+      "description": "Actualizaciones semanales, acceso directo a mí, sin intermediarios."
+    },
+    "launch": {
+      "title": "Lanzamiento + entrega",
+      "description": "Desplegado, documentado, tuyo."
+    }
+  },
+  "contactCta": {
+    "heading": "Un proyecto a la vez. Ahora mismo, tengo disponibilidad.",
+    "paragraph": "Cuéntame qué estás construyendo.",
+    "book": "Agendar una llamada",
+    "whatsapp": "Escríbeme por WhatsApp"
+  },
+  "contactForm": {
+    "heading": "Cuéntame sobre tu proyecto",
+    "subheading": "Yo mismo leo cada mensaje y respondo personalmente.",
+    "name": "Nombre",
+    "nameError": "Por favor, ingresa tu nombre.",
+    "email": "Correo electrónico",
+    "emailError": "Por favor, ingresa un correo válido.",
+    "message": "Cuéntame sobre tu proyecto",
+    "messageError": "Agrega algunos detalles sobre tu proyecto (mínimo 30 caracteres).",
+    "successMessage": "Mensaje enviado. Te responderé pronto.",
+    "errorMessage": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+    "networkErrorMessage": "Error de red. Inténtalo más tarde.",
+    "send": "Enviar mensaje",
+    "sending": "Enviando..."
+  },
+  "header": {
+    "cta": "Agendar llamada"
   },
   "articles": {
     "heading": "Últimos artículos en Dev.to"
-  },
-  "contactCta": {
-    "urgencyBadge": "Plazas Limitadas Disponibles",
-    "heading": "¿Listo Para Impulsionar Tu Negocio?",
-    "paragraph": "Únete a empresas exitosas que eligieron soluciones personalizadas en lugar de herramientas genéricas. Reserva tu consulta estratégica gratuita ahora.",
-    "guarantee1": "Consulta gratuita",
-    "guarantee2": "Garantía de 30 días",
-    "guarantee3": "Solo 3 proyectos/mes",
-    "help": "¿Necesitar ayuda?",
-    "whatsapp": "¡Chatea conmigo en WhatsApp para obtener asistencia instantánea!",
-    "whatsappHover": "WhatsApp (Respuesta Instantánea)",
-    "email": "Reservar Ahora",
-    "scarcity": "⚡ Solo 3 plazas disponibles este mes"
-  },
-  "popup": {
-    "urgencyBadge": "¡Esperar! Oferta especial",
-    "heading": "No te vayas sin solicitar tu consulta gratuita",
-    "paragraph1": "Obtenga su sesión de estrategia gratuita",
-    "paragraph2": "Antes de continuar, analicemos cómo podemos triplicar el crecimiento de su negocio con soluciones de software personalizadas.",
-    "guarantee1": "Consulta estratégica gratuita de 30 minutos",
-    "guarantee2": "Itinerario personalizado para su negocio",
-    "guarantee3": "No se requiere compromiso",
-    "button": "Reclama mi sesión gratuita ahora",
-    "close": "No gracias, pasaré esta vez.",
-    "scarcity": "⚡ Solo quedan 2 lugares este mes"
-  },
-  "header": {
-    "cta": "Comenzar"
-  },
-  "contactForm": {
-    "badge": "Sesión Estratégica Gratuita",
-    "heading": "Hablemos de Tu Proyecto",
-    "subheading": "Cuéntame sobre tus objetivos y te mostraré exactamente cómo podemos lograrlos juntos.",
-    "name": "Nombre",
-    "nameError": "El nombre debe tener al menos 3 letras.",
-    "email": "Correo electrónico",
-    "emailError": "Correo electrónico no válido",
-    "message": "Detalles del Proyecto",
-    "messageError": "Por favor, describe tu proyecto (mínimo 30 caracteres).",
-    "successMessage": "¡Mensaje enviado! Responderé en 2 horas.",
-    "errorMessage": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
-    "networkErrorMessage": "Error de red. Inténtalo más tarde.",
-    "send": "Obtener Mi Sesión Estratégica Gratuita",
-    "sending": "Enviando...",
-    "privacy": "🔒 Tu información es 100% segura y confidencial",
-    "responseTime": "Tiempo promedio de respuesta: 2 horas",
-    "schedule":"📅 Programar reunión"
   },
   "sidebar": {
     "impact": "Transformo conceptos en realidad con productos escalables y una experiencia que nunca olvidarás.",
@@ -113,7 +151,7 @@
         "startDate": "Ene 2020",
         "endDate": "Dic 2020",
         "link": "https://www.liqi.com.br/",
-        "description": "En Liqi, automatizé la emisión de facturas y dupliqué la adquisición de usuarios con una campaña de referidos. También desarrollé APIs y optimicé el rendimiento de bases de datos.",
+        "description": "En Liqi, automaticé la emisión de facturas y dupliqué la adquisición de usuarios con una campaña de referidos. También desarrollé APIs y optimicé el rendimiento de bases de datos.",
         "stack": {
           "0": "Node.js",
           "1": "TypeScript",
@@ -173,7 +211,7 @@
           "5": "Desarrollé y mantuve servicios backend y APIs para aplicaciones de alto tráfico.",
           "6": "Implementé pipelines de CI/CD, reduciendo los tiempos de despliegue y aumentando la eficiencia de entrega.",
           "7": "Participé en la refactorización de código heredado, mejorando el rendimiento y reduciendo costos operativos.",
-          "8": "Optimizé consultas de bases de datos y procesos backend para mayor escalabilidad y menor latencia."
+          "8": "Optimicé consultas de bases de datos y procesos backend para mayor escalabilidad y menor latencia."
         },
         "stack": {
           "0": "Next.js",
@@ -240,177 +278,13 @@
       }
     }
   },
-  "problem": {
-    "badge": "Desafíos Comunes de Negocios",
-    "heading": "¿Tu Negocio Está Atrapado en Estas Trampas de Crecimiento?",
-    "subheading": "La mayoría de las empresas luchan con los mismos problemas críticos que impiden un crecimiento efectivo.",
-    "interactiveHeading": "¿Cuál es Tu Mayor Desafío?",
-    "interactiveSubheading": "Haz clic en tu principal desafío comercial y obtén una recomendación de solución personalizada.",
-    "recommendation": "Recomendación personalizada",
-    "recommendationHeading":"¡Perfecto! Recomendamos: ",
-    "recommendationParagraph":"Según su desafío, este servicio le brindará el camino más rápido hacia la resolución.",
-    "recommendationDetail": "Ver detalles del servicio",
-    "recommendationCTA": "Obtenga una consulta gratuita",
-    "recommendationLP": "Landing Pages y sitios web",
-    "recommendationWeb": "Aplicaciones Web",
-    "recommendationPerformance": "Optimización del rendimiento",
-    "problem1": {
-      "title": "Ciclos de Desarrollo Lentos",
-      "description": "Tu equipo está abrumado, las funcionalidades tardan meses en construirse, y los competidores se mueven más rápido. Estás perdiendo oportunidades de mercado esperando funcionalidades básicas."
-    },
-    "problem2": {
-      "title": "Costos Técnicos Crecientes",
-      "description": "Cada cambio requiere consultores costosos, los costos de mantenimiento siguen creciendo, y tu deuda técnica se está convirtiendo en una carga financiera difícil de escapar."
-    },
-    "problem3": {
-      "title": "Cuellos de Botella de Rendimiento",
-      "description": "Tu sistema se bloquea bajo carga, los usuarios están frustrados con tiempos de respuesta lentos, y tienes miedo de escalar porque tu infraestructura no puede manejar el crecimiento."
-    },
-    "selected": "Seleccionado",
-    "conclusion": "Estos problemas no se resuelven solos. Se acumulan y se vuelven más caros de arreglar con el tiempo.",
-    "cta": "Arreglemos Esto Juntos"
-  },
-  "services": {
-    "heading": "Elige Tu Camino de Crecimiento",
-    "subheading": "Cuatro enfoques probados diseñados para escalar tu negocio en cada etapa - desde landing pages hasta aplicaciones completas",
-    "popular": "Más Popular",
-    "scheduleCta": "Reservar Consulta Gratuita",
-    "customPricing": "Precios personalizados según tus necesidades",
-    "bottomText": "¿Necesitas algo diferente? Creemos una solución personalizada para tus necesidades específicas.",
-    "customSolutionCta": "Discutir Solución Personalizada",
-    "landing": {
-      "title": "📄 Landing Pages & Sitios Web",
-      "description": "Landing pages de alta conversión y sitios web institucionales que impulsan el crecimiento del negocio y construyen confianza.",
-      "timeline": "1-3 semanas de entrega",
-      "feature1": "Diseño optimizado para conversión",
-      "feature2": "Responsivo y carga rápida",
-      "feature3": "Estructura amigable con SEO",
-      "feature4": "Integración con analytics"
-    },
-    "mvp": {
-      "title": "🚀 Aplicaciones Web",
-      "description": "Aplicaciones web personalizadas que resuelven problemas específicos del negocio con arquitectura escalable.",
-      "timeline": "4-8 semanas de entrega",
-      "feature1": "Desarrollo de funcionalidades personalizadas",
-      "feature2": "Autenticación de usuario y seguridad",
-      "feature3": "Diseño e integración de base de datos",
-      "feature4": "Pruebas y documentación"
-    },
-    "optimization": {
-      "title": "⚡ Optimización de Rendimiento",
-      "description": "Multiplica por 10x el rendimiento de tu sistema y maneja escala masiva con optimización experta.",
-      "timeline": "2-4 semanas de entrega",
-      "feature1": "Optimización de base de datos y consultas",
-      "feature2": "Mejoras de rendimiento de API",
-      "feature3": "Pruebas de carga y estrategias de escalado",
-      "feature4": "Configuración de monitoreo de rendimiento"
-    },
-    "ai": {
-      "title": "🤖 Integración de IA",
-      "description": "Automatiza flujos de trabajo y mejora la experiencia del usuario con soluciones de IA personalizadas.",
-      "timeline": "45-60 días de entrega",
-      "feature1": "Desarrollo de modelo de IA personalizado",
-      "feature2": "Integración de API y automatización",
-      "feature3": "Procesamiento de lenguaje natural",
-      "feature4": "Entrenamiento y documentación"
-    },
-    "ecommerce": {
-      "title": "🛒 Soluciones E-commerce",
-      "description": "Tiendas online completas optimizadas para ventas, experiencia del usuario y crecimiento del negocio.",
-      "timeline": "6-10 semanas de entrega",
-      "feature1": "Catálogo de productos y sistema de checkout",
-      "feature2": "Integración con pasarela de pago",
-      "feature3": "Gestión de inventario",
-      "feature4": "Analytics e informes"
-    }
-  },
-  "socialProof": {
-    "statsHeading": "Resultados Probados Que Hablan Por Sí Mismos",
-    "stat1": "Proyectos Exitosos Entregados",
-    "stat2": "Usuarios Soportados en Proyectos",
-    "stat3": "Mejora Promedio de Rendimiento",
-    "stat4": "Calificación Promedio del Cliente",
-    "resultsHeading": "Resultados Reales Que He Entregado",
-    "clientTestimony": {
-      "heading": "What Clients Say",
-      "client1": {
-        "name": "Sarah Johnson",
-        "company": "TechStart Inc.",
-        "role": "CEO",
-        "text": "Mateus entregó nuestra plataforma de comercio electrónico antes de lo previsto. Las mejoras de rendimiento fueron notables: ¡nuestra tasa de conversión aumentó en un 150%!",
-        "rating": 5
-      },
-      "client2": {
-        "name": "Lucas Oliveira",
-        "company": "TechSpire",
-        "role": "CTO",
-        "text": "El proyecto de integración de IA superó nuestras expectativas. La productividad de nuestro equipo se triplicó y los puntajes de satisfacción del cliente alcanzaron un máximo histórico.",
-        "rating": 5
-      },
-      "client3": {
-        "name": "Carlos Davis",
-        "company": "StartupLab",
-        "role": "Founder",
-        "text": "Trabajar con M&L Software fue un punto de inflexión. Entendieron nuestra visión y entregaron un producto que se adaptaba perfectamente a nuestras necesidades.",
-        "rating": 5
-      }
-    },
-    "result1": {
-      "metric": "150%",
-      "title": "Aumento de Conversión en Landing Page",
-      "description": "Rediseñé una landing page de e-commerce que aumentó las conversiones del 2,1% al 5,2%, impactando directamente los ingresos.",
-      "context": "Cliente de E-commerce"
-    },
-    "result2": {
-      "metric": "98.5%",
-      "title": "Uptime Promedio del Sistema",
-      "description": "Construí aplicaciones web confiables con manejo robusto de errores y sistemas de monitoreo.",
-      "context": "15+ Proyectos"
-    },
-    "result3": {
-      "metric": "3-8 Semanas",
-      "title": "Cronograma Típico del Proyecto",
-      "description": "Entregué soluciones de calidad desde landing pages hasta aplicaciones web con cronogramas claros y actualizaciones regulares.",
-      "context": "Varios Tipos de Proyecto"
-    },
-    "ctaText": "¿Listo para ver resultados similares para tu negocio?",
-    "ctaButton": "Reservar Tu Consulta Gratuita"
-  },
-  "process": {
-    "heading": "Proceso Simple, Resultados Poderosos",
-    "subheading": "Desde la primera llamada hasta el lanzamiento exitoso - aquí está exactamente cómo trabajaremos juntos",
-    "consultation": {
-      "title": "Consulta Estratégica Gratuita",
-      "description": "Discutimos tus objetivos, desafíos y creamos una hoja de ruta para el éxito.",
-      "duration": "30 minutos"
-    },
-    "proposal": {
-      "title": "Propuesta Personalizada",
-      "description": "Plan detallado del proyecto con cronograma, entregables y precios transparentes.",
-      "duration": "2-3 días"
-    },
-    "development": {
-      "title": "Desarrollo Ágil",
-      "description": "Actualizaciones regulares, demos semanales y comunicación constante durante todo el proceso.",
-      "duration": "2-8 semanas"
-    },
-    "launch": {
-      "title": "Lanzamiento y Soporte",
-      "description": "Despliegue suave con 30 días de soporte para asegurar que todo funcione perfectamente.",
-      "duration": "Continuo"
-    },
-    "imagesHeading": "Entre Bastidores",
-    "ctaHeading": "¿Listo Para Comenzar Tu Proyecto?",
-    "ctaText": "Únete a 15+ negocios exitosos que eligieron desarrollo personalizado sobre soluciones genéricas.",
-    "ctaButton": "Reservar Consulta Estratégica Gratuita"
-  },
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 Inglés} pt {🇧🇷 Portugués} other {Unknown}}"
   },
   "metadata": {
-    "title": "M&L Software",
-    "description": "Llevamos conceptos al mundo real, productos altamente escalables y una experiencia que nunca olvidará."
+    "title": "M&L Software — Software a medida para startups",
+    "description": "Aplicaciones web a medida, MVPs e integraciones de IA hechos por un ingeniero de software senior en São Paulo. Un proyecto a la vez, entregado en 4–8 semanas."
   },
   "notFound": {
     "message": "Lo sentimos, no pudimos encontrar la página que estabas buscando.",

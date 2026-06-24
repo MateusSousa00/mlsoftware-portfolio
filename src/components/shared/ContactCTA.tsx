@@ -1,68 +1,54 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { FaClock, FaShieldAlt, FaFire } from 'react-icons/fa';
-import { trackWhatsAppClick } from './FacebookPixel';
+import { FaWhatsapp } from 'react-icons/fa';
+import { trackScheduleClick, trackWhatsAppClick } from './FacebookPixel';
+
+const CALENDLY_FALLBACK = 'https://calendly.com/mateus-lsousa00/30min';
 
 export default function ContactCTA() {
   const t = useTranslations('contactCta');
-  const whatsapp: string = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
-  
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
+  const calendly = process.env.NEXT_PUBLIC_CALENDIFY_URL || CALENDLY_FALLBACK;
+
   return (
-    <section className="mt-32 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent py-20 px-6 text-center rounded-2xl max-w-4xl mx-auto border border-primary/20">
-      {/* Urgency Indicator */}
-      <div className="inline-flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-        <FaFire className="w-4 h-4" />
-        {t('urgencyBadge')}
-      </div>
-      
-      <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-        {t('heading')}
-      </h2>
-      <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-8 max-w-2xl mx-auto">
-        {t('paragraph')}
-      </p>
+    <section className="px-6 py-16 md:py-24">
+      <div className="relative mx-auto max-w-4xl overflow-hidden rounded-2xl border border-border px-8 py-14 text-center md:px-12 md:py-16">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/15 blur-3xl"
+        />
+        <div className="relative">
+          <h2 className="mx-auto max-w-2xl font-display text-3xl font-bold tracking-tight md:text-4xl">
+            {t('heading')}
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">{t('paragraph')}</p>
 
-      {/* Value Props */}
-      <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-2xl mx-auto">
-        <div className="flex items-center justify-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
-          <FaClock className="w-4 h-4 text-primary" />
-          {t('guarantee1')}
-        </div>
-        <div className="flex items-center justify-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
-          <FaShieldAlt className="w-4 h-4 text-primary" />
-          {t('guarantee2')}
-        </div>
-        <div className="flex items-center justify-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
-          <FaFire className="w-4 h-4 text-primary" />
-          {t('guarantee3')}
+          <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+            <Link
+              href={calendly}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackScheduleClick()}
+              className="inline-flex items-center justify-center rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-primary/90"
+            >
+              {t('book')}
+            </Link>
+            {whatsapp && (
+              <Link
+                href={whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('contact-cta')}
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-7 py-3.5 text-base font-semibold text-foreground transition hover:border-primary/60 hover:text-primary"
+              >
+                <FaWhatsapp className="h-5 w-5" />
+                {t('whatsapp')}
+              </Link>
+            )}
+          </div>
         </div>
       </div>
-
-      <div className="flex justify-center gap-4 flex-wrap mb-8">
-        {whatsapp && (
-          <Link
-            href={whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 rounded-lg bg-green-600 text-white hover:bg-green-700 transition-all transform hover:scale-105 font-semibold shadow-lg"
-            onClick={() => trackWhatsAppClick('contact-cta')}
-          >
-            {t('whatsapp')}
-          </Link>
-        )}
-        <a
-          href="#contact"
-          className="px-8 py-4 rounded-lg bg-primary text-white hover:bg-primary/90 transition-all transform hover:scale-105 font-semibold shadow-lg"
-        >
-          {t('email')}
-        </a>
-      </div>
-
-      {/* Scarcity */}
-      <p className="text-sm text-neutral-500 italic">
-        {t('scarcity')}
-      </p>
     </section>
   );
 }

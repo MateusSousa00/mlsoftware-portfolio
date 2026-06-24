@@ -1,24 +1,17 @@
-import About from '@/components/home/About';
-import Problem from '@/components/home/Problem';
+import Hero from '@/components/home/Hero';
+import WhoFor from '@/components/home/WhoFor';
 import Services from '@/components/home/Services';
+import Projects from '@/components/home/Projects';
 import Process from '@/components/home/Process';
-import SocialProof from '@/components/home/SocialProof';
-import { Locale } from 'next-intl';
-import { use } from 'react';
 
-type Props = {
-  params: Promise<{ locale: Locale }>;
-};
-
-export default function Home({ params }: Props) {
-  const { } = use(params);
+export default function Home() {
   return (
     <>
-      <About />
-      <Problem />
+      <Hero />
+      <WhoFor />
       <Services />
+      <Projects />
       <Process />
-      <SocialProof />
     </>
   );
 }

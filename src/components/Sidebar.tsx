@@ -17,7 +17,9 @@ export function Sidebar() {
   const pathName = usePathname();
   const t = useTranslations('sidebar');
 
+  // Mount gate to avoid theme hydration mismatch with next-themes.
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
   return (

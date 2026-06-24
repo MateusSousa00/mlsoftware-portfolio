@@ -1,234 +1,108 @@
 {
   "hero": {
-    "headline": "Transform Your Business with Custom Software Solutions",
-    "subheadline": "Enterprise-grade development that transforms your ideas into profitable, scalable products. From MVP to AI integration.",
-    "headMetric1":"3 Times Faster",
-    "metric1": "Average performance boost across projects",
-    "headMetric2":"5,000+ Active Users",
-    "metric2": "Real-world usage in deployed applications",
-    "headMetric3":"4 to 8 Weeks to Launch",
-    "metric3": "Typical delivery timeline from start to launch",
-    "primaryCTA": "Get Free Strategy Call",
-    "secondaryCTA": "WhatsApp Now",
-    "trustIndicator1": "Free consultation",
-    "trustIndicator2": "30-day guarantee",
-    "trustIndicator3": "Only 3 projects/month",
-    "parOne": "I specialize in transforming business ideas into scalable, profitable software solutions. With expertise in full-stack development, AI integration, and system architecture, I help companies achieve rapid growth through technology.",
-    "parTwo": "My clients have seen 3x performance improvements, supported thousands of users, and successfully grown their businesses with reliable software. Let's discuss how custom development can accelerate your growth?"
+    "name": "Mateus Lima",
+    "role": "Senior Software Engineer · São Paulo",
+    "headline": "I build the product your startup needs to move fast.",
+    "subheadline": "Custom web apps, MVPs, and AI integrations — built by a senior engineer with real production experience. Based in São Paulo.",
+    "primaryCTA": "Book a free call",
+    "secondaryCTA": "WhatsApp me"
   },
-  "problem": {
-    "badge": "Common Business Challenges",
-    "heading": "Is Your Business Stuck in These Growth Traps?",
-    "subheading": "Most businesses struggle with the same critical issues that prevent them from scaling effectively.",
-    "interactiveHeading": "What's Your Biggest Challenge?",
-    "interactiveSubheading": "Click on your main business challenge and get a personalized solution recommendation.",
-    "recommendation": "Personalized Recommendation",
-    "recommendationHeading":"Perfect! We recommend: ",
-    "recommendationParagraph":"Based on your challenge, this service will provide the fastest path to resolution.",
-    "recommendationDetail": "View Service Details",
-    "recommendationCTA": "Get Free Consultation",
-    "recommendationLP": "Landing Pages and Websites",
-    "recommendationWeb": "Web Applications",
-    "recommendationPerformance": "Performance Optimization",
-    "problem1": {
-      "title": "Slow Development Cycles",
-      "description": "Your team is overwhelmed, features take months to build, and competitors are moving faster. You're losing market opportunities while waiting for basic functionality."
-    },
-    "problem2": {
-      "title": "Escalating Technical Costs",
-      "description": "Every change requires expensive consultants, maintenance costs keep growing, and your technical debt is becoming a financial burden that's hard to escape."
-    },
-    "problem3": {
-      "title": "Performance Bottlenecks",
-      "description": "Your system crashes under load, users are frustrated with slow response times, and you're afraid to scale because your infrastructure can't handle the growth."
-    },
-    "selected": "Selected",
-    "conclusion": "These problems don't solve themselves. They compound and get more expensive to fix over time.",
-    "cta": "Let's Fix This Together"
+  "whoFor": {
+    "label": "Who this is for",
+    "text": "If you're an early-stage founder with a real product to build — not just an idea — and you want a senior engineer who will own the delivery from architecture to launch, let's talk."
   },
   "services": {
-    "heading": "Choose Your Growth Path",
-    "subheading": "Four proven approaches designed to scale your business at every stage - from landing pages to full applications",
-    "popular": "Most Popular",
-    "scheduleCta": "Schedule Free Consultation",
-    "customPricing": "Custom pricing based on your needs",
-    "bottomText": "Need something different? Let's create a custom solution for your specific needs.",
-    "customSolutionCta": "Discuss Custom Solution",
-    "landing": {
-      "title": "📄 Landing Pages & Websites",
-      "description": "High-converting landing pages and institutional websites that drive business growth and build trust.",
-      "timeline": "1-3 weeks delivery",
-      "feature1": "Conversion-optimized design",
-      "feature2": "Mobile-responsive & fast loading",
-      "feature3": "SEO-friendly structure",
-      "feature4": "Analytics integration"
-    },
-    "mvp": {
-      "title": "🚀 Web Applications",
-      "description": "Custom web applications that solve specific business problems with scalable architecture.",
-      "timeline": "4-8 weeks delivery",
-      "feature1": "Custom functionality development",
-      "feature2": "User authentication & security",
-      "feature3": "Database design & integration",
-      "feature4": "Testing & documentation"
-    },
-    "optimization": {
-      "title": "⚡ Performance Optimization",
-      "description": "Speed up existing systems and improve user experience with expert optimization.",
-      "timeline": "2-4 weeks delivery",
-      "feature1": "Database & query optimization",
-      "feature2": "API performance improvements",
-      "feature3": "Load testing & scaling strategies",
-      "feature4": "Performance monitoring setup"
+    "heading": "What I build",
+    "web": {
+      "title": "Web applications & MVPs",
+      "description": "From architecture to launch. TypeScript, Node.js, Bun, Next.js, PostgreSQL. 4–8 weeks typical delivery."
     },
     "ai": {
-      "title": "🤖 AI Integration",
-      "description": "Automate workflows and enhance user experience with custom AI solutions.",
-      "timeline": "45-60 days delivery",
-      "feature1": "Custom AI model development",
-      "feature2": "API integration & automation",
-      "feature3": "Natural language processing",
-      "feature4": "Training & documentation"
+      "title": "AI integration",
+      "description": "Add intelligence to your product using the Claude API, OpenAI, or custom pipelines. Document processing, automation, intelligent workflows."
     },
-    "ecommerce": {
-      "title": "🛒 E-commerce Solutions",
-      "description": "Complete online stores optimized for sales, user experience, and business growth.",
-      "timeline": "6-10 weeks delivery",
-      "feature1": "Product catalog & checkout system",
-      "feature2": "Payment gateway integration",
-      "feature3": "Inventory management",
-      "feature4": "Analytics & reporting"
+    "backend": {
+      "title": "Backend systems & APIs",
+      "description": "Payment integrations (PIX, BTG), WhatsApp Business API, third-party API architecture, performance at scale."
     }
   },
-  "socialProof": {
-    "statsHeading": "Proven Results That Speak for Themselves",
-    "stat1": "Successful Projects Delivered",
-    "stat2": "Users Supported Across Projects",
-    "stat3": "Average Performance Improvement",
-    "stat4": "Average Client Rating",
-    "resultsHeading": "Real Results I've Delivered",
-    "clientTestimony": {
-      "heading": "What Clients Say",
-      "client1": {
-        "name": "Sarah Johnson",
-        "company": "TechStart Inc.",
-        "role": "CEO",
-        "text": "Mateus delivered our e-commerce platform ahead of schedule. The performance improvements were remarkable - our conversion rate increased by 150%!",
-        "rating": 5
+  "projects": {
+    "heading": "Real projects",
+    "subheading": "A selection of work I've shipped to production.",
+    "linkLabel": "Visit",
+    "items": {
+      "engrenna": {
+        "name": "Engrenna",
+        "tag": "Production experience",
+        "description": "PIX payment pipeline, WhatsApp Business API (HSM) integration, and AI-powered document validation. Co-leading an ongoing migration from .NET to Bun, Elysia.js, and Next.js.",
+        "note": "Current employer — shown as production experience, not a client project."
       },
-      "client2": {
-        "name": "Lucas Oliveira",
-        "company": "TechSpire",
-        "role": "CTO",
-        "text": "The AI integration project exceeded our expectations. Our team productivity increased by 3x and customer satisfaction scores hit an all-time high.",
-        "rating": 5
+      "kieh": {
+        "name": "Kieh 540 Team",
+        "tag": "Freelance client",
+        "description": "Editorial site redesign and a Nuvemshop store for a competitive Taekwondo team."
       },
-      "client3": {
-        "name": "Carlos Davis",
-        "company": "StartupLab",
-        "role": "Founder",
-        "text": "Working with M&L Software was a game-changer. They understood our vision and delivered a product that perfectly matched our needs.",
-        "rating": 5
+      "confiare": {
+        "name": "Confiare Serviços",
+        "tag": "Freelance client",
+        "description": "Full frontend redesign built with Next.js and Tailwind.",
+        "link": "https://confiareservicos.com.br",
+        "linkLabel": "confiareservicos.com.br"
+      },
+      "sentiment": {
+        "name": "Sentiment Analysis API",
+        "tag": "Open source",
+        "description": "AI REST API built with FastAPI, Hugging Face, and Docker.",
+        "link": "https://github.com/MateusSousa00/sentiment-analysis",
+        "linkLabel": "github.com/MateusSousa00/sentiment-analysis"
       }
-    },
-    "result1": {
-      "metric": "150%",
-      "title": "Landing Page Conversion Increase",
-      "description": "Redesigned an e-commerce landing page that increased conversions from 2.1% to 5.2%, directly impacting revenue.",
-      "context": "E-commerce Client"
-    },
-    "result2": {
-      "metric": "98.5%",
-      "title": "Average System Uptime",
-      "description": "Built reliable web applications with robust error handling and monitoring systems.",
-      "context": "15+ Projects"
-    },
-    "result3": {
-      "metric": "3-8 Weeks",
-      "title": "Typical Project Timeline",
-      "description": "Delivered quality solutions from landing pages to web applications with clear timelines and regular updates.",
-      "context": "Various Project Types"
-    },
-    "ctaText": "Ready to see similar results for your business?",
-    "ctaButton": "Schedule Your Free Consultation"
+    }
   },
   "process": {
-    "heading": "Simple Process, Powerful Results",
-    "subheading": "From first call to successful launch - here's exactly how we'll work together",
+    "heading": "How it works",
     "consultation": {
-      "title": "Free Strategy Call",
-      "description": "We discuss your goals, challenges, and create a roadmap for success.",
-      "duration": "30 minutes"
+      "title": "Free call",
+      "description": "30 min, no obligation. We map your project and I tell you honestly if I'm the right fit."
     },
     "proposal": {
-      "title": "Custom Proposal",
-      "description": "Detailed project plan with timeline, deliverables, and transparent pricing.",
-      "duration": "2-3 days"
+      "title": "Proposal",
+      "description": "Scope, timeline, and price. Clear and written down."
     },
     "development": {
-      "title": "Agile Development",
-      "description": "Regular updates, weekly demos, and constant communication throughout.",
-      "duration": "2-8 weeks"
+      "title": "Development",
+      "description": "Weekly updates, direct access to me, no middlemen."
     },
     "launch": {
-      "title": "Launch & Support",
-      "description": "Smooth deployment with 30 days of support to ensure everything runs perfectly.",
-      "duration": "Ongoing"
-    },
-    "imagesHeading": "Behind the Scenes",
-    "ctaHeading": "Ready to Start Your Project?",
-    "ctaText": "Join 15+ successful businesses that chose custom development over generic solutions.",
-    "ctaButton": "Book Free Strategy Call"
+      "title": "Launch + handoff",
+      "description": "Deployed, documented, yours."
+    }
+  },
+  "contactCta": {
+    "heading": "One project at a time. Right now, I have availability.",
+    "paragraph": "Tell me what you're building.",
+    "book": "Book a call",
+    "whatsapp": "WhatsApp me"
+  },
+  "contactForm": {
+    "heading": "Tell me about your project",
+    "subheading": "I read every message myself and reply personally.",
+    "name": "Name",
+    "nameError": "Please enter your name.",
+    "email": "Email",
+    "emailError": "Please enter a valid email.",
+    "message": "Tell me about your project",
+    "messageError": "Please add a few details about your project (minimum 30 characters).",
+    "successMessage": "Message sent. I'll get back to you soon.",
+    "errorMessage": "Failed to send message. Try again.",
+    "networkErrorMessage": "Network error. Please try again later.",
+    "send": "Send message",
+    "sending": "Sending..."
+  },
+  "header": {
+    "cta": "Book a call"
   },
   "articles": {
     "heading": "Latest Dev.to Articles"
-  },
-  "contactCta": {
-    "urgencyBadge": "Limited Spots Available",
-    "heading": "Ready to Boost Your Business?",
-    "paragraph": "Join successful companies that chose custom solutions over generic tools. Book your free strategy call now.",
-    "guarantee1": "Free consultation",
-    "guarantee2": "30-day guarantee",
-    "guarantee3": "Only 3 projects/month",
-    "help": "Need help?",
-    "whatsapp": "Chat with us on WhatsApp for instant support!",
-    "whatsappHover": "WhatsApp Now (Instant Response)",
-    "email": "Book Now",
-    "scarcity": "⚡ Only 3 slots available this month"
-  },
-  "popup": {
-    "urgencyBadge": "Wait! Special Offer",
-    "heading": "Don't leave without claiming your free consultation",
-    "paragraph1": "Get Your Free Strategy Session",
-    "paragraph2": "Before you go, let's discuss how we can 3x your business growth with custom software solutions.",
-    "guarantee1": "Free 30-minute strategy consultation",
-    "guarantee2": "Custom roadmap for your business",
-    "guarantee3": "No commitment required",
-    "button": "Claim My Free Session Now",
-    "close": "No thanks, I'll pass on free advice",
-    "scarcity": "⚡ Only 3 project slots available this month"
-  },
-  "header": {
-    "cta": "Get Started"
-  },
-  "contactForm": {
-    "badge": "Free Strategy Session",
-    "heading": "Let's Discuss Your Project",
-    "subheading": "Tell me about your goals and I'll show you exactly how we can achieve them together.",
-    "name": "Name",
-    "nameError": "Name must be valid",
-    "email": "Email",
-    "emailError": "Email must be valid.",
-    "message": "Project Details",
-    "messageError": "Please describe your project (minimum 30 characters).",
-    "successMessage": "Message sent! I'll respond within 2 hours.",
-    "errorMessage": "Failed to send message. Try again.",
-    "networkErrorMessage": "Network error. Please try again later.",
-    "send": "Get My Free Strategy Session",
-    "sending": "Sending...",
-    "privacy": "🔒 Your information is 100% secure and confidential",
-    "responseTime": "Average response time: 2 hours",
-    "schedule":"📅 Schedule Meeting"
   },
   "sidebar": {
     "impact": "I bring concepts to the real world, scalable products and an experience you will never forget.",
@@ -409,8 +283,8 @@
     "locale": "{locale, select, es {🇪🇸 Spanish} en {🇺🇸 English} pt {🇧🇷 Portuguese} other {Unknown}}"
   },
   "metadata": {
-    "title": "M&L Software",
-    "description": "We bring concepts to the real world, scalable products and an experience you will never forget."
+    "title": "M&L Software — Custom software for startups",
+    "description": "Custom web apps, MVPs, and AI integrations built by a senior software engineer in São Paulo. One project at a time, delivered in 4–8 weeks."
   },
   "notFound": {
     "message": "Sorry, we couldn't find the page you were looking for.",

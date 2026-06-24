@@ -1,117 +1,38 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { FaRocket, FaBolt, FaCheck, FaFile, FaShoppingCart } from 'react-icons/fa';
+
+const SERVICES = ['web', 'ai', 'backend'] as const;
 
 export default function Services() {
   const t = useTranslations('services');
-  
-  const services = [
-    {
-      id: 'landing',
-      icon: FaFile,
-      color: 'text-green-500',
-      bgColor: 'bg-green-50 dark:bg-green-900/20',
-      borderColor: 'border-green-200 dark:border-green-800'
-    },
-    {
-      id: 'mvp',
-      icon: FaRocket,
-      color: 'text-blue-500',
-      bgColor: 'bg-blue-50 dark:bg-blue-900/20',
-      borderColor: 'border-blue-200 dark:border-blue-800'
-    },
-    {
-      id: 'optimization',
-      icon: FaBolt,
-      color: 'text-yellow-500',
-      bgColor: 'bg-yellow-50 dark:bg-yellow-900/20',
-      borderColor: 'border-yellow-200 dark:border-yellow-800'
-    },
-    {
-      id: 'ecommerce',
-      icon: FaShoppingCart,
-      color: 'text-purple-500',
-      bgColor: 'bg-purple-50 dark:bg-purple-900/20',
-      borderColor: 'border-purple-200 dark:border-purple-800'
-    }
-  ];
 
   return (
-    <section id="services" className="px-5 py-20">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('heading')}</h2>
-        <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-          {t('subheading')}
-        </p>
-      </div>
+    <section id="services" className="px-6 py-16 md:py-24">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
+          {t('heading')}
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
-        {services.map((service) => {
-          return (
+        <div className="mt-12 divide-y divide-border">
+          {SERVICES.map((id, i) => (
             <div
-              key={service.id}
-              className={`relative p-8 rounded-2xl border-2 ${service.borderColor} ${service.bgColor} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group flex flex-col`}
+              key={id}
+              className="grid gap-2 py-8 md:grid-cols-[auto_1fr] md:gap-10"
             >
-              {/* Popular Badge */}
-              {service.id === 'mvp' && (
-                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-3 rounded-full text-sm font-semibold z-20">
-                  {t('popular')}
-                </div>
-              )}
-
-              {/* Service Info */}
-              <h3 className="text-2xl font-bold mb-4">{t(`${service.id}.title`)}</h3>
-              <p className="text-neutral-600 dark:text-neutral-400 mb-6">
-                {t(`${service.id}.description`)}
-              </p>
-
-              {/* Timeline */}
-              <div className="mb-6">
-                <div className="text-lg font-semibold text-primary mb-2">
-                  {t(`${service.id}.timeline`)}
-                </div>
-                <div className="text-sm text-neutral-500">
-                  {t('customPricing')}
-                </div>
+              <span className="font-display text-sm font-semibold text-primary md:pt-1">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <div>
+                <h3 className="font-display text-xl font-semibold md:text-2xl">
+                  {t(`${id}.title`)}
+                </h3>
+                <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+                  {t(`${id}.description`)}
+                </p>
               </div>
-
-              {/* Features */}
-              <ul className="space-y-3 mb-8">
-                {[1, 2, 3, 4].map((index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <FaCheck className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{t(`${service.id}.feature${index}`)}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* CTA Button */}
-              <a
-                href="#contact"
-                className={`block w-full mt-auto justify-end text-center py-3 px-6 rounded-lg font-semibold transition-all ${
-                  service.id === 'mvp'
-                    ? 'bg-primary text-white hover:bg-primary/90'
-                    : `border-2 ${service.borderColor} ${service.color} hover:bg-primary hover:text-white hover:border-primary`
-                }`}
-              >
-                {t('scheduleCta')}
-              </a>
             </div>
-          );
-        })}
-      </div>
-
-      {/* Bottom CTA */}
-      <div className="text-center mt-16">
-        <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
-          {t('bottomText')}
-        </p>
-        <a
-          href="#contact"
-          className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all transform hover:scale-105"
-        >
-          {t('customSolutionCta')}
-        </a>
+          ))}
+        </div>
       </div>
     </section>
   );
