@@ -1,6 +1,6 @@
 # mlsoftware-portfolio
 
-Personal portfolio developed with a focus in performance, accessibility, internationalization and scability. It presents my career as Software Engineer, highlights my key projects, and integrates with external content such as Dev.to.
+Personal portfolio developed with a focus on performance, accessibility, internationalization and scalability. It presents my career as Software Engineer, highlights my key projects, and integrates with external content such as Dev.to.
 
 ### View Live:
 
@@ -10,11 +10,11 @@ Check it here: [https://mlsoftware.tech](https://mlsoftware.tech)
 
 ## Features
 
-- ✅ **Next.js 15** with App Router (`/src/app`)
+- ✅ **Next.js 16** with App Router (`/src/app`) and Turbopack
 - 🎨 **TailwindCSS** for modern, responsive styling
 - 🌐 **Internationalization (i18n)** with `next-intl` — has **pt-BR**, **en-US** and **es**
 - 🌙 **Dark mode** via `next-themes`
-- 📝 **Integração with o Dev.to** for automatic article listing.
+- 📝 **Integration with Dev.to** for automatic article listing.
 - ⚙️ Location language redirection middleware
 - 📬 Functional contact form with **Formspree** integration
 - 🧩 Reusable and decoupled components
@@ -27,11 +27,11 @@ Check it here: [https://mlsoftware.tech](https://mlsoftware.tech)
 
 | Tech                                                      | Version / Note                                |
 | --------------------------------------------------------- | --------------------------------------------- |
-| [Next.js](https://nextjs.org/)                            | v15 - App Router, SSR and optimizations       |
+| [Next.js](https://nextjs.org/)                            | v16 - App Router, SSR, Turbopack              |
 | [TailwindCSS](https://tailwindcss.com/)                   | Used with `@apply` and responsiveness         |
 | [next-intl](https://next-intl-docs.vercel.app/)           | Support 3 languages with automatic fallback   |
 | [Dev.to API](https://developers.forem.com/api/)           | Dynamic loaded articles                       |
-| [Framer Motion](https://www.framer.com/motion/)           | Smooth animations in sections and transitions |
+| [Motion](https://motion.dev/)                             | Smooth animations in sections and transitions |
 | [next-themes](https://github.com/pacocoursey/next-themes) | Light/Dark Theme Management                   |
 
 ---
@@ -52,7 +52,7 @@ src/
 ├── lib/
 ├── messages/
 ├── providers/
-└── middleware.ts
+└── proxy.ts
 ```
 
 ---

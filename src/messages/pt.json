@@ -1,10 +1,10 @@
 {
   "about": {
     "heading": "Sobre",
-    "parOne": "Sou um engenheiro de software full-stack especializado em desenvolvimento web, arquitetura backend e integração de IA. Construo aplicações escaláveis e de alto desempenho usando TypeScript, Node.js, Python, Docker e Kubernetes, focando em APIs limpas, CI/CD robusto e sistemas fáceis de manter.",
-    "parTwo": "Atualmente, estou desenvolvendo uma ferramenta de comunicação que com certeza terá IA para simplificar interações diárias usando processamento NLP e automação inteligente. Me acompanha de perto, vai ser top.",
-    "parThree": "Liderei sistemas que processam mais de 10.000 operações por minuto, refatorei stacks legados de Laravel para Kotlin e integrei SAP HANA com dados em tempo real. Também ajudei a escalar equipes através de mentoria e liderança motivacional, mas não sou coach.",
-    "parFour": "Fora do expediente, geralmente estou tocando contra-baixo, cantando ou caçando bugs em projetos pessoais. Café alimenta o 'meu código' e sim, modo escuro é um estilo de vida."
+    "parOne": "Sou um engenheiro de software full-stack com foco em fintech, construindo sistemas backend de alto desempenho com TypeScript, Bun, Elysia.js e Next.js. Sou especializado em integrações de pagamento (PIX, Stripe), automação com a WhatsApp Business API, fluxos de trabalho com IA e arquitetura de APIs para produtos de crédito e financeiros.",
+    "parTwo": "Atualmente atuo como Engenheiro de Software Sênior na Engrenna, uma fintech brasileira de crédito veicular, co-liderando a migração de uma stack legada .NET para uma arquitetura moderna em Bun/Elysia/Next.js — e integrando IA diretamente nos fluxos de validação de crédito usando a Anthropic Claude API.",
+    "parThree": "Também construo nas horas vagas: AutoZappr, um SaaS de automação de WhatsApp.",
+    "parFour": "Fora do trabalho, toco piano, faço Taekwondo e pratico cubo mágico. Modo escuro continua sendo um estilo de vida."
   },
   "articles": {
     "heading": "Últimos artigos no Dev.to"
@@ -40,10 +40,25 @@
     "cta": "Experiência completa →",
     "jobs": {
       "0": {
-        "title": "Desenvolvedor de Software Sênior",
+        "title": "Engenheiro de Software Sênior",
+        "company": "Gearbank / Engrenna",
+        "startDate": "Dez 2025",
+        "endDate": "Atual",
+        "link": "https://engrenna.com",
+        "description": "Liderando a migração de um sistema legado .NET para Bun + Elysia + Next.js, além de construir pipelines de pagamento PIX, análise de documentos com IA e integrações com a WhatsApp Business para uma plataforma de crédito fintech.",
+        "stack": {
+          "0": "Bun",
+          "1": "Elysia.js",
+          "2": "Next.js",
+          "3": "Trigger.dev",
+          "4": "E mais..."
+        }
+      },
+      "1": {
+        "title": "Engenheiro de Software",
         "company": "Globant - Neobrain",
         "startDate": "Mar 2024",
-        "endDate": "-",
+        "endDate": "Dez 2025",
         "link": "https://www.neobrain.io/",
         "description": "Liderei o desenvolvimento de funcionalidades escaláveis, melhorei a arquitetura e implementei ferramentas impulsionadas por IA para plataformas de RH.",
         "stack": {
@@ -54,10 +69,10 @@
           "4": "E mais..."
         }
       },
-      "1": {
-        "title": "Engenheiro de Software",
+      "2": {
+        "title": "Engenheiro Full Stack",
         "company": "Alloy Mit",
-        "startDate": "Jan 2021",
+        "startDate": "Jan 2023",
         "endDate": "Mar 2024",
         "link": "https://alloymit.com/",
         "description": "Na Alloy, liderei implantações com containers, refatorei sistemas legados de Laravel para Kotlin e integrei APIs que aumentaram a produtividade financeira em 20x. Também desenvolvi serviços de alto tráfego, otimizei pipelines de CI/CD e melhorei o desempenho de código legado.",
@@ -69,11 +84,11 @@
           "4": "E mais..."
         }
       },
-      "2": {
+      "3": {
         "title": "Engenheiro Backend",
         "company": "LIQI Digital Assets",
-        "startDate": "Jan 2020",
-        "endDate": "Dez 2020",
+        "startDate": "Jan 2022",
+        "endDate": "Dez 2022",
         "link": "https://www.liqi.com.br/",
         "description": "Na Liqi, automatizei a emissão de faturas e dobrei a aquisição de usuários com uma campanha de indicação. Também desenvolvi APIs e otimizei o desempenho de banco de dados.",
         "stack": {
@@ -96,9 +111,38 @@
     "jobs": {
       "0": {
         "title": "Engenheiro de Software Sênior",
+        "company": "Gearbank / Engrenna",
+        "startDate": "Dez 2025",
+        "endDate": "Atual",
+        "link": "https://engrenna.com",
+        "description": {
+          "0": "Arquitetando e liderando a migração de um sistema legado .NET 4.8.1 MVC para Bun + Elysia + Next.js, co-projetando a nova stack com o CTO.",
+          "1": "Desenvolvi um pipeline de pagamento PIX ponta a ponta com reconciliação em tempo real, lidando com volume mensal de transações na casa dos seis dígitos.",
+          "2": "Construí um pipeline de análise de documentos com IA, usando inferência de LLM para aprovar ou rejeitar submissões de forma autônoma e eliminar um gargalo de revisão manual.",
+          "3": "Integrei a WhatsApp Business API para notificações de pagamento e uma API de dados veiculares que alimenta o fluxo de aprovação de crédito.",
+          "4": "Implementei uma arquitetura de failover de provedores de assinatura, eliminando pontos únicos de falha nos fluxos de assinatura digital.",
+          "5": "Construí uma infraestrutura de comunicação transacional automatizando notificações de clientes nos fluxos de crédito."
+        },
+        "stack": {
+          "0": "C#",
+          "1": ".NET",
+          "2": "Bun",
+          "3": "Elysia.js",
+          "4": "Next.js",
+          "5": "Trigger.dev",
+          "6": "PIX",
+          "7": "WhatsApp API",
+          "8": "LangChain",
+          "9": "Claude API",
+          "10": "OCR",
+          "11": "SQL Server"
+        }
+      },
+      "1": {
+        "title": "Engenheiro de Software",
         "company": "Globant - Neobrain",
         "startDate": "Mar 2024",
-        "endDate": "-",
+        "endDate": "Dez 2025",
         "link": "https://www.neobrain.io/",
         "description": {
           "0": "Projetei e desenvolvi uma solução personalizada de avaliação de habilidades de funcionários no valor de €6-digitos, permitindo a avaliação de talentos em toda a força de trabalho.",
@@ -120,10 +164,10 @@
           "8": "Gitlab Actions"
         }
       },
-      "1": {
-        "title": "Engenheiro de Software",
+      "2": {
+        "title": "Engenheiro Full Stack",
         "company": "Alloy Mit",
-        "startDate": "Jan 2021",
+        "startDate": "Jan 2023",
         "endDate": "Mar 2024",
         "link": "https://alloymit.com/",
         "description": {
@@ -153,11 +197,11 @@
           "12": "Kotlin"
         }
       },
-      "2": {
+      "3": {
         "title": "Engenheiro Backend",
         "company": "LIQI Digital Assets",
-        "startDate": "Jan 2020",
-        "endDate": "Dez 2020",
+        "startDate": "Jan 2022",
+        "endDate": "Dez 2022",
         "link": "https://www.liqi.com.br/",
         "description": {
           "0": "Integrei um sistema contábil, automatizando a geração de até 120 faturas por minuto e otimizando os processos financeiros.",
@@ -184,13 +228,17 @@
   "highlightProjects": {
     "heading": "Projetos em Destaque",
     "projects": {
+      "0": {
+        "name": "Engrenna",
+        "description": "Plataforma de crédito fintech com pipeline de pagamento PIX ponta a ponta, análise de documentos com IA e integração com a WhatsApp Business, construída sobre Bun, Elysia e Next.js."
+      },
       "1": {
-        "name": "Projeto de Arquitetura de Software",
-        "description": "Sistema baseado em Clean Architecture com microsserviços, monitoramento e estratégias de deployment usando Docker, Kubernetes e AWS."
+        "name": "Kieh540 Team",
+        "description": "Redesign completo de e-commerce para uma marca esportiva de Taekwondo: rebranding editorial, integração Nuvemshop e cards de produto animados em Next.js + Framer Motion."
       },
       "2": {
-        "name": "API de Análise de Sentimentos",
-        "description": "API REST alimentada por IA usando FastAPI, Hugging Face e Docker para classificação de sentimentos em tempo real."
+        "name": "Projeto de Arquitetura de Software",
+        "description": "Sistema baseado em Clean Architecture com microsserviços, monitoramento e estratégias de deployment usando Docker, Kubernetes e AWS."
       },
       "3": {
         "name": "Version",

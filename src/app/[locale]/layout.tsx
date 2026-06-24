@@ -1,11 +1,7 @@
-import { Inter } from 'next/font/google';
-import '@/app/globals.css';
 import { Sidebar } from '@/components/Sidebar';
-import { ThemeProvider } from '@/providers/ThemeProvider';
-import { cn } from '@/lib/utils';
 import ContactCTA from '@/components/shared/ContactCTA';
-import CustomCursor from '@/components/CustomCursor';
 import ContactForm from '@/components/shared/ContactForm';
+import HtmlLang from '@/components/HtmlLang';
 import { hasLocale, Locale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -17,8 +13,6 @@ type Props = {
   children: ReactNode;
   params: Promise<{ locale: Locale }>;
 };
-
-const inter = Inter({ subsets: ['latin'] });
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -42,27 +36,21 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={cn(inter.className, 'bg-primary-foreground text-black dark:bg-background dark:text-white')}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <NextIntlClientProvider>
-            <div className="flex justify-center flex-row">
-              <div className="w-full max-w-[1280px]">
-                <Sidebar />
-                <main className="flex sm:px-6 py-12">
-                  <div className="mx-auto w-full md:pl-96">
-                    {children}
-                    <ContactCTA />
-                    <ContactForm />
-                    <Toaster richColors />
-                  </div>
-                </main>
-              </div>
+    <NextIntlClientProvider>
+      <HtmlLang locale={locale} />
+      <div className="flex justify-center flex-row">
+        <div className="w-full max-w-[1280px]">
+          <Sidebar />
+          <main className="flex sm:px-6 py-12">
+            <div className="mx-auto w-full md:pl-96">
+              {children}
+              <ContactCTA />
+              <ContactForm />
+              <Toaster richColors />
             </div>
-            <CustomCursor />
-          </NextIntlClientProvider>
-        </ThemeProvider>
-      </body>
-    </html>
+          </main>
+        </div>
+      </div>
+    </NextIntlClientProvider>
   );
 }

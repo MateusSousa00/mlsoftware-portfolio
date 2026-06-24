@@ -7,12 +7,16 @@ import { getIndexedKeysFromMessages } from '@/lib/utils';
 
 const projectAssets = [
   {
-    image: '/projects/software_architecture.png',
-    link: 'https://github.com/orgs/4SOAT-G48/repositories'
+    image: '/projects/engrenna.png',
+    link: 'https://engrenna.com'
   },
   {
-    image: '/projects/sentiment_analysis.png',
-    link: 'https://github.com/MateusSousa00/sentiment-analysis'
+    image: '/projects/kieh540.png',
+    link: 'https://kieh540team.com'
+  },
+  {
+    image: '/projects/software_architecture.png',
+    link: 'https://github.com/orgs/4SOAT-G48/repositories'
   },
   {
     image: '/projects/version.png',

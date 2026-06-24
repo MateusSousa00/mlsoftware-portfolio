@@ -18,6 +18,9 @@ export function Sidebar() {
   const t = useTranslations('sidebar');
 
   useEffect(() => {
+    // Hydration guard for next-themes: theme is only known on the client,
+    // so we flip `mounted` after the first render to avoid an SSR mismatch.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
   return (
