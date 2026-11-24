@@ -1,281 +1,140 @@
 {
   "hero": {
-    "name": "Mateus Lima",
-    "role": "Ingeniero de Software Senior · São Paulo",
-    "headline": "Construyo el producto que tu startup necesita para avanzar rápido.",
-    "subheadline": "Aplicaciones web a medida, MVPs e integraciones de IA — hechos por un ingeniero senior con experiencia real en producción. Con base en São Paulo.",
+    "eyebrow": "M&L Software · Software house · São Paulo",
+    "headline": "Ingeniería de software para operaciones que no pueden detenerse.",
+    "subheadline": "Nuestro equipo construye y moderniza los sistemas detrás de pagos, documentos, atención al cliente e integraciones — código en producción, no solo prototipos.",
     "primaryCTA": "Agendar una llamada",
-    "secondaryCTA": "Escríbeme por WhatsApp"
+    "secondaryCTA": "Hablar por WhatsApp",
+    "panelLabel": "Dónde actuamos"
   },
-  "whoFor": {
-    "label": "Para quién es esto",
-    "text": "Si eres un founder en etapa temprana con un producto real para construir — no solo una idea — y quieres un ingeniero senior que se haga cargo de la entrega desde la arquitectura hasta el lanzamiento, hablemos."
+  "pillars": {
+    "heading": "Resolvemos dolores de operación, no solo de tecnología",
+    "subheading": "Organizamos nuestro trabajo según los problemas que nuestros clientes necesitan resolver.",
+    "whyLabel": "Por qué importa",
+    "whatLabel": "Qué hacemos",
+    "resultLabel": "Resultado",
+    "items": {
+      "payments": {
+        "title": "Pagos & Conciliación Financiera",
+        "why": "Cada pago no conciliado se convierte en retrabajo manual, riesgo de error y caja que nadie ve con claridad.",
+        "what": "Construimos pipelines de pago PIX de punta a punta, conciliación automática en tiempo real e integraciones con bancos y proveedores de pago.",
+        "result": "Conciliación PIX en tiempo real para una fintech brasileña de pagos, cliente de M&L, con un volumen mensual de seis dígitos."
+      },
+      "documents": {
+        "title": "Automatización de Documentos & Back-office",
+        "why": "La emisión y revisión manual de documentos frenan el back-office y no escalan con el crecimiento de la operación.",
+        "what": "Automatizamos la emisión de facturas y los flujos de documentos, y aplicamos IA para analizar, validar y aprobar documentos con seguridad.",
+        "result": "120 facturas por minuto con cero pérdida de datos, y de 5 a 10 minutos de revisión manual eliminados por documento con IA."
+      },
+      "whatsapp": {
+        "title": "Atención al Cliente & WhatsApp Business",
+        "why": "Tu cliente ya está en WhatsApp. Un bot mal protegido, sin embargo, se convierte en puerta de entrada para fraudes y fugas de datos.",
+        "what": "Integramos la WhatsApp Business API a notificaciones y atención con IA, con pruebas de seguridad contra prompt injection y phishing antes de salir al aire.",
+        "result": "Chatbot de WhatsApp en producción probado contra prompt injection y phishing."
+      },
+      "legacy": {
+        "title": "Integraciones & Modernización de Sistemas Legados",
+        "why": "Los sistemas legados y las integraciones frágiles hacen que cada cambio sea lento, caro y riesgoso.",
+        "what": "Conectamos sistemas, APIs de terceros y proveedores, y migramos stacks legados a arquitecturas modernas de forma incremental.",
+        "result": "Migración incremental de un stack legado .NET a una arquitectura moderna en TypeScript, realizada con la operación en funcionamiento."
+      }
+    }
   },
-  "services": {
-    "heading": "Lo que construyo",
-    "web": {
-      "title": "Aplicaciones web & MVPs",
-      "description": "De la arquitectura al lanzamiento. TypeScript, Node.js, Bun, Next.js, PostgreSQL. Entrega típica en 4–8 semanas."
-    },
-    "ai": {
-      "title": "Integración de IA",
-      "description": "Agrega inteligencia a tu producto con la Claude API, OpenAI o pipelines a medida. Procesamiento de documentos, automatización y flujos inteligentes."
-    },
-    "backend": {
-      "title": "Sistemas backend & APIs",
-      "description": "Integraciones de pago (PIX, BTG), WhatsApp Business API, arquitectura de APIs de terceros y rendimiento a escala."
+  "packages": {
+    "heading": "Cómo puedes contratarnos",
+    "subheading": "Tres formatos, pensados para distintos momentos de tu operación.",
+    "cta": "Conversar sobre este formato",
+    "items": {
+      "squad": {
+        "name": "Squad de Ingeniería Dedicado",
+        "type": "Retainer fraccionado",
+        "description": "Un squad sénior dedicado a tu operación por una fracción del costo de un equipo interno. Ideal para evolucionar producto y sistemas de forma continua.",
+        "includes": ["Capacidad mensual recurrente", "Arquitectura, desarrollo y mantenimiento", "Rituales semanales y acceso directo al equipo"]
+      },
+      "automation": {
+        "name": "Sprint de Automatización",
+        "type": "Proyecto cerrado",
+        "description": "Un proyecto con alcance, plazo y precio definidos para automatizar un proceso específico: conciliación, emisión de documentos, integraciones.",
+        "includes": ["Diagnóstico del proceso actual", "Alcance, plazo y precio por escrito", "Entrega en producción y documentada"]
+      },
+      "ai": {
+        "name": "Sprint de IA Operacional",
+        "type": "Proyecto cerrado",
+        "description": "IA aplicada a documentos y atención al cliente, con validación humana donde importa y pruebas de seguridad antes de salir al aire.",
+        "includes": ["Análisis y validación de documentos con IA", "Pruebas contra prompt injection y phishing", "Métricas de operación desde el primer día"]
+      }
     }
   },
   "projects": {
-    "heading": "Proyectos reales",
-    "subheading": "Una selección de trabajos que llevé a producción.",
-    "linkLabel": "Visitar",
+    "heading": "Casos",
+    "subheading": "Una selección de trabajos que nuestro equipo puso en producción.",
     "items": {
-      "engrenna": {
-        "name": "Engrenna",
-        "tag": "Experiencia en producción",
-        "description": "Pipeline de pagos PIX, integración con la WhatsApp Business API (HSM) y validación de documentos con IA. Co-liderando la migración de .NET a Bun, Elysia.js y Next.js.",
-        "note": "Empleador actual — presentado como experiencia en producción, no como proyecto de cliente."
+      "fintech": {
+        "name": "Fintech brasileña de pagos",
+        "tag": "Cliente M&L",
+        "description": "Pipeline de pagos PIX con conciliación en tiempo real, notificaciones vía WhatsApp Business API, validación de documentos con IA y modernización de un stack legado .NET."
       },
       "kieh": {
         "name": "Kieh 540 Team",
-        "tag": "Cliente freelance",
+        "tag": "E-commerce",
         "description": "Rediseño del sitio editorial y tienda en Nuvemshop para un equipo competitivo de Taekwondo."
       },
       "confiare": {
         "name": "Confiare Serviços",
-        "tag": "Cliente freelance",
+        "tag": "Sitio institucional",
         "description": "Rediseño completo del frontend hecho con Next.js y Tailwind.",
         "link": "https://confiareservicos.com.br",
         "linkLabel": "confiareservicos.com.br"
-      },
-      "sentiment": {
-        "name": "Sentiment Analysis API",
-        "tag": "Código abierto",
-        "description": "API REST de IA hecha con FastAPI, Hugging Face y Docker.",
-        "link": "https://github.com/MateusSousa00/sentiment-analysis",
-        "linkLabel": "github.com/MateusSousa00/sentiment-analysis"
       }
     }
   },
   "process": {
     "heading": "Cómo funciona",
     "consultation": {
-      "title": "Llamada inicial",
-      "description": "30 min, sin compromiso. Mapeamos tu proyecto y te digo con honestidad si soy la persona indicada."
+      "title": "Conversación inicial",
+      "description": "30 minutos, sin compromiso. Mapeamos el dolor de tu operación y te decimos con honestidad si somos el equipo indicado."
     },
     "proposal": {
       "title": "Propuesta",
-      "description": "Alcance, plazo y precio. Claros y por escrito."
+      "description": "Formato, alcance, plazo y precio. Claros y por escrito."
     },
     "development": {
       "title": "Desarrollo",
-      "description": "Actualizaciones semanales, acceso directo a mí, sin intermediarios."
+      "description": "Actualizaciones semanales y acceso directo a quienes construyen, sin intermediarios."
     },
     "launch": {
-      "title": "Lanzamiento + entrega",
-      "description": "Desplegado, documentado, tuyo."
+      "title": "Entrega",
+      "description": "En producción, documentado y tuyo."
     }
   },
   "contactCta": {
-    "heading": "Un proyecto a la vez. Ahora mismo, tengo disponibilidad.",
-    "paragraph": "Cuéntame qué estás construyendo.",
+    "heading": "Quitemos ese cuello de botella de tu operación.",
+    "paragraph": "Cuéntale a nuestro equipo qué te está frenando hoy.",
     "book": "Agendar una llamada",
-    "whatsapp": "Escríbeme por WhatsApp"
+    "whatsapp": "Hablar por WhatsApp"
   },
   "contactForm": {
-    "heading": "Cuéntame sobre tu proyecto",
-    "subheading": "Yo mismo leo cada mensaje y respondo personalmente.",
+    "heading": "Cuéntanos sobre tu proyecto",
+    "subheading": "Nuestro equipo lee cada mensaje y responde personalmente.",
     "name": "Nombre",
     "nameError": "Por favor, ingresa tu nombre.",
     "email": "Correo electrónico",
     "emailError": "Por favor, ingresa un correo válido.",
-    "message": "Cuéntame sobre tu proyecto",
+    "message": "Cuéntanos sobre tu proyecto",
     "messageError": "Agrega algunos detalles sobre tu proyecto (mínimo 30 caracteres).",
-    "successMessage": "Mensaje enviado. Te responderé pronto.",
-    "errorMessage": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+    "successMessage": "Mensaje enviado. Te responderemos pronto.",
+    "errorMessage": "Error al enviar. Inténtalo de nuevo.",
     "networkErrorMessage": "Error de red. Inténtalo más tarde.",
     "send": "Enviar mensaje",
     "sending": "Enviando..."
   },
   "header": {
-    "cta": "Agendar llamada"
-  },
-  "articles": {
-    "heading": "Últimos artículos en Dev.to"
-  },
-  "sidebar": {
-    "impact": "Transformo conceptos en realidad con productos escalables y una experiencia que nunca olvidarás.",
-    "about": "Acerca de",
-    "services": "Servicios",
-    "experience": "Experiencia",
-    "projects": "Proyectos"
-  },
-  "experience": {
-    "heading": "Experiencia",
-    "cta": "Experiencia completa →",
-    "jobs": {
-      "0": {
-        "title": "Desarrollador de Software Senior",
-        "company": "Globant - Neobrain",
-        "startDate": "Mar 2024",
-        "endDate": "-",
-        "link": "https://www.neobrain.io/",
-        "description": "Lideré el desarrollo de funcionalidades escalables, mejoré la arquitectura e implementé herramientas impulsadas por IA para plataformas de RRHH.",
-        "stack": {
-          "0": "Vue.js",
-          "1": "Typescript",
-          "2": "Node.js",
-          "3": "PHP",
-          "4": "Y más..."
-        }
-      },
-      "1": {
-        "title": "Ingeniero de Software",
-        "company": "Alloy Mit",
-        "startDate": "Ene 2021",
-        "endDate": "Mar 2024",
-        "link": "https://alloymit.com/",
-        "description": "En Alloy, lideré implementaciones con contenedores, refactoricé sistemas legados de Laravel a Kotlin e integré APIs que aumentaron la productividad financiera 20 veces. También desarrollé servicios de alto tráfico, optimicé pipelines de CI/CD y mejoré el rendimiento del código legado.",
-        "stack": {
-          "0": "Next.js",
-          "1": "TypeScript",
-          "2": "Node.js",
-          "3": "PHP",
-          "4": "Y más..."
-        }
-      },
-      "2": {
-        "title": "Ingeniero Backend",
-        "company": "LIQI Digital Assets",
-        "startDate": "Ene 2020",
-        "endDate": "Dic 2020",
-        "link": "https://www.liqi.com.br/",
-        "description": "En Liqi, automaticé la emisión de facturas y dupliqué la adquisición de usuarios con una campaña de referidos. También desarrollé APIs y optimicé el rendimiento de bases de datos.",
-        "stack": {
-          "0": "Node.js",
-          "1": "TypeScript",
-          "2": "Nest.js",
-          "3": "Prisma",
-          "4": "Y más..."
-        }
-      }
-    }
-  },
-  "fullExperience": {
-    "back": "Regresar a Inicio",
-    "heading": "Mi Experiencia Completa",
-    "intro": "Aquí tienes una mirada detallada a los roles, proyectos y resultados que he entregado en diversas industrias y stacks.",
-    "cta": "Descargar Mi Currículum - ES (PDF)",
-    "closing": "¿Te gustó tanto? Entonces quédate con él!",
-    "resume": "/mateus-curriculum.pdf",
-    "jobs": {
-      "0": {
-        "title": "Ingeniero de Software Senior",
-        "company": "Globant - Neobrain",
-        "startDate": "Mar 2024",
-        "endDate": "-",
-        "link": "https://www.neobrain.io/",
-        "description": {
-          "0": "Diseñé y desarrollé una solución personalizada de evaluación de habilidades de los empleados de €6 dígitos, que permite la evaluación del talento en toda la fuerza laboral.",
-          "1": "Construí un sistema de procesamiento por lotes de alto rendimiento capaz de insertar más de 10.000 usuarios por minuto, asegurando la sincronización perfecta entre servicios en múltiples idiomas.",
-          "2": "Inicié la migración del código monolítico heredado a una arquitectura de microservicios, mejorando significativamente la escalabilidad y el mantenimiento del sistema.",
-          "3": "Me enfoqué principalmente en corregir errores directamente en la base de datos usando SAP HANA, asegurando la integridad de los datos y la confiabilidad del sistema.",
-          "4": "Desarrollé y mantuve funcionalidades de la aplicación usando Node.js y PHP, mejorando la funcionalidad y el rendimiento del sistema. En el frontend, utilicé Vue.js para construir y mejorar interfaces de usuario, proporcionando una experiencia fluida.",
-          "5": "Aseguré que todo el código fuera rigurosamente probado, logrando un aumento del 10% en la cobertura de pruebas en proyectos heredados. Implementé pruebas automatizadas usando Jest para mantener altos estándares de calidad de código."
-        },
-        "stack": {
-          "0": "Vue.js",
-          "1": "Typescript",
-          "2": "Node.js",
-          "3": "PHP",
-          "4": "WebSocket",
-          "5": "Jest",
-          "6": "VPN",
-          "7": "HanaDB",
-          "8": "Gitlab Actions"
-        }
-      },
-      "1": {
-        "title": "Ingeniero de Software",
-        "company": "Alloy Mit",
-        "startDate": "Ene 2021",
-        "endDate": "Mar 2024",
-        "link": "https://alloymit.com/",
-        "description": {
-          "0": "Lideré la implementación del proyecto principal de la empresa utilizando contenedores (Docker, Kubernetes), mejorando la escalabilidad y la eficiencia operativa.",
-          "1": "Refactoricé un sistema heredado en Laravel a Kotlin, mejorando el rendimiento y la mantenibilidad del sistema.",
-          "2": "Integré dos sistemas contables, automatizando los procesos de pago vía API y aumentando la productividad financiera en 20 veces.",
-          "3": "Desarrollé una interfaz de comunicación universal, mejorando la interoperabilidad entre sistemas e impulsando la innovación organizacional.",
-          "4": "Brindé mentoría a desarrolladores junior, promoviendo una cultura de aprendizaje continuo y crecimiento técnico.",
-          "5": "Desarrollé y mantuve servicios backend y APIs para aplicaciones de alto tráfico.",
-          "6": "Implementé pipelines de CI/CD, reduciendo los tiempos de despliegue y aumentando la eficiencia de entrega.",
-          "7": "Participé en la refactorización de código heredado, mejorando el rendimiento y reduciendo costos operativos.",
-          "8": "Optimicé consultas de bases de datos y procesos backend para mayor escalabilidad y menor latencia."
-        },
-        "stack": {
-          "0": "Next.js",
-          "1": "TypeScript",
-          "2": "Node.js",
-          "3": "PHP",
-          "4": "Laravel",
-          "5": "Docker",
-          "6": "Redis",
-          "7": "AWS",
-          "8": "Nginx",
-          "9": "Apache2",
-          "10": "Swagger",
-          "11": "Linux",
-          "12": "Kotlin"
-        }
-      },
-      "2": {
-        "title": "Ingeniero Backend",
-        "company": "LIQI Digital Assets",
-        "startDate": "Ene 2020",
-        "endDate": "Dic 2020",
-        "link": "https://www.liqi.com.br/",
-        "description": {
-          "0": "Integré un sistema contable, automatizando la generación de hasta 120 facturas por minuto y optimizando los procesos financieros.",
-          "1": "Aumenté la adquisición de clientes en un 100% mediante la campaña \"Invita a un amigo\".",
-          "2": "Introduje y creé funcionalidad de cashback, resultando en un aumento del 5%+ en la base de clientes.",
-          "3": "Desarrollé APIs para transacciones financieras utilizando Node.js y PostgreSQL.",
-          "4": "Colaboré en la optimización de consultas a bases de datos, mejorando los tiempos de respuesta del sistema.",
-          "5": "Contribuí al desarrollo de microservicios, mejorando la modularidad y escalabilidad del sistema.",
-          "6": "Ayudé en la redacción de documentación interna y estandarización de procesos, aumentando la eficiencia del equipo."
-        },
-        "stack": {
-          "0": "Node.js",
-          "1": "TypeScript",
-          "2": "Nest.js",
-          "3": "Prisma",
-          "4": "Postgres",
-          "5": "Docker",
-          "6": "GraphQL",
-          "7": "Jest"
-        }
-      }
-    }
-  },
-  "highlightProjects": {
-    "heading": "Proyectos Destacados",
-    "projects": {
-      "0": {
-        "name": "Proyecto de Arquitectura de Software",
-        "description": "Sistema basado en Clean Architecture con microservicios, monitoreo y estrategias de deployment utilizando Docker, Kubernetes y AWS."
-      },
-      "1": {
-        "name": "API de Análisis de Sentimientos",
-        "description": "API REST impulsada por IA utilizando FastAPI, Hugging Face y Docker para clasificación de sentimientos en tiempo real."
-      },
-      "2": {
-        "name": "Version",
-        "description": "Sitio corporativo enfocado en SEO, rendimiento y diseño responsivo para una agencia de consultoría."
-      },
-      "3": {
-        "name": "Confiare",
-        "description": "Rediseño completo y desarrollo frontend de un sitio de servicios para condominios usando Next.js y Tailwind."
-      }
+    "cta": "Agendar llamada",
+    "nav": {
+      "solutions": "Soluciones",
+      "packages": "Formatos",
+      "cases": "Casos",
+      "contact": "Contacto"
     }
   },
   "LocaleSwitcher": {
@@ -283,11 +142,11 @@
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 Inglés} pt {🇧🇷 Portugués} other {Unknown}}"
   },
   "metadata": {
-    "title": "M&L Software — Software a medida para startups",
-    "description": "Aplicaciones web a medida, MVPs e integraciones de IA hechos por un ingeniero de software senior en São Paulo. Un proyecto a la vez, entregado en 4–8 semanas."
+    "title": "M&L Software — Software house para pagos, automatización e IA",
+    "description": "Software house en São Paulo, Brasil. Pagos y conciliación, automatización de documentos, IA segura en WhatsApp Business y modernización de sistemas legados."
   },
   "notFound": {
-    "message": "Lo sentimos, no pudimos encontrar la página que estabas buscando.",
-    "goHome": "Volver a la página principal"
+    "message": "Lo sentimos, no pudimos encontrar la página que buscabas.",
+    "goHome": "Volver al inicio"
   }
 }

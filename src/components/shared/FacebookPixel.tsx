@@ -1,8 +1,6 @@
 'use client';
 import { useEffect } from 'react';
 import Script from 'next/script';
-import Image from 'next/image';
-
 interface FacebookPixelProps {
   pixelId: string;
 }
@@ -59,7 +57,9 @@ export default function FacebookPixel({ pixelId }: FacebookPixelProps) {
         }}
       />
       <noscript>
-        <Image
+        {/* Tracking pixel, not content: a plain <img> (next/image would try to optimize a remote URL). */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           height="1"
           width="1"
           style={{ display: 'none' }}

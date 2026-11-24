@@ -4,22 +4,26 @@ Guidance for Claude Code when working in this repository.
 
 ## Project
 
-Personal portfolio / landing page for **mlsoftware.tech** — a Next.js 16 (App Router)
-site with internationalization, dark mode, and a contact funnel. Deployed on Vercel.
+Company landing page for **M&L Software** (software house) at **mlsoftware.com.br** — a Next.js 16
+(App Router) site with internationalization, dark mode, and a contact funnel. Deployed on Vercel.
+`mlsoftware.tech` 301-redirects to `mlsoftware.com.br` via a host rule in `next.config.mjs`.
+
+Content rules: company/team voice only (never first-person singular), never name current clients
+or banking providers, never invent metrics.
 
 ## Commands
 
 The project pins Node via `.tool-versions` (asdf). Use the project's Node when running scripts.
 
 ```bash
-npm install        # install dependencies
-npm run dev        # dev server with Turbopack (http://localhost:3000)
-npm run build      # production build (runs TypeScript typecheck)
-npm run start      # serve the production build
-npm run lint       # ESLint (flat config via eslint.config.mjs)
+pnpm install       # install dependencies (pnpm via corepack: `corepack enable pnpm`)
+pnpm dev           # dev server with Turbopack (http://localhost:3000)
+pnpm build         # production build (runs TypeScript typecheck)
+pnpm start         # serve the production build
+pnpm lint          # ESLint (flat config via eslint.config.mjs)
 ```
 
-There is no test suite. Treat `npm run build` and `npm run lint` as the verification gates —
+There is no test suite. Treat `pnpm build` and `pnpm lint` as the verification gates —
 both must pass before considering a change done.
 
 ## Architecture
@@ -28,20 +32,22 @@ both must pass before considering a change done.
 - **Styling:** Tailwind CSS v4 (configured through `@tailwindcss/postcss` in `postcss.config.mjs`;
   no `autoprefixer` — Tailwind v4 handles it). Global styles in `src/app/globals.css`.
   `tw-animate-css` for animation utilities. `cn()` helper in `src/lib/utils.ts` (clsx + tailwind-merge).
-- **i18n:** `next-intl` v4. Locales are `en`, `es`, `pt` (default `en`). The single source of truth
+- **i18n:** `next-intl` v4. Locales are `pt`, `en`, `es` (default `pt`, `localePrefix: 'as-needed'`:
+  pt at `/`, others at `/en`, `/es`; `localeDetection` off). The single source of truth
   for routing/locales is `src/i18n/routing.ts` (`defineRouting`). Related files:
   - `src/i18n/request.ts` — per-request message loading (wired via `createNextIntlPlugin()` in `next.config.mjs`).
   - `src/i18n/navigation.ts` — locale-aware `Link`, `redirect`, `usePathname`, `useRouter`.
   - `src/proxy.ts` — locale routing middleware (Next 16 `proxy` convention, formerly `middleware.ts`).
   - Translation catalogs live in `src/messages/{en,es,pt}.json` — **keep all three in sync** when
     adding or changing keys.
-- **Routing:** `/[locale]` for the home page and `/[locale]/experience`. The `/experience` path is
-  localized to `/experiencia` for `pt` and `es` (see `routing.ts` `pathnames`).
+- **Routing:** single home page `/[locale]`. Permanent redirects (old `/pt/*`, removed `/experience`
+  pages, `.tech` host) live in `next.config.mjs` `redirects()`.
 - **Theming:** `next-themes` via `src/providers/ThemeProvider.tsx`. Components that read the theme use a
   mount-gate (`useState(false)` + `setMounted(true)` in an effect) to avoid hydration mismatch — these
   carry an intentional `// eslint-disable-next-line react-hooks/set-state-in-effect`.
 - **Components:** `src/components/home/*` (page sections), `src/components/shared/*` (reusable widgets:
-  contact form, CTAs, WhatsApp, Facebook Pixel, etc.), plus top-level `Sidebar`, `Header`, locale switcher.
+  contact form, CTAs, WhatsApp, Facebook Pixel, etc.), plus top-level `Header`, locale switcher.
+  Home sections: Hero → Pillars (4 buyer-pain verticals) → Packages → Projects (cases) → Process.
 - **Contact form:** `src/app/api/contact/route.ts` proxies submissions to Formspree (`FORMSPREE_URL`).
 - **Analytics:** Google Analytics / Google Tag (`@next/third-parties`) and a Facebook Pixel component.
 

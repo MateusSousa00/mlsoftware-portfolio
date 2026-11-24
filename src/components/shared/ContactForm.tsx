@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { toast } from 'sonner';
 import { trackFormSubmission } from './FacebookPixel';
+import { motion } from '@/lib/motion';
 
 interface ContactApiResponse {
   success?: boolean;
@@ -78,20 +79,20 @@ export default function ContactForm() {
   };
 
   const fieldClass = (hasError: boolean) =>
-    `w-full rounded-lg border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 ${
+    `w-full rounded-lg border bg-card dark:bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-primary/50 ${
       hasError ? 'border-destructive focus:ring-destructive/40' : 'border-border'
     }`;
 
   return (
     <section id="contact" className="mx-auto max-w-xl px-6 py-16 md:py-24">
-      <div className="mb-8">
+      <div data-reveal="" className="mb-8">
         <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
           {t('heading')}
         </h2>
         <p className="mt-3 text-muted-foreground">{t('subheading')}</p>
       </div>
 
-      <form onSubmit={handleSubmit} method="POST" className="space-y-5">
+      <form onSubmit={handleSubmit} method="POST" data-reveal="" style={motion(80)} className="space-y-5">
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-medium">
             {t('name')}
@@ -142,7 +143,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-primary/90 active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
         >
           {isLoading ? (
             <>
